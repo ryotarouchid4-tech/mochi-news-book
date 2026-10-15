@@ -27,7 +27,8 @@ def normalize(s):return re.sub(r'\s+','',s)
 ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
 sitemap=ET.parse(OUT/'sitemap.xml');urls=[x.text for x in sitemap.findall('.//s:loc',ns)]
 expected_books=json.loads((ROOT/'content/books.json').read_text())
-assert len(urls)==len(set(urls))==len(expected_books)+11
+expected_topics=json.loads((ROOT/'content/topics.json').read_text())
+assert len(urls)==len(set(urls))==len(expected_books)+9+len(expected_topics)
 seen_titles=set();docs={}
 for f in OUT.rglob('*.html'):docs[f]=Doc(f.read_text())
 for f,d in docs.items():
@@ -87,4 +88,4 @@ for target in (OUT/'index.html',OUT/'books/index.html'):
  links=[a['href'] for t,a in docs[target].tags if t=='a' and 'href' in a]
  assert all(b['url'] in links for b in books)
 ET.parse(OUT/'feed.xml')
-print(f'PASS: {len(docs)} HTML files, {len(urls)} canonical sitemap URLs, {len(books)} text articles, {len(books)*4} images, links/anchors, JSON-LD, metadata, form configuration and XML feeds')
+print(f'PASS: {len(docs)} HTML files, {len(urls)} canonical sitemap URLs, {len(books)} text articles, {sum(len(b['pages']) for b in books)} images, links/anchors, JSON-LD, metadata, form configuration and XML feeds')
