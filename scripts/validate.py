@@ -28,7 +28,8 @@ ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
 sitemap=ET.parse(OUT/'sitemap.xml');urls=[x.text for x in sitemap.findall('.//s:loc',ns)]
 expected_books=json.loads((ROOT/'content/books.json').read_text())
 expected_topics=json.loads((ROOT/'content/topics.json').read_text())
-assert len(urls)==len(set(urls))==len(expected_books)+11+len(expected_topics)
+expected_months=len({b['date'][:7] for b in expected_books})
+assert len(urls)==len(set(urls))==len(expected_books)+11+len(expected_topics)+expected_months
 seen_titles=set();docs={}
 for f in OUT.rglob('*.html'):docs[f]=Doc(f.read_text())
 for f,d in docs.items():
@@ -84,8 +85,10 @@ for b in books:
  assert any(x['@type']=='BlogPosting' for x in d.jsons[0]['@graph'])
  for p in b['pages']:assert (OUT/p).exists()
 # All books must be discoverable from the static home and static archive HTML.
-for target in (OUT/'index.html',OUT/'books/index.html'):
- links=[a['href'] for t,a in docs[target].tags if t=='a' and 'href' in a]
- assert all(b['url'] in links for b in books)
+links=[a['href'] for t,a in docs[OUT/'books/index.html'].tags if t=='a' and 'href' in a]
+assert all(b['url'] in links for b in books)
+# トップページには、いちばん新しい本が必ずのっている
+home=[a['href'] for t,a in docs[OUT/'index.html'].tags if t=='a' and 'href' in a]
+assert books[0]['url'] in home
 ET.parse(OUT/'feed.xml')
 print(f'PASS: {len(docs)} HTML files, {len(urls)} canonical sitemap URLs, {len(books)} text articles, {sum(len(b['pages']) for b in books)} images, links/anchors, JSON-LD, metadata, form configuration and XML feeds')

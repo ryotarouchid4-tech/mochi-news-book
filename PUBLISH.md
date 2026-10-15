@@ -7,7 +7,7 @@
 
 - このリポジトリ：`ryotarouchid4-tech/mochi-news-book`（ブランチ `main`）
 - 公開URL：https://mochi-news-book.pages.dev （push すると Cloudflare Pages が自動でビルドして公開する）
-- 本の画像：`news-book/output/年月日/01.png〜`（3枚か4枚。`overview.png` は使わない）
+- 本の画像：`news-book/output/年月日/01.png〜`（3〜10枚。`overview.png` は使わない）
 - 文章：`news-book/news.json` の内容をそのまま使う（画像と同じ文章にする）
 
 ## 1. 最新にする
@@ -28,7 +28,7 @@ git pull --rebase origin main
   "topic": "ai",
   "summary": "茨木市とNTT西日本が、一部の小中学校で先生の書類仕事にAIを使う実証について。",
   "description": "茨木市とNTT西日本の校務AIの実証を、2026年10月15日の本で紹介。資料探しや要約、文章作成を手伝うAIについて読めます。",
-  "body": ["news.json の what", "news.json の shio"],
+  "body": ["news.json の what", "news.json の detail の1つ目", "…", "news.json の shio"],
   "afterword": "news.json の matome",
   "mochi": "news.json の mochi",
   "source": {
@@ -55,7 +55,7 @@ git pull --rebase origin main
   - なるべく既存のテーマに入れる。似たテーマを増やしすぎない
 - `summary`：何のニュースかを1文で（40〜60文字くらい）。「〜について。」で終える。記事に書いてあることだけ
 - `description`：検索結果に出る説明。「〇〇を、2026年10月15日の本で紹介。」＋ひとこと（60〜90文字くらい）
-- `body`：`news.json` の `what` と `shio` を、この順にそのまま入れる
+- `body`：`news.json` の `what`、`detail` の全部（順番どおり）、`shio` を、この順にそのまま入れる（`\n` は取りのぞく）
 - `afterword`：`news.json` の `matome` をそのまま
 - `mochi`：`news.json` の `mochi` をそのまま
 - `source`：
@@ -64,7 +64,7 @@ git pull --rebase origin main
   - `url`：記事のURL
   - `date`：記事の公開日がわかるときだけ入れる（わからなければ項目ごと省く）。海外の記事は現地の公開日
   - `status`：ITmedia は `2026年10月15日に記事名と本文を確認。`、NHK は `2026年10月15日に記事名とリード文を確認。`、海外の記事は `2026年10月15日に記事名と本文（英語）を確認。`（日付は今日）
-- `images`：`output/年月日/` の `01.png` から順に、できた枚数ぶん（3枚か4枚）
+- `images`：`output/年月日/` の `01.png` から順に、できた枚数ぶん（3〜10枚）
 
 ## 3. 本を追加する
 

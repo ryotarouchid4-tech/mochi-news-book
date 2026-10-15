@@ -14,7 +14,7 @@
   "topic_en": "AI & TECHNOLOGY",    新しいテーマのときだけ必要
   "summary": "一覧や本のページの紹介文（1文）",
   "description": "検索結果に出る説明文（1〜2文）",
-  "body": ["その一の文章", "その二の文章"],
+  "body": ["その一の文章", "くわしい説明1", "…", "シオの話"],  2〜8個
   "afterword": "あとがきの一文",
   "mochi": "モチの一言",
   "source": {"name": "ITmedia NEWS", "title": "記事の見出し", "url": "https://...", "date": "2026-10-14",
@@ -24,7 +24,7 @@
 }
 
 やること:
-  - 画像（3〜4枚）を WebP に変換して public/assets/book-{番号}-{ページ}.webp に置く
+  - 画像（3〜10枚）を WebP に変換して public/assets/book-{番号}-{ページ}.webp に置く
   - content/books.json の先頭に1冊分を追加する（URL は /books/{日付}-{時間}/）
   - 新しいテーマなら content/topics.json にも追加する
 """
@@ -82,8 +82,8 @@ def main():
     afterword = text(data, 'afterword')
     mochi = text(data, 'mochi')
     body = data.get('body')
-    if not (isinstance(body, list) and len(body) == 2 and all(isinstance(x, str) and x.strip() for x in body)):
-        fail('「body」は ["その一", "その二"] の2つの文章にしてください')
+    if not (isinstance(body, list) and 2 <= len(body) <= 8 and all(isinstance(x, str) and x.strip() for x in body)):
+        fail('「body」は ["その一", くわしい説明…, "シオの話"] の2〜8個の文章にしてください')
     body = [x.strip() for x in body]
 
     # 出典
@@ -124,8 +124,8 @@ def main():
 
     # 画像
     images = data.get('images')
-    if not (isinstance(images, list) and 3 <= len(images) <= 4):
-        fail('「images」は3〜4枚の画像のパスにしてください')
+    if not (isinstance(images, list) and 3 <= len(images) <= 10):
+        fail('「images」は3〜10枚の画像のパスにしてください')
     opened = []
     for path in images:
         if not Path(path).is_file():

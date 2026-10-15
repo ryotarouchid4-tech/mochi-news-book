@@ -15,3 +15,53 @@ body{background:var(--paper);color:var(--ink)}::selection{background:#ebbcac;col
 
 .book__region{font-size:9px;font-weight:700;letter-spacing:.14em;line-height:1.6;color:#fff9ee;background:#5e4130;border-radius:3px;padding:0 6px;align-self:center}.tabs__divider{width:1px;align-self:stretch;margin:4px 6px;background:var(--line)}
 @media(max-width:760px){.tabs__divider{display:none}}
+/* きょうの本：大きな表紙で並べる */
+.today{padding:44px 0 28px}
+.today .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:22px}
+.today .section-head h2{font-weight:500;font-size:30px;margin:0}
+.today .section-head h2 small{display:block;font-size:10px;letter-spacing:.14em;color:#a68c71;margin-bottom:8px}
+.cover-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:26px 22px}
+.cover-tile{display:flex;flex-direction:column;gap:9px;color:inherit;text-decoration:none}
+.cover-tile__img{display:block;border-radius:10px;overflow:hidden;box-shadow:0 3px 0 #e6d3b8,0 10px 22px #84634b1c;transition:transform .25s,box-shadow .25s;background:#fff9ee}
+.cover-tile__img img{display:block;width:100%;height:auto}
+.cover-tile:hover .cover-tile__img{transform:translateY(-4px);box-shadow:0 5px 0 #d2b894,0 16px 26px #84634b26}
+.cover-tile__meta{font-size:11px;color:#a76e54;letter-spacing:.02em}
+.cover-tile__title{font-size:15px;line-height:1.55;font-weight:600;color:#5e4130}
+/* 日付ごとの見出し */
+.date-group{margin-top:30px}
+.date-group:first-of-type{margin-top:6px}
+.date-head{display:flex;align-items:baseline;gap:10px;font-size:17px;font-weight:600;color:#5e4130;margin:0 0 14px;padding-bottom:8px;border-bottom:1px dashed var(--line)}
+.date-head span{font-size:11px;font-weight:400;color:var(--muted)}
+/* 月ごとのリンク */
+.month-links{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.month-links a{border:1px solid var(--line);border-radius:25px;padding:7px 14px;font-size:12px;color:inherit;text-decoration:none;background:#fffcf6}
+.month-links a small{margin-left:6px;color:var(--muted)}
+.month-links a:hover{border-color:#c8a98a;color:#a76e54}
+/* 前の本・次の本 */
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:34px 0 10px}
+.pager__item{display:flex;flex-direction:column;gap:4px;border:1px solid var(--line);border-radius:13px;padding:14px 16px;background:#fffcf6;color:inherit;text-decoration:none}
+.pager__item small{font-size:11px;color:#a76e54;letter-spacing:.04em}
+.pager__item span{font-size:14px;line-height:1.5;color:#5e4130}
+.pager__item--next{text-align:right}
+.pager__item:hover{border-color:#c8a98a}
+.pager__item--empty{border:0;background:none}
+/* スマホ：本のカードを2列の表紙グリッドに */
+@media(max-width:760px){
+.cover-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
+.cover-tile__title{font-size:14px}
+.books{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important}
+.book,.content .book{display:flex!important;flex-direction:column;padding:12px!important;gap:8px}
+.book .book__cover{width:100%}
+.book .book__cover img{width:100%;height:auto}
+.book .book__meta{margin-top:4px;font-size:10px!important;gap:3px 8px}
+.book .book__title{font-size:14px;line-height:1.5;margin:0}
+.book .book__actions{display:none}
+.pager{grid-template-columns:1fr}
+.pager__item--next{text-align:left}
+.pager__item--empty{display:none}
+}
+.cover-tile__img{position:relative}
+.cover-tile__badge{position:absolute;top:8px;right:8px;box-shadow:0 1px 3px #0002}
+.shelf .cover-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+@media(max-width:760px){.shelf .cover-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 10px}.shelf .cover-tile__title{font-size:12px}.shelf .cover-tile__meta{font-size:9px}}
+@media(max-width:760px){.shelf .cover-tile__meta{display:none}}
