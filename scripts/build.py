@@ -199,12 +199,10 @@ for i,wid in enumerate(WEEKS):
  shell(path,f'{a.year}年{week_label(wid)}の本｜今週のニュースまとめ',lead,intro('WEEKLY / '+str(len(selected))+' BOOKS',f'{week_label(wid)}の本',lead)+'<section><h2>この週の本（ひとことで）</h2>'+titles+'</section><section><h2>表紙から読む</h2>'+dated_cards(selected,tiles=True)+'</section>'+nav,kind='CollectionPage',extra=[item_list(selected,path)],crumb=[('ホーム','/'),('週のまとめ','/weeks/'),(week_label(wid),path)],wide=True)
 shell('/weeks/','週のまとめ｜もちとしおのニュース本','1週間ごとに、もちとしおのニュース本をまとめています。',intro('WEEKLY','週のまとめ','1週間ごとに、その週に作った本をまとめています。')+'<ul class="week-list">'+''.join(f'<li><a href="/weeks/{w}/">{week_label(w)}<small>{sum(1 for b in BOOKS if week_id(b["date"])==w)}冊</small></a></li>' for w in WEEKS)+'</ul>',kind='CollectionPage',crumb=[('ホーム','/'),('週のまとめ','/weeks/')],wide=True)
 # ---- キャラクター紹介（公式サイト「もちとしお」の設定にもとづく）
-OFFICIAL='https://mochi-to-shio.vercel.app/';X_URL='https://x.com/mochi_shio_com'
 shell('/characters/','モチとシオ｜キャラクター紹介','ニュースの本に登場する、しろいねこのモチと、ちいさいとりのシオの紹介です。',intro('CHARACTERS','モチとシオ','ニュースの本に登場するふたりを紹介します。')+f'''<div class="prose"><img class="about-character" src="/assets/icon.webp" alt="赤いパーカーを着たしろいねこのモチと、ちいさいとりのシオ" width="1254" height="1254" loading="lazy">
 <section class="character"><h2>モチ</h2><dl class="character__facts"><dt>どんな子</dt><dd>しろいねこ</dd><dt>せいかく</dt><dd>めんどくさがり。なんでも明日に回しがち</dd><dt>ふくそう</dt><dd>お気に入りの赤いパーカー</dd><dt>くちぐせ</dt><dd>「あと5分だけ…」</dd></dl><p>ニュースの本では、最後の「あとがき」のページで、吹き出しのひとことを話します。</p></section>
 <section class="character"><h2>シオ</h2><dl class="character__facts"><dt>どんな子</dt><dd>ちいさいとり</dd><dt>せいかく</dt><dd>冷静。いつもモチをしずかに見守っている</dd><dt>とくぎ</dt><dd>的確なひとこと</dd><dt>くちぐせ</dt><dd>「…」</dd></dl><p>ニュースの本では、最後の「その」のページで、ニュースを読んで思ったことや「自分たちにどう関係ある？」を、やわらかい話し言葉で話します。</p></section>
 <h2>ふたりの関係</h2><p>モチとシオは、一緒に暮らす同居人のような関係です。モチが行動する側、シオがそれを静かに見守る側。けんかをするわけでも、いつも仲良しこよしというわけでもない、少し距離感のある関係です。</p>
-<h2>4コマ漫画も、まいにち更新</h2><p>もちとしおは、なんでもない毎日をゆるく過ごす4コマ漫画も描いています。漫画は<a class="text-link" href="{OFFICIAL}" target="_blank" rel="noopener">もちとしお公式サイト ↗</a>で、新しいお話は<a class="text-link" href="{X_URL}" target="_blank" rel="noopener">X（@mochi_shio_com）↗</a>で読めます。</p>
 <div class="home-links"><a href="/books/">ニュースの本を読む →</a><a href="/about/">このサイトについて →</a></div></div>''',crumb=[('ホーム','/'),('モチとシオ','/characters/')])
 # ---- サイト内検索（全部の本が対象。ページは検索結果用なので noindex）
 SEARCH=[{'t':b['title'],'u':b['url'],'d':b['date'],'c':b['category'],'r':region(b),'s':b['summary'],'g':[TAGS[t] for t in book_tags(b)],'n':b['source']['name'],'i':'/'+thumb(b)} for b in BOOKS]
