@@ -78,3 +78,5 @@ body{background:var(--paper);color:var(--ink)}::selection{background:#ebbcac;col
 .site-header{position:sticky;top:0;z-index:60}
 html{scroll-padding-top:110px}
 @media(max-width:760px){html{scroll-padding-top:96px}}
+/* 上の赤い読み進みバーは出さない */
+.scroll-progress{display:none}
