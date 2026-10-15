@@ -19,7 +19,8 @@
   "mochi": "モチの一言",
   "source": {"name": "ITmedia NEWS", "title": "記事の見出し", "url": "https://...", "date": "2026-10-14",
              "status": "2026年10月15日に記事名と本文を確認。"},
-  "images": ["/path/to/01.png", "/path/to/02.png", "/path/to/03.png", "/path/to/04.png"]
+  "images": ["/path/to/01.png", "/path/to/02.png", "/path/to/03.png", "/path/to/04.png"],
+  "webPublished": "2026-10-16"     （省略可）サイトに載せた日。省略すると date と同じ
 }
 
 やること:
@@ -159,12 +160,15 @@ def main():
         'source': source,
         'topic': topic,
         'url': f'/books/{slug}/',
-        'webPublished': date,
+        'webPublished': data.get('webPublished') or date,
+        'time': time,
     }
     if new_topic:
         topics.append(new_topic)
         save_json(TOPICS_FILE, topics)
     books.insert(0, book)
+    # 新しい日付・時間が先頭になるように並べる（あとから古い本を足したときのため）
+    books.sort(key=lambda b: (b['date'], b.get('time', '')), reverse=True)
     save_json(BOOKS_FILE, books)
 
     print(f'追加しました: {title}')
