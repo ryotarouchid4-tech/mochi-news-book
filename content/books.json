@@ -1,0 +1,161 @@
+[
+  {
+    "id": 3,
+    "title": "先生の書類仕事を、国産AIがお手伝い",
+    "date": "2026-10-15",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-3-1.webp",
+      "assets/book-3-2.webp",
+      "assets/book-3-3.webp",
+      "assets/book-3-4.webp"
+    ],
+    "slug": "school-local-ai",
+    "description": "茨木市とNTT西日本の校務AIの実証を、2026年10月15日の本で紹介。資料探しや要約、文章作成を手伝うAIについて読めます。",
+    "summary": "茨木市とNTT西日本が、一部の小中学校で先生の書類仕事にAIを使う実証について。",
+    "body": [
+      "大阪府の茨木市とNTT西日本が、一部の小中学校で先生の書類仕事にAIを使う試しを始めるんだって。使うのは、NTTが一から作った国産のAI。学校側に置いたサーバで動かして、資料さがしや要約、文章づくりを手伝うよ。試すのは来年3月までの予定。",
+      "学校の書類って、いろんなファイルにバラバラに入ってて、探すだけでひと苦労らしい。外のサービスじゃなくて、自分たちのサーバで動かすところが気になったな。大事な情報が多い場所だから、慎重になるのもわかる。先生が子どもと向き合う時間、増えるといいね。"
+    ],
+    "afterword": "探す時間がへったら、だいぶ助かりそう",
+    "mochi": "ぼくの宿題もお願い",
+    "source": {
+      "name": "ITmedia NEWS",
+      "title": "小中学校の校務に“自前運用”の国産LLM　NTT西と茨木市が全国初の実証",
+      "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002276/",
+      "date": "2026-10-14",
+      "status": "2026年10月15日に記事名と本文を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/school-local-ai/",
+    "webPublished": "2026-10-15"
+  },
+  {
+    "id": 4,
+    "title": "AIで作った曲に、目印がつくように",
+    "date": "2026-10-15",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-4-1.webp",
+      "assets/book-4-2.webp",
+      "assets/book-4-3.webp",
+      "assets/book-4-4.webp"
+    ],
+    "slug": "youtube-music-ai-labels",
+    "description": "YouTube MusicのAI生成楽曲のラベル表示を、2026年10月15日の本で紹介。4ページの画像、本文、あとがき、参考記事を掲載。",
+    "summary": "YouTube Musicで、主に生成AIで作られた曲にラベルを付ける取り組みについて。",
+    "body": [
+      "YouTube Musicで、おもに生成AIで作られた曲に、ラベルが付きはじめたんだって。そういう曲をかけると、画面に目印が出る。タップすれば、くわしい説明も見られるよ。これから、ふつうのYouTubeアプリにも広げる予定なんだとか。",
+      "聞いてる曲がAIで作ったものか、今までは気づかないこともあったよね。わかるようにしてほしいって声が、聞く人から出ていたらしい。いい曲なら、作り方はどっちでもいい気もする。でも、人が歌ってると思ってたら、ちょっとびっくりしちゃうかな。"
+    ],
+    "afterword": "知ったうえで聞けるのは、ちょっとうれしい。",
+    "mochi": "ぼくの鼻歌は手作りだよ",
+    "source": {
+      "name": "ITmedia NEWS",
+      "title": "「YouTube Music」、生成AIで作られた楽曲にラベル表示",
+      "url": "https://www.itmedia.co.jp/news/article/2610/15/2000002287/",
+      "date": "2026-10-15",
+      "status": "2026年10月15日に記事名と本文を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/youtube-music-ai-labels/",
+    "webPublished": "2026-10-15"
+  },
+  {
+    "id": 1,
+    "title": "AIで作ったアプリが、スマホで動かせるように",
+    "date": "2026-10-14",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-1-1.webp",
+      "assets/book-1-2.webp",
+      "assets/book-1-3.webp",
+      "assets/book-1-4.webp"
+    ],
+    "slug": "google-ai-studio-personal-apps",
+    "description": "Google AI Studioで作った個人用アプリを自分の端末で使うニュースを、2026年10月14日の本でやさしく紹介。本文と参考記事も掲載。",
+    "summary": "Google AI Studioで作ったアプリを、自分のスマートフォンで使う仕組みについて。",
+    "body": [
+      "Googleが、AIに頼んで作ったアプリを、自分のスマホで動かせるようにしたんだって。対象は「Google AI Studio」で作ったアプリ。ふつうのGoogleアカウントがあればよくて、ストアには並ばず自分だけで使う形。まずはアメリカなど一部の国の、18歳以上の人からだそう。",
+      "アプリって、プロが作るものだと思ってた。自分用なら、AIに話すだけで作れるんだ。家の買い物メモとか、ちょっとしたものがほしい人にはうれしそう。日本で使えるのはいつごろかな。"
+    ],
+    "afterword": "ほしいアプリを、自分で作る日が来るのかな。",
+    "mochi": "昼寝アラーム作って",
+    "source": {
+      "name": "ITmedia NEWS",
+      "title": "「Google Play」、AI Studioで作った自作アプリを自分の端末で実行可能に　AIでゲームを探す機能も",
+      "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002240/",
+      "date": "2026-10-14",
+      "status": "2026年10月15日に記事名と本文を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/google-ai-studio-personal-apps/",
+    "webPublished": "2026-10-15"
+  },
+  {
+    "id": 2,
+    "title": "SBI証券のFXで、まちがいロスカット",
+    "date": "2026-10-14",
+    "category": "お金・くらし",
+    "pages": [
+      "assets/book-2-1.webp",
+      "assets/book-2-2.webp",
+      "assets/book-2-3.webp",
+      "assets/book-2-4.webp"
+    ],
+    "slug": "sbi-fx-system-error",
+    "description": "SBI証券のFXで起きた誤ロスカットについて、2026年10月14日の4ページの本を掲載。本文、あとがき、出典をまとめました。",
+    "summary": "SBI証券のFXで起きたシステム障害と、779口座での誤ったロスカットについて。",
+    "body": [
+      "SBI証券のFXで、本当はしなくていいロスカットが779口座で起きたんだって。担保にしていた株の値段が、システムに入っていなかったのが原因。仕事を任されていた会社の担当者が、手順をまちがえたそうだよ。会社は、お客さんの希望を聞いて元にもどすと言っているよ。",
+      "株を担保にしてたのに、その分がゼロあつかいだったってこと？それで勝手に決済されたら、びっくりするよ。ファイルがそろってなくても、システムが先に進んじゃったのも気になる。だれかが気づくしくみ、なかったのかなあ。"
+    ],
+    "afterword": "ひとつのミスが、779口座まで広がっちゃった",
+    "mochi": "株…もってなかった",
+    "source": {
+      "name": "ITmedia NEWS",
+      "title": "SBI証券のFXで“誤ロスカット”　再委託先IIJが作業ミス、システムでも検知できず　779口座が対象",
+      "url": "https://www.itmedia.co.jp/news/article/2610/14/2000002249/",
+      "date": "2026-10-14",
+      "status": "2026年10月15日に記事名と本文を確認。"
+    },
+    "primary": {
+      "name": "株式会社SBI証券の発表（PR TIMES掲載）",
+      "title": "FX株券担保サービスにおけるシステム障害の発生とお客さまへの対応について",
+      "url": "https://prtimes.jp/main/html/rd/p/000000957.000007957.html"
+    },
+    "topic": "money",
+    "url": "/books/sbi-fx-system-error/",
+    "webPublished": "2026-10-15"
+  },
+  {
+    "id": 0,
+    "title": "声をAIで使うなら、本人の許可を",
+    "date": "2026-10-09",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-0-1.webp",
+      "assets/book-0-2.webp",
+      "assets/book-0-3.webp",
+      "assets/book-0-4.webp"
+    ],
+    "slug": "ai-voice-permission",
+    "description": "生成AIで声を利用するときの本人の許諾について、2026年10月9日の本を文章と4ページの画像で紹介します。",
+    "summary": "生成AIで声を使う際の、本人の許諾に関するガイドラインを取り上げています。",
+    "body": [
+      "声優などが入っている業界団体が、生成AIで声を使うときのガイドラインを初めて作ったよ。声を使うなら、前もって本人の許可をもらうことが必須になってる。これから企業などに知らせていくんだって。",
+      "声も、AIで作れる時代になってきたね。知らないうちに自分の声が使われたら、ちょっとこわい。仕事で声のAIを使うことがあったら、だれの声なのか、許可はもらっているのか。そこを一回たしかめておくと安心かも。"
+    ],
+    "afterword": "声を使うなら、まず本人にひとこと",
+    "mochi": "ぼくの寝言は…いいよ",
+    "source": {
+      "name": "NHKニュース",
+      "title": "声優などの団体 声の生成AIガイドライン初作成“事前許諾を”",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261009de56922",
+      "status": "本の出典表記と記事URLを照合。リンク先本文は今回取得できていません。"
+    },
+    "topic": "ai",
+    "url": "/books/ai-voice-permission/",
+    "webPublished": "2026-10-15"
+  }
+]
