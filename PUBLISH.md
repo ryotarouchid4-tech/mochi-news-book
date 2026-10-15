@@ -59,7 +59,7 @@ git pull --rebase origin main
 - `afterword`：`news.json` の `matome` をそのまま
 - `mochi`：`news.json` の `mochi` をそのまま
 - `source`：
-  - `name`：NHK のときは `NHKニュース`、ITmedia のときは `ITmedia NEWS`。海外はサイト名そのまま（`TechCrunch` / `Engadget` / `Axios`）
+  - `name`：NHK のときは `NHKニュース`、ITmedia のときは `ITmedia NEWS`。ほかはサイト名そのまま（`Impress Watch` / `GIGAZINE` / `TechCrunch` / `Engadget` / `Axios`）
   - `title`：記事の見出し（`history.json` に入れたものと同じ。海外の記事は英語の見出しのまま）
   - `url`：記事のURL
   - `date`：記事の公開日がわかるときだけ入れる（わからなければ項目ごと省く）。海外の記事は現地の公開日
