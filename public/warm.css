@@ -80,3 +80,36 @@ html{scroll-padding-top:110px}
 @media(max-width:760px){html{scroll-padding-top:96px}}
 /* 上の赤い読み進みバーは出さない */
 .scroll-progress{display:none}
+/* 話題のタグ */
+.tag-chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+.tag-chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:20px;padding:4px 12px;font-size:12px;color:#8a5a45;background:#fffcf6;text-decoration:none}
+a.tag-chip:hover{border-color:#c8a98a;color:#a76e54}
+.tag-chips--cloud{gap:10px;margin:24px 0}
+.tag-chip--big{font-size:15px;padding:8px 16px}
+.tag-chip small{font-size:11px;color:var(--muted)}
+/* 週のまとめ */
+.week-titles{list-style:none;padding:0;margin:14px 0 30px;display:grid;gap:12px}
+.week-titles li{display:flex;flex-direction:column;gap:2px;border-bottom:1px dashed var(--line);padding-bottom:10px}
+.week-titles a{font-weight:600;color:#5e4130}
+.week-titles span{font-size:13px;color:var(--muted)}
+.week-list{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.week-list a{display:inline-flex;gap:8px;border:1px solid var(--line);border-radius:25px;padding:8px 16px;background:#fffcf6;color:inherit;text-decoration:none}
+.week-list small{color:var(--muted)}
+/* キャラクター紹介 */
+.character{border:1px solid var(--line);border-radius:15px;padding:18px 22px;margin:22px 0;background:#fffcf6}
+.character h2{margin-top:0}
+.character__facts{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:0 0 10px}
+.character__facts dt{color:#a76e54;font-size:13px}
+.character__facts dd{margin:0}
+/* サイト内検索 */
+.site-search{margin:22px 0 8px;max-width:560px}
+.site-search .search{display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--line);padding:8px 2px}
+.site-search input{flex:1;border:0;background:none;font-size:17px;outline:none;color:inherit}
+.search-status{font-size:13px;color:var(--muted)}
+.search-results{display:grid;gap:14px;margin:14px 0 30px}
+.search-hit{display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:start;border:1px solid var(--line);border-radius:13px;padding:12px;background:#fffcf6;color:inherit;text-decoration:none}
+.search-hit:hover{border-color:#c8a98a}
+.search-hit img{width:72px;height:auto;border-radius:6px}
+.search-hit small{display:block;font-size:11px;color:#a76e54}
+.search-hit strong{display:block;color:#5e4130;margin:2px 0}
+.search-hit span span{font-size:13px;color:var(--muted)}

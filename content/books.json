@@ -41,7 +41,11 @@
     "webPublished": "2026-10-15",
     "time": "2100",
     "thumb": "assets/book-14-thumb.webp",
-    "ogImage": "assets/book-14-og.jpg"
+    "ogImage": "assets/book-14-og.jpg",
+    "tags": [
+      "apple",
+      "smart-home"
+    ]
   },
   {
     "id": 13,
@@ -85,7 +89,11 @@
     "webPublished": "2026-10-15",
     "time": "1900",
     "thumb": "assets/book-13-thumb.webp",
-    "ogImage": "assets/book-13-og.jpg"
+    "ogImage": "assets/book-13-og.jpg",
+    "tags": [
+      "generative-ai",
+      "design"
+    ]
   },
   {
     "id": 12,
@@ -123,7 +131,11 @@
     "webPublished": "2026-10-15",
     "time": "1700",
     "thumb": "assets/book-12-thumb.webp",
-    "ogImage": "assets/book-12-og.jpg"
+    "ogImage": "assets/book-12-og.jpg",
+    "tags": [
+      "railway",
+      "advertising"
+    ]
   },
   {
     "id": 4,
@@ -165,7 +177,12 @@
     "webPublished": "2026-10-15",
     "time": "1100",
     "thumb": "assets/book-4-thumb.webp",
-    "ogImage": "assets/book-4-og.jpg"
+    "ogImage": "assets/book-4-og.jpg",
+    "tags": [
+      "google",
+      "generative-ai",
+      "music"
+    ]
   },
   {
     "id": 3,
@@ -207,7 +224,12 @@
     "webPublished": "2026-10-15",
     "time": "0800",
     "thumb": "assets/book-3-thumb.webp",
-    "ogImage": "assets/book-3-og.jpg"
+    "ogImage": "assets/book-3-og.jpg",
+    "tags": [
+      "generative-ai",
+      "ntt",
+      "school"
+    ]
   },
   {
     "id": 2,
@@ -256,7 +278,11 @@
     "webPublished": "2026-10-15",
     "time": "1700",
     "thumb": "assets/book-2-thumb.webp",
-    "ogImage": "assets/book-2-og.jpg"
+    "ogImage": "assets/book-2-og.jpg",
+    "tags": [
+      "securities",
+      "system-trouble"
+    ]
   },
   {
     "id": 1,
@@ -298,7 +324,12 @@
     "webPublished": "2026-10-15",
     "time": "1100",
     "thumb": "assets/book-1-thumb.webp",
-    "ogImage": "assets/book-1-og.jpg"
+    "ogImage": "assets/book-1-og.jpg",
+    "tags": [
+      "google",
+      "generative-ai",
+      "apps"
+    ]
   },
   {
     "id": 11,
@@ -336,7 +367,11 @@
     "webPublished": "2026-10-15",
     "time": "0800",
     "thumb": "assets/book-11-thumb.webp",
-    "ogImage": "assets/book-11-og.jpg"
+    "ogImage": "assets/book-11-og.jpg",
+    "tags": [
+      "securities",
+      "system-trouble"
+    ]
   },
   {
     "id": 10,
@@ -370,7 +405,11 @@
     "webPublished": "2026-10-15",
     "time": "1700",
     "thumb": "assets/book-10-thumb.webp",
-    "ogImage": "assets/book-10-og.jpg"
+    "ogImage": "assets/book-10-og.jpg",
+    "tags": [
+      "prices",
+      "statistics"
+    ]
   },
   {
     "id": 9,
@@ -412,7 +451,11 @@
     "webPublished": "2026-10-15",
     "time": "1100",
     "thumb": "assets/book-9-thumb.webp",
-    "ogImage": "assets/book-9-og.jpg"
+    "ogImage": "assets/book-9-og.jpg",
+    "tags": [
+      "meta",
+      "generative-ai"
+    ]
   },
   {
     "id": 8,
@@ -446,7 +489,11 @@
     "webPublished": "2026-10-15",
     "time": "0800",
     "thumb": "assets/book-8-thumb.webp",
-    "ogImage": "assets/book-8-og.jpg"
+    "ogImage": "assets/book-8-og.jpg",
+    "tags": [
+      "generative-ai",
+      "business"
+    ]
   },
   {
     "id": 7,
@@ -488,7 +535,11 @@
     "webPublished": "2026-10-15",
     "time": "1700",
     "thumb": "assets/book-7-thumb.webp",
-    "ogImage": "assets/book-7-og.jpg"
+    "ogImage": "assets/book-7-og.jpg",
+    "tags": [
+      "microsoft",
+      "generative-ai"
+    ]
   },
   {
     "id": 6,
@@ -528,7 +579,12 @@
     "webPublished": "2026-10-15",
     "time": "0800",
     "thumb": "assets/book-6-thumb.webp",
-    "ogImage": "assets/book-6-og.jpg"
+    "ogImage": "assets/book-6-og.jpg",
+    "tags": [
+      "cloud",
+      "security",
+      "system-trouble"
+    ]
   },
   {
     "id": 5,
@@ -562,7 +618,11 @@
     "webPublished": "2026-10-15",
     "time": "1100",
     "thumb": "assets/book-5-thumb.webp",
-    "ogImage": "assets/book-5-og.jpg"
+    "ogImage": "assets/book-5-og.jpg",
+    "tags": [
+      "prices",
+      "statistics"
+    ]
   },
   {
     "id": 0,
@@ -595,6 +655,10 @@
     "webPublished": "2026-10-15",
     "time": "0800",
     "thumb": "assets/book-0-thumb.webp",
-    "ogImage": "assets/book-0-og.jpg"
+    "ogImage": "assets/book-0-og.jpg",
+    "tags": [
+      "generative-ai",
+      "voice"
+    ]
   }
 ]

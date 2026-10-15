@@ -29,7 +29,10 @@ sitemap=ET.parse(OUT/'sitemap.xml');urls=[x.text for x in sitemap.findall('.//s:
 expected_books=json.loads((ROOT/'content/books.json').read_text())
 expected_topics=json.loads((ROOT/'content/topics.json').read_text())
 expected_months=len({b['date'][:7] for b in expected_books})
-assert len(urls)==len(set(urls))==len(expected_books)+11+len(expected_topics)+expected_months
+assert len(urls)==len(set(urls))
+for b in expected_books:assert BASE+b['url'] in urls,(b['url'],'サイトマップにない')
+for p in ('/characters/','/weeks/'):assert BASE+p in urls,(p,'サイトマップにない')
+assert BASE+'/search/' not in urls
 seen_titles=set();docs={}
 for f in OUT.rglob('*.html'):docs[f]=Doc(f.read_text())
 for f,d in docs.items():

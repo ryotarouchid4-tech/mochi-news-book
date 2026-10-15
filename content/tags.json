@@ -1,0 +1,86 @@
+[
+  {
+    "id": "generative-ai",
+    "name": "生成AI"
+  },
+  {
+    "id": "google",
+    "name": "グーグル"
+  },
+  {
+    "id": "apple",
+    "name": "アップル"
+  },
+  {
+    "id": "microsoft",
+    "name": "マイクロソフト"
+  },
+  {
+    "id": "meta",
+    "name": "Meta"
+  },
+  {
+    "id": "ntt",
+    "name": "NTT"
+  },
+  {
+    "id": "system-trouble",
+    "name": "システム障害"
+  },
+  {
+    "id": "securities",
+    "name": "証券会社"
+  },
+  {
+    "id": "prices",
+    "name": "物価"
+  },
+  {
+    "id": "statistics",
+    "name": "統計"
+  },
+  {
+    "id": "security",
+    "name": "セキュリティ"
+  },
+  {
+    "id": "cloud",
+    "name": "クラウド"
+  },
+  {
+    "id": "apps",
+    "name": "アプリ"
+  },
+  {
+    "id": "music",
+    "name": "音楽"
+  },
+  {
+    "id": "school",
+    "name": "学校"
+  },
+  {
+    "id": "railway",
+    "name": "鉄道"
+  },
+  {
+    "id": "advertising",
+    "name": "広告"
+  },
+  {
+    "id": "design",
+    "name": "デザイン"
+  },
+  {
+    "id": "smart-home",
+    "name": "スマートホーム"
+  },
+  {
+    "id": "business",
+    "name": "会社・経営"
+  },
+  {
+    "id": "voice",
+    "name": "声"
+  }
+]

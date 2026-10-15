@@ -65,6 +65,10 @@ git pull --rebase origin main
   - `date`：記事の公開日がわかるときだけ入れる（わからなければ項目ごと省く）。海外の記事は現地の公開日
   - `status`：ITmedia は `2026年10月15日に記事名と本文を確認。`、NHK は `2026年10月15日に記事名とリード文を確認。`、海外の記事は `2026年10月15日に記事名と本文（英語）を確認。`（日付は今日）
 - `images`：`output/年月日/` の `01.png` から順に、できた枚数ぶん（3〜10枚）
+- `tags`：話題のタグを1〜5個。`content/tags.json` を読み、合うものがあればその `id` を使う（`{"id": "google"}`）
+  - 本に出てくる会社・サービス・キーワードから選ぶ（例：`generative-ai` 生成AI、`google` グーグル、`prices` 物価、`system-trouble` システム障害）
+  - 合うものがないときだけ新しく作る：`{"id": "半角英小文字", "name": "日本語の名前"}`。似たタグを増やしすぎない
+  - 2冊以上の本に付いたタグには、自動でまとめページ（`/tags/id/`）ができる
 
 ## 3. 本を追加する
 
@@ -95,6 +99,7 @@ python3 scripts/validate.py
 ```
 git add content/books.json public/assets/book-*
 git add content/topics.json   # 新しいテーマを作ったときだけ
+git add content/tags.json     # 新しいタグを作ったときだけ
 git status                    # 追加した本の画像と JSON だけになっているか確認
 git commit -m "本を追加（本のタイトル）"
 git push origin main

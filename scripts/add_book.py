@@ -19,6 +19,7 @@
   "mochi": "モチの一言",
   "source": {"name": "ITmedia NEWS", "title": "記事の見出し", "url": "https://...", "date": "2026-10-14",
              "status": "2026年10月15日に記事名と本文を確認。"},
+  "tags": [{"id": "google", "name": "グーグル"}],  （任意）話題のタグ。1〜5個
   "images": ["/path/to/01.png", "/path/to/02.png", "/path/to/03.png", "/path/to/04.png"],
   "webPublished": "2026-10-16"     （省略可）サイトに載せた日。省略すると date と同じ
 }
@@ -35,6 +36,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 BOOKS_FILE = ROOT / 'content/books.json'
 TOPICS_FILE = ROOT / 'content/topics.json'
+TAGS_FILE = ROOT / 'content/tags.json'
 ASSETS = ROOT / 'public/assets'
 # 定期実行の枠（2時間ごと。国内: 0700/1100/1500/1900/2300、海外: 0900/1300/1700/2100）
 # 0800 は前の時間割の名残り（過去の本のため）
@@ -123,6 +125,26 @@ def main():
             'sections': [],
         }
 
+    # 話題のタグ（任意）: [{"id": "google", "name": "グーグル"}, ...]。1〜5個
+    tag_list = json.loads(TAGS_FILE.read_text()) if TAGS_FILE.exists() else []
+    known = {t['id']: t['name'] for t in tag_list}
+    tags, new_tags = [], []
+    for t in data.get('tags') or []:
+        tid, name = (t.get('id'), t.get('name')) if isinstance(t, dict) else (t, None)
+        if not isinstance(tid, str) or not re.fullmatch(r'[a-z0-9]+(-[a-z0-9]+)*', tid):
+            fail(f'タグの id は半角英小文字・数字・ハイフンにしてください: {tid}')
+        if tid not in known:
+            if not (isinstance(name, str) and name.strip()):
+                fail(f'新しいタグ「{tid}」には name（日本語の名前）が必要です')
+            if name.strip() in known.values():
+                fail(f'タグ「{name}」は別の id で登録されています（content/tags.json を見てください）')
+            known[tid] = name.strip()
+            new_tags.append({'id': tid, 'name': name.strip()})
+        if tid not in tags:
+            tags.append(tid)
+    if len(tags) > 5:
+        fail('タグは5個までにしてください')
+
     # 画像
     images = data.get('images')
     if not (isinstance(images, list) and 3 <= len(images) <= 10):
@@ -164,11 +186,14 @@ def main():
         'topic': topic,
         'url': f'/books/{slug}/',
         'webPublished': data.get('webPublished') or date,
+        'tags': tags,
         'time': time,
     }
     if new_topic:
         topics.append(new_topic)
         save_json(TOPICS_FILE, topics)
+    if new_tags:
+        TAGS_FILE.write_text(json.dumps(tag_list + new_tags, ensure_ascii=False, indent=2) + '\n')
     books.insert(0, book)
     # 新しい日付・時間が先頭になるように並べる（あとから古い本を足したときのため）
     books.sort(key=lambda b: (b['date'], b.get('time', '')), reverse=True)
