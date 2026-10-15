@@ -74,3 +74,7 @@ body{background:var(--paper);color:var(--ink)}::selection{background:#ebbcac;col
 .stage-book__back,.stage-book__pages,.stage-book__spine,.stage-book__shine{display:none}
 .stage-book__front{transform:none;backface-visibility:visible;box-shadow:6px 9px 18px #79584033}
 }
+/* ヘッダーを画面の上に固定する */
+.site-header{position:sticky;top:0;z-index:60}
+html{scroll-padding-top:110px}
+@media(max-width:760px){html{scroll-padding-top:96px}}
