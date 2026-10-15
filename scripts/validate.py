@@ -85,8 +85,13 @@ for b in books:
  assert any(x['@type']=='BlogPosting' for x in d.jsons[0]['@graph'])
  for p in b['pages']:assert (OUT/p).exists()
 # All books must be discoverable from the static home and static archive HTML.
-links=[a['href'] for t,a in docs[OUT/'books/index.html'].tags if t=='a' and 'href' in a]
-assert all(b['url'] in links for b in books)
+# すべての本が、その月のページからたどれる（本棚の一覧は新しい本だけ）
+for b in books:
+ month=[a['href'] for t,a in docs[OUT/('books/'+b['date'][:7]+'/index.html')].tags if t=='a' and 'href' in a]
+ assert b['url'] in month,(b['url'],'月のページにない')
+ for k in ('thumb','ogImage'):
+  if b.get(k):assert (OUT/b[k]).exists(),(b[k],'画像がない')
+assert (OUT/'llms.txt').exists() and books[0]['url'] in (OUT/'llms.txt').read_text()
 # トップページには、いちばん新しい本が必ずのっている
 home=[a['href'] for t,a in docs[OUT/'index.html'].tags if t=='a' and 'href' in a]
 assert books[0]['url'] in home

@@ -73,6 +73,7 @@ python3 scripts/add_book.py /tmp/book.json
 ```
 
 - 画像が WebP に変換されて `public/assets/book-番号-ページ.webp` に入り、`content/books.json` の先頭に1冊追加される
+- 一覧用の小さい表紙 `public/assets/book-番号-thumb.webp` と、SNS用のシェア画像 `public/assets/book-番号-og.jpg` も自動で作られる
 - 新しいテーマのときは `content/topics.json` にも追加される
 - 「エラー:」が出たら、内容を直してもう一度実行する（エラーのときはファイルは何も変わらない）
   - 「同じタイトルの本がもうあります」と出たときは、push せずに理由を伝えて終わる（タイトルは勝手に変えない）
@@ -92,14 +93,14 @@ python3 scripts/validate.py
 ## 5. commit して push
 
 ```
-git add content/books.json public/assets/book-*.webp
+git add content/books.json public/assets/book-*
 git add content/topics.json   # 新しいテーマを作ったときだけ
 git status                    # 追加した本の画像と JSON だけになっているか確認
 git commit -m "本を追加（本のタイトル）"
 git push origin main
 ```
 
-- コミットするのは `content/books.json`、追加した `public/assets/book-番号-*.webp`、（新しいテーマのときだけ）`content/topics.json` だけ
+- コミットするのは `content/books.json`、追加した `public/assets/book-番号-*`（ページの .webp、thumb.webp、og.jpg）、（新しいテーマのときだけ）`content/topics.json` だけ
 - ほかのファイル（`scripts/`、`templates/`、CSS、JS など）は変更しない
 - コミットメッセージの末尾には、定期実行の指示文にある Co-Authored-By などの行を入れる
 - push が「先に進んでいる」と拒否されたら、`git pull --rebase origin main` してからもう一度 push する

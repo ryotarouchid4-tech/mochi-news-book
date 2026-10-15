@@ -174,9 +174,14 @@ def main():
     books.sort(key=lambda b: (b['date'], b.get('time', '')), reverse=True)
     save_json(BOOKS_FILE, books)
 
+    # 一覧用の小さい表紙と、SNS用のシェア画像を作る
+    import subprocess
+    subprocess.run([sys.executable, str(ROOT / 'scripts/make_images.py'), str(number)], check=True)
+
     print(f'追加しました: {title}')
     print(f'  URL: /books/{slug}/  画像: {len(pages)}枚  テーマ: {category}' + ('（新しいテーマ）' if new_topic else ''))
-    print('  変更したファイル: content/books.json' + (', content/topics.json' if new_topic else '') + ', ' + ', '.join('public/' + p for p in pages))
+    print('  変更したファイル: content/books.json' + (', content/topics.json' if new_topic else '') + ', ' + ', '.join('public/' + p for p in pages)
+          + f', public/assets/book-{number}-thumb.webp, public/assets/book-{number}-og.jpg')
 
 
 if __name__ == '__main__':

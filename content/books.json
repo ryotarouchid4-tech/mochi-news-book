@@ -39,7 +39,9 @@
     "topic": "ai",
     "url": "/books/2026-10-15-2100/",
     "webPublished": "2026-10-15",
-    "time": "2100"
+    "time": "2100",
+    "thumb": "assets/book-14-thumb.webp",
+    "ogImage": "assets/book-14-og.jpg"
   },
   {
     "id": 13,
@@ -81,7 +83,9 @@
     "topic": "ai",
     "url": "/books/2026-10-15-1900/",
     "webPublished": "2026-10-15",
-    "time": "1900"
+    "time": "1900",
+    "thumb": "assets/book-13-thumb.webp",
+    "ogImage": "assets/book-13-og.jpg"
   },
   {
     "id": 12,
@@ -117,7 +121,9 @@
     "topic": "money",
     "url": "/books/2026-10-15-1700/",
     "webPublished": "2026-10-15",
-    "time": "1700"
+    "time": "1700",
+    "thumb": "assets/book-12-thumb.webp",
+    "ogImage": "assets/book-12-og.jpg"
   },
   {
     "id": 4,
@@ -157,7 +163,9 @@
     "topic": "ai",
     "url": "/books/youtube-music-ai-labels/",
     "webPublished": "2026-10-15",
-    "time": "1100"
+    "time": "1100",
+    "thumb": "assets/book-4-thumb.webp",
+    "ogImage": "assets/book-4-og.jpg"
   },
   {
     "id": 3,
@@ -197,7 +205,9 @@
     "topic": "ai",
     "url": "/books/school-local-ai/",
     "webPublished": "2026-10-15",
-    "time": "0800"
+    "time": "0800",
+    "thumb": "assets/book-3-thumb.webp",
+    "ogImage": "assets/book-3-og.jpg"
   },
   {
     "id": 2,
@@ -244,7 +254,9 @@
     "topic": "money",
     "url": "/books/sbi-fx-system-error/",
     "webPublished": "2026-10-15",
-    "time": "1700"
+    "time": "1700",
+    "thumb": "assets/book-2-thumb.webp",
+    "ogImage": "assets/book-2-og.jpg"
   },
   {
     "id": 1,
@@ -284,7 +296,9 @@
     "topic": "ai",
     "url": "/books/google-ai-studio-personal-apps/",
     "webPublished": "2026-10-15",
-    "time": "1100"
+    "time": "1100",
+    "thumb": "assets/book-1-thumb.webp",
+    "ogImage": "assets/book-1-og.jpg"
   },
   {
     "id": 11,
@@ -320,7 +334,9 @@
     "topic": "money",
     "url": "/books/2026-10-14-0800/",
     "webPublished": "2026-10-15",
-    "time": "0800"
+    "time": "0800",
+    "thumb": "assets/book-11-thumb.webp",
+    "ogImage": "assets/book-11-og.jpg"
   },
   {
     "id": 10,
@@ -352,7 +368,9 @@
     "topic": "money",
     "url": "/books/2026-10-13-1700/",
     "webPublished": "2026-10-15",
-    "time": "1700"
+    "time": "1700",
+    "thumb": "assets/book-10-thumb.webp",
+    "ogImage": "assets/book-10-og.jpg"
   },
   {
     "id": 9,
@@ -392,7 +410,9 @@
     "topic": "ai",
     "url": "/books/2026-10-13-1100/",
     "webPublished": "2026-10-15",
-    "time": "1100"
+    "time": "1100",
+    "thumb": "assets/book-9-thumb.webp",
+    "ogImage": "assets/book-9-og.jpg"
   },
   {
     "id": 8,
@@ -424,7 +444,9 @@
     "topic": "ai",
     "url": "/books/2026-10-13-0800/",
     "webPublished": "2026-10-15",
-    "time": "0800"
+    "time": "0800",
+    "thumb": "assets/book-8-thumb.webp",
+    "ogImage": "assets/book-8-og.jpg"
   },
   {
     "id": 7,
@@ -464,7 +486,9 @@
     "topic": "ai",
     "url": "/books/2026-10-12-1700/",
     "webPublished": "2026-10-15",
-    "time": "1700"
+    "time": "1700",
+    "thumb": "assets/book-7-thumb.webp",
+    "ogImage": "assets/book-7-og.jpg"
   },
   {
     "id": 6,
@@ -502,7 +526,9 @@
     "topic": "ai",
     "url": "/books/2026-10-11-0800/",
     "webPublished": "2026-10-15",
-    "time": "0800"
+    "time": "0800",
+    "thumb": "assets/book-6-thumb.webp",
+    "ogImage": "assets/book-6-og.jpg"
   },
   {
     "id": 5,
@@ -534,7 +560,9 @@
     "topic": "money",
     "url": "/books/2026-10-09-1100/",
     "webPublished": "2026-10-15",
-    "time": "1100"
+    "time": "1100",
+    "thumb": "assets/book-5-thumb.webp",
+    "ogImage": "assets/book-5-og.jpg"
   },
   {
     "id": 0,
@@ -565,6 +593,8 @@
     "topic": "ai",
     "url": "/books/ai-voice-permission/",
     "webPublished": "2026-10-15",
-    "time": "0800"
+    "time": "0800",
+    "thumb": "assets/book-0-thumb.webp",
+    "ogImage": "assets/book-0-og.jpg"
   }
 ]
