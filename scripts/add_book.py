@@ -120,8 +120,8 @@ def main():
             'id': topic,
             'title': category,
             'en': en,
-            'card': f'{category}にまつわるニュースを集めました。',
-            'lead': f'{category}にまつわるニュースを、短い本にまとめて紹介しています。',
+            'card': '',
+            'lead': '',
             'sections': [],
         }
 
