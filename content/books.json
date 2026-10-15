@@ -1,5 +1,37 @@
 [
   {
+    "id": 13,
+    "title": "AIに渡す「デザインのルール帳」",
+    "date": "2026-10-15",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-13-1.webp",
+      "assets/book-13-2.webp",
+      "assets/book-13-3.webp",
+      "assets/book-13-4.webp"
+    ],
+    "slug": "2026-10-15-1900",
+    "description": "Figmaが発表した、AIにデザインのルールを渡せる新機能を、2026年10月15日の本で紹介。決まりごとを書いておける「Figma Specs」について読めます。",
+    "summary": "Figmaが発表した、AIエージェントにデザインの決まりごとを伝える新機能について。",
+    "body": [
+      "デザインの道具を作っているFigmaが、インドで初めて開いたイベントで新しい機能を発表したよ。\n「Figma Specs」は、色や形の決まりごとを文章で書いておける場所。\n人だけでなく、AIのエージェントもそのルールを見ながらデザインを作れるようになるんだって。",
+      "AIって、同じことを頼んでも毎回ちょっとずつ違うものを出してくるよね。\nだから先に「うちはこうする」って書いて渡しておくのか。\nコードの量は17倍に増えたのに、世に出たものは1.3倍だけっていう話も気になったな。"
+    ],
+    "afterword": "AIにも、まず決まりごとを伝えるところから。",
+    "mochi": "ぼくのルールは昼寝",
+    "source": {
+      "name": "TechCrunch",
+      "title": "Figma announces new features to define how agents work on its platform",
+      "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/",
+      "date": "2026-10-14",
+      "status": "2026年10月15日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-10-15-1900/",
+    "webPublished": "2026-10-15",
+    "time": "1900"
+  },
+  {
     "id": 12,
     "title": "阪急電車から、中づり広告がなくなる",
     "date": "2026-10-15",
