@@ -117,3 +117,5 @@ a.tag-chip:hover{border-color:#c8a98a;color:#a76e54}
 .experience-menu{display:inline-flex;align-items:center;justify-content:center;gap:8px}
 .experience-menu .hamburger{display:inline-flex;flex-direction:column;justify-content:space-between;width:18px;height:12px;margin:0;font-size:0}
 .experience-menu .hamburger i{display:block;height:2px;width:100%;border-radius:2px;background:currentColor}
+/* メニューボタン：文字なしの丸いアイコンボタン */
+.experience-menu{width:44px;height:44px;min-width:44px;padding:0;border-radius:50%;gap:0}
