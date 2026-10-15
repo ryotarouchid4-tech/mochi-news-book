@@ -45,7 +45,7 @@ git pull --rebase origin main
 各項目の決め方：
 
 - `date`：日本時間の今日。`2026-10-15` の形
-- `time`：今回の枠。`0800` / `1100` / `1700` のどれか（本のURLが `/books/2026-10-15-0800/` になる）
+- `time`：今回の枠。国内は `0800` / `1100` / `1700`、海外は `1300` / `1900` / `2100`（本のURLが `/books/2026-10-15-0800/` になる）
 - `title`：`news.json` の `title`。`\n` は取りのぞく
 - `topic`：`content/topics.json` を読み、合うテーマの `id` を入れる
   - 合うテーマがないときだけ、新しいテーマを作る。そのときは次の2つも入れる
@@ -59,11 +59,11 @@ git pull --rebase origin main
 - `afterword`：`news.json` の `matome` をそのまま
 - `mochi`：`news.json` の `mochi` をそのまま
 - `source`：
-  - `name`：NHK のときは `NHKニュース`、ITmedia のときは `ITmedia NEWS`
-  - `title`：記事の見出し（`history.json` に入れたものと同じ）
+  - `name`：NHK のときは `NHKニュース`、ITmedia のときは `ITmedia NEWS`。海外はサイト名そのまま（`TechCrunch` / `Engadget` / `Axios`）
+  - `title`：記事の見出し（`history.json` に入れたものと同じ。海外の記事は英語の見出しのまま）
   - `url`：記事のURL
-  - `date`：記事の公開日がわかるときだけ入れる（わからなければ項目ごと省く）
-  - `status`：ITmedia は `2026年10月15日に記事名と本文を確認。`、NHK は `2026年10月15日に記事名とリード文を確認。`（日付は今日）
+  - `date`：記事の公開日がわかるときだけ入れる（わからなければ項目ごと省く）。海外の記事は現地の公開日
+  - `status`：ITmedia は `2026年10月15日に記事名と本文を確認。`、NHK は `2026年10月15日に記事名とリード文を確認。`、海外の記事は `2026年10月15日に記事名と本文（英語）を確認。`（日付は今日）
 - `images`：`output/年月日/` の `01.png` から順に、できた枚数ぶん（3枚か4枚）
 
 ## 3. 本を追加する

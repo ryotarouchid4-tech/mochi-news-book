@@ -7,7 +7,7 @@
 追加する本.json の形（くわしくは PUBLISH.md）:
 {
   "date": "2026-10-15",            本の日付（日本時間の今日）
-  "time": "0800",                  今回の枠: "0800" / "1100" / "1700"
+  "time": "0800",                  今回の枠: 0800 / 1100 / 1700（国内）、1300 / 1900 / 2100（海外）
   "title": "表紙の見出し",          改行(\\n)は入れない
   "topic": "ai",                   テーマのID（半角英小文字・数字・ハイフン）
   "topic_title": "AI・テクノロジー", 新しいテーマのときだけ必要
@@ -36,6 +36,8 @@ ROOT = Path(__file__).resolve().parent.parent
 BOOKS_FILE = ROOT / 'content/books.json'
 TOPICS_FILE = ROOT / 'content/topics.json'
 ASSETS = ROOT / 'public/assets'
+# 定期実行の枠（国内: 0800/1100/1700、海外: 1300/1900/2100）
+TIMES = ('0800', '1100', '1300', '1700', '1900', '2100')
 
 
 def fail(message):
@@ -65,8 +67,8 @@ def main():
     if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', date):
         fail('「date」は 2026-10-15 の形にしてください')
     time = text(data, 'time')
-    if time not in ('0800', '1100', '1700'):
-        fail('「time」は 0800 / 1100 / 1700 のどれかにしてください')
+    if time not in TIMES:
+        fail('「time」は ' + ' / '.join(TIMES) + ' のどれかにしてください')
     slug = f'{date}-{time}'
     if any(b['slug'] == slug for b in books):
         fail(f'{slug} の本はもう登録されています')
