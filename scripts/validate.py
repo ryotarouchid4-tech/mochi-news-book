@@ -77,7 +77,7 @@ assert form['action']=='https://formsubmit.co/ryotarouchid4@gmail.com' and form[
 fields={a.get('name'):a.get('value') for t,a in c.tags if t=='input'}
 assert fields['_next']==BASE+'/thanks/'
 assert fields['_url']==BASE+'/contact/'
-assert '_captcha' not in fields
+assert fields['_captcha']=='false' and '_honey' in fields  # 確認画面を出さず、かわりに見えない入力欄でスパムを防ぐ
 assert fields['_autoresponse'] and 'ryotarouchid4@gmail.com' in fields['_autoresponse']
 books=json.loads((ROOT/'content/books.json').read_text())
 for b in books:
