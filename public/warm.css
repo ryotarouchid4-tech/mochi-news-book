@@ -65,3 +65,12 @@ body{background:var(--paper);color:var(--ink)}::selection{background:#ebbcac;col
 .shelf .cover-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
 @media(max-width:760px){.shelf .cover-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 10px}.shelf .cover-tile__title{font-size:12px}.shelf .cover-tile__meta{font-size:9px}}
 @media(max-width:760px){.shelf .cover-tile__meta{display:none}}
+/* スマホ・タブレット（iPhone の Safari など）：トップの本を3Dにせず、平面の表紙を少し傾けて置く */
+@media (hover:none),(pointer:coarse){
+.stage-books,.stage-book{transform-style:flat}
+.stage-books{transform:none;will-change:auto}
+.motion-on .stage-books{animation:none}
+.stage-book,.motion-off .stage-book{transform:rotate(3deg)}
+.stage-book__back,.stage-book__pages,.stage-book__spine,.stage-book__shine{display:none}
+.stage-book__front{transform:none;backface-visibility:visible;box-shadow:6px 9px 18px #79584033}
+}
