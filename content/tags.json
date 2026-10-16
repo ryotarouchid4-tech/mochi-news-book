@@ -134,5 +134,9 @@
   {
     "id": "wearable",
     "name": "ウェアラブル"
+  },
+  {
+    "id": "sns",
+    "name": "SNS"
   }
 ]
