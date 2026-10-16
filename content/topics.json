@@ -48,5 +48,13 @@
     "card": "",
     "lead": "",
     "sections": []
+  },
+  {
+    "id": "electronics",
+    "title": "電子機器",
+    "en": "ELECTRONICS",
+    "card": "",
+    "lead": "",
+    "sections": []
   }
 ]

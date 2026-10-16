@@ -1,5 +1,46 @@
 [
   {
+    "id": 17,
+    "title": "E Inkがカラー電子ペーパーを改良",
+    "date": "2026-10-16",
+    "category": "電子機器",
+    "pages": [
+      "assets/book-17-1.webp",
+      "assets/book-17-2.webp",
+      "assets/book-17-3.webp",
+      "assets/book-17-4.webp",
+      "assets/book-17-5.webp",
+      "assets/book-17-6.webp"
+    ],
+    "slug": "2026-10-16-1300",
+    "description": "E Inkのカラー電子ペーパー「Kaleido 4」を、2026年10月16日の本で紹介。色や表示の切り替えの改良と、中国で販売されている搭載端末について読めます。",
+    "summary": "E Inkが発表したカラー電子ペーパー「Kaleido 4」の、色や表示の切り替えの改良について。",
+    "body": [
+      "E Inkが、新しいカラー電子ペーパーを発表したよ。名前は「Kaleido 4」。電子書籍を読む端末や、ペンで書ける端末に使うものなんだ。会社の説明では、出せる色が4万色を超えるそうだよ。白い部分が明るくなり、明暗の差もよくなるというよ。",
+      "電子ペーパーは、表示の切り替えが遅め。今回は画面の裏側の部品を変え、切り替えを速くしたというよ。E Inkによると、動画を1秒に18コマ表示できるんだって。スマホの画面ほど速くはないよ。それでも記事では、電子ペーパーとしては前進だと紹介しているんだ。",
+      "この画面を使うと正式に発表されているのは、今のところHanvonの「M10 C II」という端末だけ。中国だけで販売されているそうだよ。画面を照らすライトも作り直し、ガラスの表面には細かな加工をしてあるんだ。ペンで書いたときに、紙に近い感触になるというよ。",
+      "カラーの絵だけじゃなくて、文字も変わるんだね。本を読むなら、小さな文字がくっきり見えるとうれしいな。同じページを、新旧二つの画面で比べてみたい。ぼくは絵の色を見てから、つい細かい文字までじっと読んでしまいそう。"
+    ],
+    "afterword": "新しい画面で、色と動きが変わる",
+    "mochi": "ぼくは寝ながら読みたい",
+    "source": {
+      "name": "Engadget",
+      "title": "E Ink's new Kaleido 4 could inch us closer to the perfect color e-reader",
+      "url": "https://www.engadget.com/2288006/e-ink-kaleido-4-could-inch-us-closer-to-the-perfect-color-e-reader/",
+      "date": "2026-10-15",
+      "status": "2026年10月16日に記事名と本文（英語）を確認。"
+    },
+    "topic": "electronics",
+    "url": "/books/2026-10-16-1300/",
+    "webPublished": "2026-10-16",
+    "tags": [
+      "e-paper"
+    ],
+    "time": "1300",
+    "thumb": "assets/book-17-thumb.webp",
+    "ogImage": "assets/book-17-og.jpg"
+  },
+  {
     "id": 16,
     "title": "シャープが排水しない洗濯機を展示",
     "date": "2026-10-16",
