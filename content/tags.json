@@ -82,5 +82,9 @@
   {
     "id": "voice",
     "name": "声"
+  },
+  {
+    "id": "carbon-removal",
+    "name": "二酸化炭素の除去"
   }
 ]
