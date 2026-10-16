@@ -126,5 +126,13 @@
   {
     "id": "windows",
     "name": "Windows"
+  },
+  {
+    "id": "amazon",
+    "name": "アマゾン"
+  },
+  {
+    "id": "wearable",
+    "name": "ウェアラブル"
   }
 ]
