@@ -170,7 +170,6 @@ for filename,title,kind in [('contact.html','お問い合わせ','ContactPage'),
  body=re.sub(r'<div class="breadcrumb">.*?</div>','',body,count=1,flags=re.S)
  body=body.replace('https://mochi-shio-news.satinyvenus.chatgpt.site',BASE).replace('/contact.html','/contact/').replace('/privacy.html','/privacy/').replace('/thanks.html','/thanks/').replace('/#shelf','/books/')
  path='/'+filename.replace('.html','')+'/'
- if filename=='contact.html':body+='<script src="/contact.js" defer></script>'
  desc={'contact.html':'本の感想や掲載内容へのご連絡、制作のご相談を受け付けています。','privacy.html':'個人情報とお問い合わせフォームでお預かりする情報の取り扱いについて。','thanks.html':'お問い合わせを受け付けました。'}[filename]
  # Forms need only the small existing form styles; the shared chrome remains in site.css.
  shell(path,title,desc,'<link rel="stylesheet" href="/forms.css">'+body,kind=kind,crumb=[('ホーム','/'),(title,path)],noindex=filename=='thanks.html',main_class='page')

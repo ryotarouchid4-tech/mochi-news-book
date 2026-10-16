@@ -75,13 +75,9 @@ assert BASE+'/thanks/' not in urls
 assert BASE+'/404.html' not in urls
 assert 'noindex' in docs[OUT/'thanks/index.html'].find('meta','name','robots')[0]['content']
 robots=(OUT/'robots.txt').read_text();assert 'Disallow: /' not in robots and BASE+'/sitemap.xml' in robots
-c=docs[OUT/'contact/index.html'];form=next(a for t,a in c.tags if t=='form')
-assert form['action']=='https://formsubmit.co/ryotarouchid4@gmail.com' and form['method']=='POST'
-fields={a.get('name'):a.get('value') for t,a in c.tags if t=='input'}
-assert fields['_next']==BASE+'/thanks/'
-assert fields['_url']==BASE+'/contact/'
-assert fields['_captcha']=='false' and '_honey' in fields  # 確認画面を出さず、かわりに見えない入力欄でスパムを防ぐ
-assert fields['_autoresponse'] and 'ryotarouchid4@gmail.com' in fields['_autoresponse']
+c=docs[OUT/'contact/index.html'];frame=next(a for t,a in c.tags if t=='iframe')
+assert frame['src']=='https://docs.google.com/forms/d/e/1FAIpQLSeZCq7yVHLezvUF2hM7lYrHpdHZ3mnvP2mGnfWh_eLjmu1kRw/viewform?embedded=true'  # お問い合わせは Googleフォームを埋め込む
+assert not any(t=='form' for t,a in c.tags) and 'formsubmit' not in (OUT/'contact/index.html').read_text()
 books=json.loads((ROOT/'content/books.json').read_text())
 for b in books:
  d=docs[file_for(b['url'])]
