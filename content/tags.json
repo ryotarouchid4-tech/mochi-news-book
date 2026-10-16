@@ -114,5 +114,13 @@
   {
     "id": "cars",
     "name": "自動車"
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI"
+  },
+  {
+    "id": "browser",
+    "name": "ブラウザ"
   }
 ]

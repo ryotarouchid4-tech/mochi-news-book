@@ -1,5 +1,50 @@
 [
   {
+    "id": 21,
+    "title": "ChatGPTが、開いているタブを見られるように",
+    "date": "2026-10-16",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-21-1.webp",
+      "assets/book-21-2.webp",
+      "assets/book-21-3.webp",
+      "assets/book-21-4.webp",
+      "assets/book-21-5.webp",
+      "assets/book-21-6.webp",
+      "assets/book-21-7.webp"
+    ],
+    "slug": "2026-10-16-2100",
+    "description": "ChatGPTが開いているタブを見て答えたり作業したりできるようになった話を、2026年10月16日の本で紹介。くらべものや入力の手伝いについて読めます。",
+    "summary": "OpenAIのChrome用拡張機能で、ChatGPTが開いているタブを見て手伝えるようになったことについて。",
+    "body": [
+      "ChatGPTを作っているOpenAIが、Chromeの拡張機能を新しくしたんだって。拡張機能は、ブラウザにあとから足す機能のこと。これで、開いているタブの中身をChatGPTが見られるようになったよ。見ているページに合わせて、答えてくれるみたい。",
+      "たとえば、ソファを3つのタブで見くらべているとき。ChatGPTに頼むと、大きさや値段をくらべてくれるそう。届くまでの日数や、返品のルールも並べてくれるらしい。タブを行ったり来たりしなくてすむんだね。",
+      "「ChatGPT Work」っていう、手順の多い作業をまかせる機能もある。こっちは、メッセージを送ったり、フォームに入力したり、タブを整理したりもできる。新しい歯医者さんの申し込みフォームを埋めて、予定をカレンダーに入れる。そんな使い方が紹介されていたよ。",
+      "ブラウザの横に出る画面からは、これまでのChatGPTの会話も見られる。今のページを離れずに、相談したりお願いしたりできるんだ。Chromeのほか、EdgeやBrave、Operaでも使えるって。どのプランでも使えるそう。OpenAIは自分のブラウザを持っていたけど、8月9日にやめているよ。",
+      "くらべものをするとき、タブを全部見てもらえるのは楽そう。ぼくはいつも、どのタブに何があったか忘れちゃうんだ。でも、開いているページを見せるってことでもあるよね。どこまで見せるのか、ちょっと気になるな。"
+    ],
+    "afterword": "ChatGPTが、タブを見て手伝ってくれる",
+    "mochi": "タブ、開きすぎてた…",
+    "source": {
+      "name": "Engadget",
+      "title": "ChatGPT can now look at your Chrome tabs to do tasks for you",
+      "url": "https://www.engadget.com/2288580/open-ai-updates-chatgpt-extension-for-chrome/",
+      "date": "2026-10-16",
+      "status": "2026年10月16日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-10-16-2100/",
+    "webPublished": "2026-10-16",
+    "tags": [
+      "generative-ai",
+      "openai",
+      "browser"
+    ],
+    "time": "2100",
+    "thumb": "assets/book-21-thumb.webp",
+    "ogImage": "assets/book-21-og.jpg"
+  },
+  {
     "id": 20,
     "title": "テスラが、空を飛ぶ新しいロードスターを発表",
     "date": "2026-10-16",
