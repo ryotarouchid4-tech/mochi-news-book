@@ -12,13 +12,14 @@
 Pillow が必要（サイトのビルドには不要。Cloudflare では動かさない）。
 """
 from pathlib import Path
-import json, sys
+import json, os, sys
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 BOOKS_FILE = ROOT / 'content/books.json'
 PUBLIC = ROOT / 'public'
-FONT_DIR = Path('/usr/share/fonts/opentype/noto')
+# Noto CJK フォントの場所。ほかの環境では MOCHI_FONT_DIR で変えられる
+FONT_DIR = Path(os.environ.get('MOCHI_FONT_DIR', '/usr/share/fonts/opentype/noto'))
 THUMB_W = 480
 OG_W, OG_H = 1200, 630
 BG = (247, 240, 228)

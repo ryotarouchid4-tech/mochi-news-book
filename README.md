@@ -1,6 +1,8 @@
 # もちとしおのニュース本棚
 
-ニュースを4ページの本にまとめた静的サイトです。Python 3でHTMLを生成します。追加パッケージやデータベースは不要です。
+ニュースを3〜10ページの本にまとめた静的サイトです。Python 3でHTMLを生成します。サイトのビルドに追加パッケージやデータベースは不要です（本を追加する `scripts/add_book.py` と `scripts/make_images.py` だけ Pillow と日本語フォントを使います）。
+
+AIで作業するときは、先に `AGENTS.md` を読んでください。ChatGPT への引き継ぎは `MIGRATION.md` にまとめています。
 
 ## Cloudflare Pages
 
@@ -9,7 +11,7 @@
 - ルートディレクトリ：リポジトリのルート
 - ビルドコマンド：python3 scripts/build.py
 - 出力ディレクトリ：dist
-- 環境変数：SITE_URL=https://mochi-to-shio.pages.dev
+- 公開URL：https://mochi-news-book.pages.dev（`site.config.json` の url。環境変数 SITE_URL で上書きできます）
 
 GitHubのリポジトリ直下に、このフォルダの中身を登録してください。mochi-to-shioというフォルダごと一段深く登録した場合は、Cloudflareのルートディレクトリも合わせる必要があります。
 
@@ -37,7 +39,7 @@ Node.jsは操作テストにのみ使用します。公開用のビルドにはP
 
 ## お問い合わせ
 
-FormSubmitを利用し、ryotarouchid4@gmail.comに通知します。受付の自動返信を設定しています。公開元が変わったら、テスト送信で認証メールや配信状況を確認してください。通知先とは別のメールアドレスをフォームに入力し、通知・受付メール・サンクスページを確認します。
+Googleフォームを `/contact/` に埋め込んでいます（`templates/contact.html`）。通知メールと回答のコピーは、Googleフォーム側の設定で送ります。
 
 ## 既存のCloudflare Pagesプロジェクトについて
 
