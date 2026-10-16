@@ -56,5 +56,13 @@
     "card": "",
     "lead": "",
     "sections": []
+  },
+  {
+    "id": "transport",
+    "title": "乗り物・交通",
+    "en": "TRANSPORT",
+    "card": "",
+    "lead": "",
+    "sections": []
   }
 ]

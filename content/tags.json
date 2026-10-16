@@ -102,5 +102,9 @@
   {
     "id": "e-paper",
     "name": "電子ペーパー"
+  },
+  {
+    "id": "smartphone",
+    "name": "スマホ"
   }
 ]
