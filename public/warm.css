@@ -119,3 +119,46 @@ a.tag-chip:hover{border-color:#c8a98a;color:#a76e54}
 .experience-menu .hamburger i{display:block;height:2px;width:100%;border-radius:2px;background:currentColor}
 /* メニューボタン：文字なしの丸いアイコンボタン */
 .experience-menu{width:44px;height:44px;min-width:44px;padding:0;border-radius:50%;gap:0}
+/* 枠や角丸のブロックをやめて、余白と細い線だけで区切る */
+.book,.content .book,.book:hover{border:0;border-bottom:1px solid var(--line);border-radius:0;background:none;box-shadow:none;padding:22px 0}
+.book__cover img,.book:hover .book__cover img{border-radius:0;box-shadow:0 2px 8px #84634b1a}
+.book__actions{border-top:0}
+.cover-tile__img,.cover-tile:hover .cover-tile__img{border-radius:0;box-shadow:0 2px 8px #84634b1a;background:none}
+.cover-tile:hover .cover-tile__img{transform:translateY(-2px)}
+.cover-tile__badge{border-radius:0;box-shadow:none}
+.book__region{border-radius:0}
+.topic-card,.topic-card:hover{background:none;border:0;border-top:1px solid var(--line);border-radius:0;padding:24px 0}
+.topic-card:hover h3{color:var(--red)}
+.topic-card:after{display:none}
+.topic-list{gap:6px 20px}
+.topic-list a,.topic-list a:hover{border:0;border-bottom:1px solid var(--line);border-radius:0;background:none;padding:2px 0}
+.topic-list a:hover{color:#a76e54;border-color:#a76e54}
+.toc{background:none!important;border:0;border-left:1px solid var(--line);border-radius:0;padding:4px 0 4px 20px}
+.afterword{background:none;border:0;border-left:2px solid #c6a47c;border-radius:0;padding:4px 0 4px 22px}
+.reading-frame{background:none;border:0;border-radius:0;box-shadow:none;padding:0}
+.reading-controls button,.reading-controls button:not(:disabled):hover{border-radius:0}
+.pager{gap:0 24px}
+.pager__item,.pager__item:hover{border:0;border-top:1px solid var(--line);border-radius:0;background:none;padding:14px 0}
+.pager__item:hover span{color:var(--red)}
+.pager__item--empty,.pager__item--empty:hover{border:0}
+.month-links,.week-list{gap:6px 20px}
+.month-links a,.week-list a{border:0;border-radius:0;background:none;padding:2px 0;border-bottom:1px solid var(--line)}
+.month-links a:hover,.week-list a:hover{color:#a76e54;border-color:#a76e54}
+.tag-chips{gap:6px 16px}
+.tag-chip,.tag-chip--big{border:0;border-radius:0;background:none;padding:0}
+a.tag-chip:hover{text-decoration:underline}
+.tag-chip--big{font-size:15px}
+.tab,.tab[aria-pressed=true]{border:0;border-radius:0;background:none;color:var(--muted);padding:8px 2px;margin-right:14px;border-bottom:2px solid transparent}
+.tab[aria-pressed=true]{color:var(--ink);border-bottom-color:var(--red)}
+.tabs__divider{margin:6px 14px 6px 0}
+.character{border:0;border-top:1px solid var(--line);border-radius:0;background:none;padding:22px 0 0}
+.search-hit,.search-hit:hover{border:0;border-bottom:1px solid var(--line);border-radius:0;background:none;padding:0 0 14px}
+.search-hit:hover strong{color:var(--red)}
+.search-hit img{border-radius:0}
+.nav-dialog__link{border-radius:0}
+.nav-dialog__link:hover{background:none}
+.action,.page .button,.hero-enter{border-radius:2px;box-shadow:none}
+.page .field input,.page .field select,.page .field textarea{border-radius:2px}
+.page .note{border-radius:0;background:none;padding:4px 0 4px 18px}
+.random-book>a{border-radius:0}
+@media(max-width:760px){.book,.content .book{padding:0 0 12px!important;border-bottom:0}.topic-card{padding:20px 0}}
