@@ -106,5 +106,13 @@
   {
     "id": "smartphone",
     "name": "スマホ"
+  },
+  {
+    "id": "tesla",
+    "name": "テスラ"
+  },
+  {
+    "id": "cars",
+    "name": "自動車"
   }
 ]
