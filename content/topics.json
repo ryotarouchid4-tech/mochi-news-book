@@ -40,5 +40,13 @@
     "card": "",
     "lead": "",
     "sections": []
+  },
+  {
+    "id": "appliances",
+    "title": "家電",
+    "en": "HOME APPLIANCES",
+    "card": "",
+    "lead": "",
+    "sections": []
   }
 ]
