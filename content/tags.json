@@ -122,5 +122,9 @@
   {
     "id": "browser",
     "name": "ブラウザ"
+  },
+  {
+    "id": "windows",
+    "name": "Windows"
   }
 ]
