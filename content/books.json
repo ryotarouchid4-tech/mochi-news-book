@@ -1,5 +1,50 @@
 [
   {
+    "id": 19,
+    "title": "メタが、Macで動かせるAIモデルを公開",
+    "date": "2026-10-16",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-19-1.webp",
+      "assets/book-19-2.webp",
+      "assets/book-19-3.webp",
+      "assets/book-19-4.webp",
+      "assets/book-19-5.webp",
+      "assets/book-19-6.webp",
+      "assets/book-19-7.webp"
+    ],
+    "slug": "2026-10-16-1700",
+    "description": "メタのMacで動くAIモデル「Muse Spark Open」を、2026年10月16日の本で紹介。どんなMacで動くのか、なにができるのかが読めます。",
+    "summary": "メタが、Macの上で動かせるオープンなAIモデル「Muse Spark Open」を公開したことについて。",
+    "body": [
+      "アメリカのメタが、新しいAIモデル「Muse Spark Open」を出したんだって。中身の設計図にあたる部分が公開されている「オープン」なモデルなんだ。アップルのパソコン、Macの上で動かせるように作られているそうだよ。",
+      "メタは、アメリカのオープンなAIモデルの中でいちばん賢いって言ってる。アメリカ時間の15日に出したテストの結果でも、ほかの有名なオープンなモデルより上だったみたい。文字だけじゃなく画像なんかもそのまま扱えて、むずかしいプログラム作りや、AIが自分で作業を進める使い方を考えて作られてるんだって。",
+      "ただ、どんなMacでも動くわけじゃないらしい。かなり大きなモデルだから、パソコンの力がたくさんいる。いちばんよく動くのは、M5 Ultraというチップをのせた「Mac Studio」だそうだよ。ネットを通して使えるサービスでも、もう使えるようになってるみたい。",
+      "メタは、自分たちのプログラム作りの道具「Muse Code」と組み合わせて試したんだって。SNSのアプリの不具合を直したり、新しい機能を足したりできたそう。動画を編集するソフトでは、映像を見て、いらないところを切ってくれたらしいよ。",
+      "AIって、ふつうは会社のサーバーで動いてて、ネットごしに使うものだと思ってた。自分の机の上のパソコンで動くなら、ネットにつながってなくても使えるのかな。でも、そのために必要なMacがすごく高そう。動画の編集を任せられるのは、ちょっと気になるな。"
+    ],
+    "afterword": "大きなAIが、手元のパソコンにやってきた",
+    "mochi": "ぼくの昼寝も任せたい",
+    "source": {
+      "name": "TechCrunch",
+      "title": "Meta launches an open-weight AI model that runs on Macs",
+      "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+      "date": "2026-10-15",
+      "status": "2026年10月16日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-10-16-1700/",
+    "webPublished": "2026-10-16",
+    "tags": [
+      "meta",
+      "generative-ai",
+      "apple"
+    ],
+    "time": "1700",
+    "thumb": "assets/book-19-thumb.webp",
+    "ogImage": "assets/book-19-og.jpg"
+  },
+  {
     "id": 18,
     "title": "スマホを持つだけで通れる改札、JR東が展示",
     "date": "2026-10-16",
