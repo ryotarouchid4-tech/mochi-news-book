@@ -162,5 +162,13 @@
   {
     "id": "festival",
     "name": "お祭り"
+  },
+  {
+    "id": "game",
+    "name": "ゲーム"
+  },
+  {
+    "id": "steam",
+    "name": "Steam"
   }
 ]

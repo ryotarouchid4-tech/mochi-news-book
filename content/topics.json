@@ -72,5 +72,13 @@
     "card": "",
     "lead": "",
     "sections": []
+  },
+  {
+    "id": "game",
+    "title": "ゲーム",
+    "en": "GAMES",
+    "card": "",
+    "lead": "",
+    "sections": []
   }
 ]

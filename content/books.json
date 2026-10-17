@@ -1,5 +1,51 @@
 [
   {
+    "id": 33,
+    "title": "Steamの実績、DLC用に分けられる新機能",
+    "date": "2026-10-18",
+    "category": "ゲーム",
+    "pages": [
+      "assets/book-33-1.webp",
+      "assets/book-33-2.webp",
+      "assets/book-33-3.webp",
+      "assets/book-33-4.webp",
+      "assets/book-33-5.webp",
+      "assets/book-33-6.webp",
+      "assets/book-33-7.webp",
+      "assets/book-33-8.webp"
+    ],
+    "slug": "2026-10-18-0900",
+    "description": "Steamの新機能「Achievement Sets」を、2026年10月18日の本で紹介。DLCが出ても実績の100%がくずれなくなるしくみが読めます。",
+    "summary": "Steamで、ゲームの実績を本編とDLCなどのグループに分けられる新機能が始まったことについて。",
+    "body": [
+      "ゲーム配信サービスのSteamで、「実績」をグループに分けられる新しい機能が始まったよ。名前は「Achievement Sets」。今はベータ版のSteamで使えるんだって。",
+      "実績っていうのは、ゲームの中で条件を達成するともらえる記録のこと。これまでは、あとからDLCが出ると、そのぶんの実績も同じゲームに足されていたんだ。DLCは追加で買うコンテンツのことだよ。だから、全部集めて100%にしていても、DLCが出ると数字が下がってしまうことがあったみたい。",
+      "新しい機能では、本編の実績とDLCの実績が、べつのグループになるよ。本編のグループは青、DLCのグループはむらさきで表示されるんだって。DLCのグループは、そのDLCを持っているときだけ、全体の進み具合にふくまれるそう。",
+      "グループの分け方は、ゲームを作る会社が決めるよ。たとえば、一人用とみんなで遊ぶ用で分けたり、ハロウィンみたいな季節のイベント用のグループを作ったり。使うには、作る会社がゲームを更新する必要があるんだ。",
+      "グループごとに進み具合のバーがあって、全部集めると「コンプリート」の印をプロフィールにかざれるよ。あとから実績が増えても、100%のままなんだって。実績のページも新しくなって、友だち3人まで進み具合をくらべられるようになったそう。",
+      "せっかく100%にしたのに、知らないうちに数字が減ってたら、ちょっとがっかりするよね。本編はちゃんと終わらせたって記録が残るのは、うれしい人が多そう。どのゲームが対応するのかは、これから少しずつ増えていくのかな。"
+    ],
+    "afterword": "集めた記録が、あとから減らなくなるんだね",
+    "mochi": "ぼくは0%で安定",
+    "source": {
+      "name": "Engadget",
+      "title": "Steam Achievement Sets will stop DLCs from ruining your 100 percent record",
+      "url": "https://www.engadget.com/2288624/steam-achievement-sets-protect-100-percent-record-from-dlcs/",
+      "date": "2026-10-16",
+      "status": "2026年10月18日に記事名と本文（英語）を確認。"
+    },
+    "topic": "game",
+    "url": "/books/2026-10-18-0900/",
+    "webPublished": "2026-10-18",
+    "tags": [
+      "game",
+      "steam"
+    ],
+    "time": "0900",
+    "thumb": "assets/book-33-thumb.webp",
+    "ogImage": "assets/book-33-og.jpg"
+  },
+  {
     "id": 32,
     "title": "LEDで光る「未来の山車」が登場",
     "date": "2026-10-18",
