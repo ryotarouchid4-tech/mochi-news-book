@@ -64,5 +64,13 @@
     "card": "",
     "lead": "",
     "sections": []
+  },
+  {
+    "id": "culture",
+    "title": "文化・お祭り",
+    "en": "CULTURE",
+    "card": "",
+    "lead": "",
+    "sections": []
   }
 ]
