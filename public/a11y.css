@@ -1,0 +1,97 @@
+/* ==========================================================================
+   アクセシビリティ（デジタル庁デザインシステム DADS に合わせる）
+   - 文字：本文16px以上、小さい文字も14px以上（14px未満は CSS 側で14pxに引き上げ済み）
+   - 色：文字と背景のコントラスト 4.5:1 以上
+   - フォーカス：黄色＋黒の2重（DADS と同じ。変えない）
+   - 押せる場所：高さ44px以上
+   - リンク：色だけでなく下線でもわかるように
+   ========================================================================== */
+:root{--muted:#6f6152;--red:#a3463a;--focus-yellow:#ffd43d;--focus-black:#000}
+
+body{font-size:16px;line-height:1.7}
+.page p,.page li,.prose p,.content p,.transcript p,.lead,.page__intro,.about p{font-size:16px;line-height:1.75}
+
+/* フォーカス：キーボードで選んだところを、黒い枠＋黄色で示す */
+:is(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:3px solid var(--focus-black)!important;outline-offset:2px!important;box-shadow:0 0 0 5px var(--focus-yellow)!important}
+a:focus-visible{background-color:var(--focus-yellow)!important;color:#1a1a1a!important;text-decoration-color:#1a1a1a!important}
+
+/* リンク：文章の中のリンクは下線をつける */
+.page a:not(.button),.prose a,.content p a,.text-link,.breadcrumb a,.source-list a,.footer-bottom a,.more-by-month a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.25em}
+:is(.page a:not(.button),.prose a,.content p a,.text-link,.breadcrumb a,.source-list a,.footer-bottom a):hover{text-decoration-thickness:2px}
+
+/* 押せる場所を広くする（見た目の大きさは変えずに、上下の余白で44pxにする） */
+.breadcrumb a,.breadcrumb span[aria-current],.footer-nav a,.footer-bottom a,.home-links a,.month-links a,.week-list a,.topic-list a,a.tag-chip,.book__read,.book__preview,.site-nav a,.motion-toggle,.random-book>a{display:inline-flex;align-items:center;min-height:44px}
+.site-search input,.search input{font-size:16px;min-height:44px}
+
+/* ==========================================================================
+   本棚ページ（/books/）のギミック
+   ========================================================================== */
+
+/* しおりの形の絞り込みボタン：上の線からぶら下がり、選ぶと下に伸びる */
+.shelf--wood .tabs{gap:6px 4px;align-items:flex-start;border-top:2px solid #b08a63;padding-top:0;margin-bottom:6px}
+.shelf--wood .tab,.shelf--wood .tab[aria-pressed=true]{position:relative;isolation:isolate;min-height:56px;min-width:44px;margin:0;padding:10px 14px 20px;border:0;background:none;color:var(--ink);font-size:16px;line-height:1.4;transition:padding-bottom .2s ease}
+.shelf--wood .tab::before{content:'';position:absolute;inset:0;z-index:-1;background:#efe2cf;clip-path:polygon(0 0,100% 0,100% 100%,50% calc(100% - 10px),0 100%);transition:background .2s ease}
+.shelf--wood .tab:hover::before{background:#e6d2b6}
+.shelf--wood .tab[aria-pressed=true]{color:#fff;padding-bottom:30px}
+.shelf--wood .tab[aria-pressed=true]::before{background:var(--red)}
+.shelf--wood .tabs__divider{align-self:stretch;width:2px;margin:0 8px;background:#b08a63}
+
+/* 案内役：モチとシオ */
+.shelf-guide{position:relative;display:flex;align-items:center;gap:12px;margin:22px 0 8px;padding-right:120px;min-height:96px}
+.shelf-guide__face{width:56px;height:56px;flex:none;border-radius:50%}
+.shelf-guide__line{margin:0;font-size:17px;line-height:1.6;color:var(--ink);border-left:2px solid #c6a47c;padding:4px 0 4px 14px;flex:1;min-width:0}
+.shelf-guide__line span:first-child{color:var(--red);font-weight:700}
+.shelf-pick{flex:none;min-height:44px;padding:0 18px;border:2px solid var(--red);border-radius:2px;background:#fffaf1;color:var(--red);font-size:16px;font-weight:700;cursor:pointer}
+.shelf-pick:hover{background:var(--red);color:#fff}
+.shelf-guide__peek{position:absolute;right:0;bottom:-12px;width:110px;height:auto;pointer-events:none}
+
+/* 木の棚：本が板の上に立って並ぶ */
+.shelf--wood .books{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))!important;gap:30px 26px!important;overflow:hidden;padding-top:12px}
+.shelf--wood .book,.shelf--wood .book:hover{display:flex!important;flex-direction:column;gap:6px;padding:0!important;border:0;background:none;box-shadow:none}
+.shelf--wood .book__cover{position:relative;display:block;width:100%;padding-bottom:12px}
+.shelf--wood .book__cover img,.shelf--wood .book:hover .book__cover img{display:block;width:100%;height:auto;border-radius:0;box-shadow:2px 3px 8px #6a4b3933;transform:none;transform-origin:50% 100%}
+.shelf--wood .book__cover::after{content:'';position:absolute;left:-14px;right:-14px;bottom:0;height:12px;background:linear-gradient(#d2ae86,#b88f65);box-shadow:0 4px 6px #6a4b3926}
+.shelf--wood .book__meta{font-size:14px;gap:2px 10px;margin-top:4px}
+.shelf--wood .book__title{font-size:16px;line-height:1.55;margin:0}
+.shelf--wood .book__title a{text-decoration:none}
+.shelf--wood .book__title a:hover{text-decoration:underline}
+.shelf--wood .book__actions{display:flex!important;border:0;padding:0;margin-top:auto}
+.shelf--wood .book__read{display:none}
+.shelf--wood .date-head{border-bottom:0;margin-bottom:4px}
+
+/* 引き出す動き（動きを止めていないときだけ） */
+.motion-on .shelf--wood .book__cover img{transition:transform .25s ease,box-shadow .25s ease}
+.motion-on .shelf--wood .book:is(:hover,:focus-within) .book__cover img{transform:translateY(-10px) rotate(-2deg);box-shadow:6px 12px 16px #6a4b3940}
+
+/* シオのおすすめで選ばれた本 */
+.shelf--wood .book.is-picked .book__cover img{outline:4px solid var(--red);outline-offset:4px}
+.motion-on .shelf--wood .book.is-picked .book__cover img{animation:picked-hop .6s ease 2}
+@keyframes picked-hop{0%,100%{transform:translateY(0)}40%{transform:translateY(-16px) rotate(-3deg)}70%{transform:translateY(-4px)}}
+
+/* しゃべったとき、顔が少しはねる */
+.motion-on .shelf-guide.is-talking .shelf-guide__face{animation:guide-hop .35s ease}
+@keyframes guide-hop{40%{transform:translateY(-6px)}}
+.motion-on .shelf-guide__peek{animation:peek 6s ease-in-out infinite}
+@keyframes peek{0%,70%,100%{transform:translateY(0)}80%{transform:translateY(-8px) rotate(-3deg)}}
+
+@media(prefers-reduced-motion:reduce){.shelf--wood *,.shelf-guide *{animation:none!important;transition:none!important}}
+
+@media(max-width:760px){
+.shelf-guide{flex-wrap:wrap;padding-right:84px;gap:10px}
+.shelf-guide__face{width:48px;height:48px}
+.shelf-guide__line{font-size:16px;flex-basis:calc(100% - 60px)}
+.shelf-pick{order:3}
+.shelf-guide__peek{width:80px;bottom:auto;top:-8px}
+.shelf--wood .books{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:26px 18px!important}
+.shelf--wood .tab,.shelf--wood .tab[aria-pressed=true]{padding-left:10px;padding-right:10px}
+}
+
+/* トップの本のボタン：押せる大きさを確保 */
+.stage-controls{gap:14px}
+.stage-controls>button{width:44px;height:44px}
+small{font-size:max(14px,.8em)}
+.shelf--wood .book__cover{overflow:visible;padding:0 0 12px;background:none}
+.shelf--wood .book__cover::after{display:block}
+.shelf--wood .books{margin:14px 0 8px}
+.shelf--wood .tabs__divider{flex-basis:100%;width:auto;height:0;margin:4px 0 0;background:none}
+@media(max-width:760px){.shelf--wood .tabs__divider{display:block}}
