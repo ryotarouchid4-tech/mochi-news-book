@@ -146,5 +146,9 @@
   {
     "id": "shinkansen",
     "name": "新幹線"
+  },
+  {
+    "id": "leap-second",
+    "name": "うるう秒"
   }
 ]
