@@ -138,5 +138,9 @@
   {
     "id": "sns",
     "name": "SNS"
+  },
+  {
+    "id": "solar-power",
+    "name": "太陽光発電"
   }
 ]
