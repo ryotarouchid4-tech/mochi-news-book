@@ -162,3 +162,17 @@ small{font-size:max(14px,.8em)}
 .bookmark{min-width:0;padding:12px 14px 24px;font-size:16px}
 .character__figure img{width:160px}
 }
+
+/* メニュー（全画面）：ロゴ、四角い閉じるボタン、番号と英語をなくす */
+.nav-dialog__brand{display:inline-flex;align-items:center;min-height:44px}
+.nav-dialog__brand img{width:160px;height:auto}
+.nav-dialog__top button{border-radius:2px;min-height:44px}
+.nav-dialog__link{grid-template-columns:1fr 48px!important;gap:12px!important}
+.nav-dialog__link>b{font-size:32px;line-height:1}
+.motion-on .nav-dialog__link:hover>b{transform:translateX(6px)}
+@media(max-width:760px){.nav-dialog__brand img{width:130px}.nav-dialog__link>b{font-size:26px}}
+.nav-dialog__link{align-items:center!important}
+.nav-dialog__link>span{line-height:1.4!important}
+.nav-dialog__link>b{align-self:center}
+.nav-dialog__link>span{align-self:center!important;margin:0!important}
+.nav-dialog__link{display:flex!important;justify-content:space-between}
