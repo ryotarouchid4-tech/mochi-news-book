@@ -95,3 +95,70 @@ small{font-size:max(14px,.8em)}
 .shelf--wood .books{margin:14px 0 8px}
 .shelf--wood .tabs__divider{flex-basis:100%;width:auto;height:0;margin:4px 0 0;background:none}
 @media(max-width:760px){.shelf--wood .tabs__divider{display:block}}
+
+/* ==========================================================================
+   ほかのページへ広げたギミック
+   ========================================================================== */
+
+/* きょうの本は大きめの表紙で */
+.shelf--big .books{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))!important}
+
+/* 動かない案内（一覧ページ・404 など） */
+.shelf-guide--static{padding-right:0;min-height:0;margin:10px 0 22px}
+
+/* しおりの形のリンク（テーマ・話題） */
+.bookmarks{display:flex;flex-wrap:wrap;gap:8px 6px;align-items:flex-start;border-top:2px solid #b08a63;margin:18px 0 28px}
+.bookmark{position:relative;isolation:isolate;display:inline-flex;flex-direction:column;gap:2px;min-width:120px;min-height:72px;padding:14px 18px 26px;color:var(--ink);text-decoration:none;font-size:17px;line-height:1.4;transition:padding-bottom .2s ease}
+.bookmark::before{content:'';position:absolute;inset:0;z-index:-1;background:#efe2cf;clip-path:polygon(0 0,100% 0,100% 100%,50% calc(100% - 12px),0 100%);transition:background .2s ease}
+.bookmark small{font-size:14px;color:var(--muted)}
+.bookmark:hover::before{background:#e6d2b6}
+.motion-on .bookmark:hover{padding-bottom:34px}
+.bookmark:hover span{text-decoration:underline}
+
+/* 本のページ：シオの話・モチのひとことに顔 */
+.said{display:flex;gap:14px;align-items:flex-start}
+.said p{margin:0;min-width:0}
+.said__face{width:48px;height:48px;flex:none;border-radius:50%}
+.afterword .character-line{display:flex;align-items:center;gap:10px}
+.afterword .character-line .said__face{width:40px;height:40px}
+
+/* 本のページ：めくった位置を示すしおり */
+.reading-frame{position:relative}
+.reading-ribbon{position:absolute;top:-8px;left:calc(var(--p,0) * (100% - 22px));width:22px;height:46px;z-index:2;background:var(--red);clip-path:polygon(0 0,100% 0,100% 100%,50% calc(100% - 9px),0 100%);pointer-events:none}
+.motion-on .reading-ribbon{transition:left .35s ease}
+
+/* 前の本・次の本：表紙を立てかけた形 */
+.pager__item{display:grid!important;grid-template-columns:56px 1fr;column-gap:16px;align-items:center}
+.pager__item small{grid-column:2}
+.pager__item>span{grid-column:2}
+.pager__spine{grid-row:1/3;grid-column:1;width:56px;height:auto;box-shadow:2px 3px 6px #6a4b3933;transform:rotate(-6deg)}
+.pager__item--next{grid-template-columns:1fr 56px}
+.pager__item--next small,.pager__item--next>span{grid-column:1}
+.pager__item--next .pager__spine{grid-column:2;transform:rotate(6deg)}
+.motion-on .pager__spine{transition:transform .25s ease}
+.motion-on .pager__item:is(:hover,:focus-visible) .pager__spine{transform:rotate(0) translateY(-4px)}
+
+/* モチとシオのページ：絵を押すとはねる */
+.character__figure{display:block;margin:0 0 6px;padding:6px;border:0;background:none;cursor:pointer;line-height:0}
+.character__figure img{width:200px;height:auto}
+.character__figure--shio img{width:110px}
+.motion-on .character__figure.is-hopping img{animation:char-hop .6s ease}
+@keyframes char-hop{30%{transform:translateY(-22px) rotate(-4deg)}60%{transform:translateY(0)}75%{transform:translateY(-6px)}}
+
+/* さがす：結果を小さな棚に並べる */
+.shelf--wood .search-results{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:30px 26px;margin:14px 0 30px}
+.shelf--wood .search-hit,.shelf--wood .search-hit:hover{display:flex;flex-direction:column;gap:6px;padding:0;border:0;background:none}
+.shelf--wood .search-hit img{width:100%;height:auto;border-radius:0;padding-bottom:12px;background:linear-gradient(#d2ae86,#b88f65) bottom/100% 12px no-repeat;box-shadow:none}
+.motion-on .shelf--wood .search-hit img{transition:transform .25s ease}
+.motion-on .shelf--wood .search-hit:is(:hover,:focus-visible) img{transform:translateY(-8px)}
+.shelf--wood .search-hit small{font-size:14px}
+.shelf--wood .search-hit strong{font-size:16px;line-height:1.55}
+.shelf--wood .search-hit span span{display:none}
+
+@media(prefers-reduced-motion:reduce){.bookmark,.bookmark::before,.reading-ribbon,.pager__spine,.character__figure img,.search-hit img{animation:none!important;transition:none!important}}
+@media(max-width:760px){
+.shelf--big .books{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.shelf--wood .search-results{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}
+.bookmark{min-width:0;padding:12px 14px 24px;font-size:16px}
+.character__figure img{width:160px}
+}

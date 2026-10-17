@@ -83,13 +83,15 @@ def pager_html(b):
  older=BOOKS[i+1] if i+1<len(BOOKS) else None;newer=BOOKS[i-1] if i>0 else None
  def link(x,cls,label):
   if not x:return f'<span class="pager__item pager__item--empty {cls}"></span>'
-  return f'<a class="pager__item {cls}" href="{x["url"]}"><small>{label}</small><span>{H(x["title"])}</span></a>'
+  _USED.append(x)
+  return f'<a class="pager__item {cls}" href="{x["url"]}"><img class="pager__spine" src="/{thumb(x)}" alt="" width="480" height="640" loading="lazy"><small>{label}</small><span>{H(x["title"])}</span></a>'
  return '<nav class="pager" aria-label="前後の本">'+link(older,'pager__item--prev','← 前の本')+link(newer,'pager__item--next','次の本 →')+'</nav>'
 def transcript_html(b):
  parts=b['body'];out=''
  for i,t in enumerate(parts):
   kind='ニュースのお話' if i==0 else '読んで考えたこと' if i==len(parts)-1 else 'くわしく'
-  out+=f'<section class="transcript"><h3>その{KANJI[i]} — {kind}</h3><p>{H(t)}</p></section>'
+  if i==len(parts)-1 and i>0:out+=f'<section class="transcript transcript--shio"><h3>その{KANJI[i]} — {kind}</h3><div class="said"><img class="said__face" src="/assets/shio-face.webp" alt="シオ" width="64" height="64"><p>{H(t)}</p></div></section>'
+  else:out+=f'<section class="transcript"><h3>その{KANJI[i]} — {kind}</h3><p>{H(t)}</p></section>'
  return out
 def sources_html(b):
  s=b['source'];result=f'<li><span class="source-kind">本に記載された出典：{H(s["name"])}</span><a href="{H(s["url"])}" target="_blank" rel="noopener noreferrer">{H(s["title"])} <span class="sr-only">（外部サイト・新しいタブ）</span>↗</a>'
@@ -129,29 +131,42 @@ GUIDE=('<div class="shelf-guide" data-shelf-guide hidden><img class="shelf-guide
  '<p class="shelf-guide__line" id="shelf-message" role="status"><span data-guide-name>モチ</span>「<span data-guide-text>どれ読む？</span>」</p>'
  '<button type="button" class="shelf-pick" data-shelf-pick>シオのおすすめ</button>'
  '<img class="shelf-guide__peek" src="/assets/mochi-peek.webp" alt="" width="120" height="114"></div>')
+def wood(inner,big=False):
+ """木の棚（本が板の上に並ぶ）で包む"""
+ return f'<div class="shelf--wood{" shelf--big" if big else ""}">{inner}</div>'
+def say_html(who,text):
+ """モチかシオのひとこと（顔アイコンつき・動かない案内）"""
+ face='shio' if who=='シオ' else 'mochi'
+ return f'<div class="shelf-guide shelf-guide--static"><img class="shelf-guide__face" src="/assets/{face}-face.webp" alt="" width="64" height="64"><p class="shelf-guide__line"><span>{who}</span>「{text}」</p></div>'
+def newest_line(books,who='シオ'):
+ return say_html(who,f'いちばん新しいのは『{H(books[0]["title"])}』だよ') if books else ''
+def bookmarks(items,label):
+ """しおりの形のリンク（items: [(href, 名前, 補足)]）"""
+ return f'<nav class="bookmarks" aria-label="{label}">'+''.join(f'<a class="bookmark" href="{h}"><span>{t}</span>'+(f'<small>{n}</small>' if n else '')+'</a>' for h,t,n in items)+'</nav>'
 def cover_tile(b):
  _USED.append(b)
  return f'''<a class="cover-tile" href="{b['url']}"><span class="cover-tile__img"><img src="/{thumb(b)}" alt="" loading="lazy" width="480" height="640">{'<b class="book__region cover-tile__badge">WORLD</b>' if region(b)=='world' else ''}</span><span class="cover-tile__meta">{H(b['category'])} ・ {len(b['pages'])}ページ</span><span class="cover-tile__title">{H(b['title'])}</span></a>'''
 TODAY=[b for b in BOOKS if b['date']==BOOKS[0]['date']]
 RECENT=[b for b in BOOKS if b['date']!=BOOKS[0]['date']][:12]
-today_html=f'''<section class="today" id="today"><div class="section-head"><h2>{'きょうの本' if True else ''}</h2><span class="count"><time datetime="{BOOKS[0]['date']}">{jdate(BOOKS[0]['date'])}</time></span></div><div class="cover-grid">'''+''.join(cover_tile(b) for b in TODAY)+'</div></section>'
-shelf=f'''<section class="shelf" id="shelf"><div class="section-head"><h2>最近の本</h2></div>'''+dated_cards(RECENT,tiles=True)+f'''<div class="home-links"><a href="/books/">すべての本を見る（{len(BOOKS)}冊）→</a><a href="/weeks/{week_id(BOOKS[0]['date'])}/">今週のまとめ →</a><a href="/search/">本をさがす →</a><a href="/sources/">本で参考にした記事を見る →</a></div></section>'''
-topics_html='<div class="topic-grid">'+''.join(f'<a class="topic-card" href="/topics/{t['id']}/"><h3>{H(t['title'])}</h3><span>読む →</span></a>' for t in TOPICS)+'</div>'
+HOME_GUIDE=GUIDE.replace('data-shelf-guide hidden','data-shelf-guide data-greeting hidden')
+today_html=f'''<section class="today" id="today"><div class="section-head"><h2>きょうの本</h2><span class="count"><time datetime="{BOOKS[0]['date']}">{jdate(BOOKS[0]['date'])}</time></span></div>'''+HOME_GUIDE+wood(cards(TODAY),big=True)+'</section>'
+shelf=f'''<section class="shelf" id="shelf"><div class="section-head"><h2>最近の本</h2></div>'''+wood(dated_cards(RECENT))+f'''<div class="home-links"><a href="/books/">すべての本を見る（{len(BOOKS)}冊）→</a><a href="/weeks/{week_id(BOOKS[0]['date'])}/">今週のまとめ →</a><a href="/search/">本をさがす →</a><a href="/sources/">本で参考にした記事を見る →</a></div></section>'''
+topics_html=bookmarks([(f"/topics/{t['id']}/",H(t['title']),f"{n_books(t['id'])}冊") for t in TOPICS],'テーマ')
 shell('/',NAME,DESCRIPTION,hero+today_html+shelf+extras_html(BOOKS)+'<section class="home-section"><h2>テーマから探す</h2><p></p>'+topics_html+'</section><section class="about" id="about"><h2>このサイトについて</h2><div><p>毎日のニュースを、小さな本に。</p><div class="home-links"><a href="/about/">このサイトについて →</a><a href="/guide/">初めての方へ →</a><a href="/editorial/">制作・掲載方針 →</a></div></div></section>',kind='CollectionPage',extra=[item_list(TODAY+RECENT,'/')],main_class='')
 # Book archive and topic pages.
 shell('/books/','本棚','もちとしおのニュース本',intro('ALL BOOKS','本棚')+'<div class="topic-list">'+''.join(f'<a href="/topics/{t["id"]}/">{H(t["title"])}</a>' for t in TOPICS)+''.join(f'<a href="/{r}/">{t}</a>' for r,t,_,_ in REGIONS)+'</div>'+month_links+'<section class="shelf shelf--archive shelf--wood" id="shelf"><div class="section-head"><h2 class="sr-only">本棚</h2><span class="count" id="count">'+str(len(BOOKS))+'冊</span></div>'+TOOLBAR+GUIDE+dated_cards(BOOKS[:LIST_LIMIT])+('<p class="more-by-month">もっと前の本 → '+''.join(f'<a class="text-link" href="/books/{m}/">{month_label(m)}</a> ' for m in MONTHS)+'</p>' if len(BOOKS)>LIST_LIMIT else '')+'</section>',kind='CollectionPage',extra=[item_list(BOOKS[:LIST_LIMIT],'/books/')],crumb=[('ホーム','/'),('本棚','/books/')],wide=True)
 for m in MONTHS:
  selected=[b for b in BOOKS if b['date'][:7]==m];path=f'/books/{m}/'
- shell(path,month_label(m)+'の本',month_label(m)+'の、もちとしおのニュース本',intro('MONTHLY / '+str(len(selected))+' BOOKS',month_label(m)+'の本')+month_links+dated_cards(selected)+'<p><a class="text-link" href="/books/">すべての本を見る →</a></p>',kind='CollectionPage',extra=[item_list(selected,path)],crumb=[('ホーム','/'),('本棚','/books/'),(month_label(m),path)],wide=True)
+ shell(path,month_label(m)+'の本',month_label(m)+'の、もちとしおのニュース本',intro('MONTHLY / '+str(len(selected))+' BOOKS',month_label(m)+'の本')+month_links+newest_line(selected,'モチ')+wood(dated_cards(selected))+'<p><a class="text-link" href="/books/">すべての本を見る →</a></p>',kind='CollectionPage',extra=[item_list(selected,path)],crumb=[('ホーム','/'),('本棚','/books/'),(month_label(m),path)],wide=True)
 shell('/topics/','テーマから探す','もちとしおのニュース本 テーマ別',intro('TOPICS','テーマから探す')+topics_html,kind='CollectionPage',crumb=[('ホーム','/'),('テーマから探す','/topics/')],wide=True)
 for topic,title,lead,sections in [(t['id'],t['title'],t['lead'],t['sections']) for t in TOPICS]:
  allbooks=[b for b in BOOKS if b['topic']==topic];selected=allbooks[:LIST_LIMIT];path=f'/topics/{topic}/'
- body=intro('TOPIC / '+str(len(allbooks))+' BOOKS',H(title))+cards(selected)+'<p><a class="text-link" href="/topics/">ほかのテーマ →</a></p>'
+ body=intro('TOPIC / '+str(len(allbooks))+' BOOKS',H(title))+newest_line(selected)+wood(dated_cards(selected))+'<p><a class="text-link" href="/topics/">ほかのテーマ →</a></p>'
  shell(path,title,f'{title}の、もちとしおのニュース本',body,kind='CollectionPage',extra=[item_list(selected,path)],crumb=[('ホーム','/'),('テーマから探す','/topics/'),(title,path)],wide=True)
 # 日本のニュース・海外のニュースの一覧ページ
 for r,title,en,lead in REGIONS:
  allbooks=[b for b in BOOKS if region(b)==r];selected=allbooks[:LIST_LIMIT];path=f'/{r}/'
- body=intro(en+' / '+str(len(allbooks))+' BOOK'+('S' if len(allbooks)!=1 else ''),title,lead)+(cards(selected) if selected else '<p>まだありません。</p>')+'<p><a class="text-link" href="/books/">本棚へ →</a></p>'
+ body=intro(en+' / '+str(len(allbooks))+' BOOK'+('S' if len(allbooks)!=1 else ''),title,lead)+(newest_line(selected)+wood(dated_cards(selected)) if selected else say_html('モチ','まだないみたい'))+'<p><a class="text-link" href="/books/">本棚へ →</a></p>'
  shell(path,title,f'{title}の、もちとしおのニュース本',body,kind='CollectionPage',extra=[item_list(selected,path)],crumb=[('ホーム','/'),('本棚','/books/'),(title,path)],wide=True)
 # Individual books: real text, source links and citations accompany the images.
 for b in BOOKS:
@@ -159,7 +174,7 @@ for b in BOOKS:
  reading=''.join(f'<figure class="reading-page"><img src="/{f}" alt="{H(b["title"])} {n}ページ目" width="1367" height="1823" loading="lazy"><figcaption>{n} / {len(b['pages'])} ページ</figcaption></figure>' for n,f in enumerate(b['pages'],1))
  related=[x for x in BOOKS if x['id']!=b['id'] and x['topic']==b['topic']][:2]
  if not related:related=[x for x in BOOKS if x['id']!=b['id']][:2]
- body=intro(f"NEWS BOOK / {len(b['pages'])} PAGES",H(b['title']),H(b['summary']))+f'''<div class="meta"><span>本の日付：<time datetime="{b['date']}">{b['date'].replace('-','.')}</time></span><a href="{topicpath}">{b['category']}</a><a href="/{region(b)}/">{'海外のニュース' if region(b)=='world' else '日本のニュース'}</a><span>制作・掲載：<a href="/about/">{NAME} 運営者</a></span><span>ページ公開日：<time datetime="{b['webPublished']}">{b['webPublished'].replace('-','.')}</time></span></div>{tag_links(b)}<nav class="toc" aria-label="このページの目次"><strong>目次</strong><ol><li><a href="#read">本を読む</a></li><li><a href="#text">文章で読む</a></li><li><a href="#afterword">あとがき</a></li><li><a href="#sources">参考記事</a></li></ol></nav><section id="read" class="section-anchor"><h2>{len(b['pages'])}ページの本を読む</h2><div class="reading-frame" data-reader><div class="reading-pages" tabindex="0" role="region" aria-label="{H(b['title'])}のページ。左右キーでもページを移動できます">{reading}</div><div class="reading-controls" hidden><button type="button" data-prev aria-label="前のページ">← 前へ</button><span class="reading-counter" aria-live="polite">1 / {len(b['pages'])}</span><button type="button" data-next aria-label="次のページ">次へ →</button></div></div></section><section id="text" class="section-anchor"><h2>文章で読む</h2>{transcript_html(b)}</section><section id="afterword" class="section-anchor"><h2>あとがき</h2><div class="afterword"><blockquote>{H(b['afterword'])}</blockquote><div class="character-line">モチ「{H(b['mochi'])}」</div></div></section><section id="sources" class="section-anchor"><h2>参考にした記事・関連する発表</h2>{sources_html(b)}<p><a class="text-link" href="/editorial/">制作・掲載方針を見る →</a></p></section>{pager_html(b)}<div class="actions"><button class="action action--secondary" type="button" data-share hidden>この本のURLをコピー</button><a class="action action--secondary" href="/books/">本棚に戻る</a></div><p class="share-status" aria-live="polite"></p><section><h2>{'同じテーマの本' if b['topic']=='ai' else 'ほかの本'}</h2>{cards(related)}</section>'''
+ body=intro(f"NEWS BOOK / {len(b['pages'])} PAGES",H(b['title']),H(b['summary']))+f'''<div class="meta"><span>本の日付：<time datetime="{b['date']}">{b['date'].replace('-','.')}</time></span><a href="{topicpath}">{b['category']}</a><a href="/{region(b)}/">{'海外のニュース' if region(b)=='world' else '日本のニュース'}</a><span>制作・掲載：<a href="/about/">{NAME} 運営者</a></span><span>ページ公開日：<time datetime="{b['webPublished']}">{b['webPublished'].replace('-','.')}</time></span></div>{tag_links(b)}<nav class="toc" aria-label="このページの目次"><strong>目次</strong><ol><li><a href="#read">本を読む</a></li><li><a href="#text">文章で読む</a></li><li><a href="#afterword">あとがき</a></li><li><a href="#sources">参考記事</a></li></ol></nav><section id="read" class="section-anchor"><h2>{len(b['pages'])}ページの本を読む</h2><div class="reading-frame" data-reader><span class="reading-ribbon" aria-hidden="true"></span><div class="reading-pages" tabindex="0" role="region" aria-label="{H(b['title'])}のページ。左右キーでもページを移動できます">{reading}</div><div class="reading-controls" hidden><button type="button" data-prev aria-label="前のページ">← 前へ</button><span class="reading-counter" aria-live="polite">1 / {len(b['pages'])}</span><button type="button" data-next aria-label="次のページ">次へ →</button></div></div></section><section id="text" class="section-anchor"><h2>文章で読む</h2>{transcript_html(b)}</section><section id="afterword" class="section-anchor"><h2>あとがき</h2><div class="afterword"><blockquote>{H(b['afterword'])}</blockquote><div class="character-line"><img class="said__face" src="/assets/mochi-face.webp" alt="" width="64" height="64"><span>モチ「{H(b['mochi'])}」</span></div></div></section><section id="sources" class="section-anchor"><h2>参考にした記事・関連する発表</h2>{sources_html(b)}<p><a class="text-link" href="/editorial/">制作・掲載方針を見る →</a></p></section>{pager_html(b)}<div class="actions"><button class="action action--secondary" type="button" data-share hidden>この本のURLをコピー</button><a class="action action--secondary" href="/books/">本棚に戻る</a></div><p class="share-status" aria-live="polite"></p><section><h2>{'同じテーマの本' if b['topic']=='ai' else 'ほかの本'}</h2>{wood(cards(related))}</section>'''
  article={'@type':'BlogPosting','@id':url(path+'#article'),'headline':b['title'],'description':b['summary'],'url':url(path),'mainEntityOfPage':{'@id':url(path+'#webpage')},'image':[url('/'+og_image(b)),url('/'+b['pages'][0])],'datePublished':b['webPublished'],'dateModified':b.get('modified') or b['webPublished'],'author':{'@id':url('/#publisher')},'publisher':{'@id':url('/#publisher')},'inLanguage':'ja','articleSection':b['category'],'articleBody':'\n'.join(b['body']+[b['afterword']]),'citation':[b['source']['url']]+([b['primary']['url']] if b.get('primary') else [])}
  shell(path,b['title'],b['description'],body,extra=[article],crumb=[('ホーム','/'),('本棚','/books/'),(b['title'],path)],image='/'+og_image(b))
 # Site and editorial information grounded in the supplied work, without invented credentials.
@@ -180,14 +195,14 @@ for filename,title,kind in [('contact.html','お問い合わせ','ContactPage'),
  shell(path,title,desc,'<link rel="stylesheet" href="/forms.css">'+body,kind=kind,crumb=[('ホーム','/'),(title,path)],noindex=filename=='thanks.html',main_class='page')
  # Existing external links to .html continue to work; canonical points at the new directory URL.
  legacy=OUT/filename;legacy.write_text((OUT/path.strip('/')/'index.html').read_text())
-shell('/404.html','ページが見つかりません','ページが見つかりません',intro('PAGE NOT FOUND','この本は、見つかりませんでした。')+'<div class="actions"><a class="action" href="/books/">本棚へ →</a></div>',noindex=True)
+shell('/404.html','ページが見つかりません','ページが見つかりません',intro('PAGE NOT FOUND','この本は、見つかりませんでした。')+say_html('モチ','このページ、見つからないね')+'<div class="actions"><a class="action" href="/books/">本棚へ →</a></div>',noindex=True)
 # ---- 話題のタグページ（2冊以上の本があるタグ）
 for t in TAG_PAGES:
  allbooks=[b for b in BOOKS if t in book_tags(b)];selected=allbooks[:LIST_LIMIT];path=f'/tags/{t}/';name=TAGS[t]
- shell(path,f'#{name}',f'「{name}」の、もちとしおのニュース本',intro('TAG / '+str(len(allbooks))+' BOOKS',f'#{H(name)}')+dated_cards(selected,tiles=True)+'<p><a class="text-link" href="/tags/">ほかの話題 →</a></p>',kind='CollectionPage',extra=[item_list(selected,path)],crumb=[('ホーム','/'),('話題から探す','/tags/'),(name,path)],wide=True)
+ shell(path,f'#{name}',f'「{name}」の、もちとしおのニュース本',intro('TAG / '+str(len(allbooks))+' BOOKS',f'#{H(name)}')+newest_line(selected,'モチ')+wood(dated_cards(selected))+'<p><a class="text-link" href="/tags/">ほかの話題 →</a></p>',kind='CollectionPage',extra=[item_list(selected,path)],crumb=[('ホーム','/'),('話題から探す','/tags/'),(name,path)],wide=True)
 if TAG_PAGES:
- chips=''.join(f'<a class="tag-chip tag-chip--big" href="/tags/{t}/">#{H(TAGS[t])}<small>{TAG_COUNT[t]}冊</small></a>' for t in sorted(TAG_PAGES,key=lambda x:-TAG_COUNT[x]))
- shell('/tags/','話題から探す','もちとしおのニュース本 話題別',intro('TAGS','話題から探す')+f'<div class="tag-chips tag-chips--cloud">{chips}</div>',kind='CollectionPage',crumb=[('ホーム','/'),('話題から探す','/tags/')],wide=True)
+ chips=bookmarks([(f'/tags/{t}/',f'#{H(TAGS[t])}',f'{TAG_COUNT[t]}冊') for t in sorted(TAG_PAGES,key=lambda x:-TAG_COUNT[x])],'話題')
+ shell('/tags/','話題から探す','もちとしおのニュース本 話題別',intro('TAGS','話題から探す')+chips,kind='CollectionPage',crumb=[('ホーム','/'),('話題から探す','/tags/')],wide=True)
 # ---- 週ごとのまとめページ
 WEEKS=list(dict.fromkeys(week_id(b['date']) for b in BOOKS))
 for i,wid in enumerate(WEEKS):
@@ -199,17 +214,17 @@ for i,wid in enumerate(WEEKS):
  lead=f'{len(selected)}冊（日本{len(selected)-n_world}・海外{n_world}）'
  titles='<ul class="week-titles">'+''.join(f'<li><a href="{b["url"]}">{H(b["title"])}</a><span>{H(b["summary"])}</span></li>' for b in selected)+'</ul>'
  nav='<nav class="pager" aria-label="前後の週">'+(f'<a class="pager__item pager__item--prev" href="/weeks/{WEEKS[i+1]}/"><small>← 前の週</small><span>{week_label(WEEKS[i+1])}</span></a>' if i+1<len(WEEKS) else '<span class="pager__item pager__item--empty"></span>')+(f'<a class="pager__item pager__item--next" href="/weeks/{WEEKS[i-1]}/"><small>次の週 →</small><span>{week_label(WEEKS[i-1])}</span></a>' if i>0 else '<span class="pager__item pager__item--empty"></span>')+'</nav>'
- shell(path,f'{week_label(wid)}の本',f'{a.year}年{week_label(wid)}の、もちとしおのニュース本',intro('WEEKLY / '+str(len(selected))+' BOOKS',f'{week_label(wid)}の本',lead)+'<section><h2>この週の本</h2>'+titles+'</section><section><h2>表紙</h2>'+dated_cards(selected,tiles=True)+'</section>'+nav,kind='CollectionPage',extra=[item_list(selected,path)],crumb=[('ホーム','/'),('週のまとめ','/weeks/'),(week_label(wid),path)],wide=True)
+ shell(path,f'{week_label(wid)}の本',f'{a.year}年{week_label(wid)}の、もちとしおのニュース本',intro('WEEKLY / '+str(len(selected))+' BOOKS',f'{week_label(wid)}の本',lead)+say_html('モチ',f'この週は{len(selected)}冊できたよ')+'<section><h2>この週の本</h2>'+titles+'</section><section><h2>表紙</h2>'+wood(cards(selected))+'</section>'+nav,kind='CollectionPage',extra=[item_list(selected,path)],crumb=[('ホーム','/'),('週のまとめ','/weeks/'),(week_label(wid),path)],wide=True)
 shell('/weeks/','週のまとめ','もちとしおのニュース本 週ごと',intro('WEEKLY','週のまとめ')+'<ul class="week-list">'+''.join(f'<li><a href="/weeks/{w}/">{week_label(w)}<small>{sum(1 for b in BOOKS if week_id(b["date"])==w)}冊</small></a></li>' for w in WEEKS)+'</ul>',kind='CollectionPage',crumb=[('ホーム','/'),('週のまとめ','/weeks/')],wide=True)
 # ---- キャラクター紹介（公式サイト「もちとしお」の設定にもとづく）
 shell('/characters/','モチとシオ','しろいねこのモチと、ちいさいとりのシオ',intro('CHARACTERS','モチとシオ')+f'''<div class="prose"><img class="about-character" src="/assets/icon.webp" alt="赤いパーカーを着たしろいねこのモチと、ちいさいとりのシオ" width="1254" height="1254" loading="lazy">
-<section class="character"><h2>モチ</h2><dl class="character__facts"><dt>どんな子</dt><dd>しろいねこ</dd><dt>せいかく</dt><dd>めんどくさがり。なんでも明日に回しがち</dd><dt>ふくそう</dt><dd>お気に入りの赤いパーカー</dd><dt>くちぐせ</dt><dd>「あと5分だけ…」</dd></dl><p>本では、あとがきでひとこと。</p></section>
-<section class="character"><h2>シオ</h2><dl class="character__facts"><dt>どんな子</dt><dd>ちいさいとり</dd><dt>せいかく</dt><dd>冷静。いつもモチをしずかに見守っている</dd><dt>とくぎ</dt><dd>的確なひとこと</dd><dt>くちぐせ</dt><dd>「…」</dd></dl><p>本では、最後の「その」で、読んで思ったことを話す。</p></section>
+<section class="character"><button type="button" class="character__figure" data-hop aria-label="モチ（押すとはねます）"><img src="/assets/mochi-stand.webp" alt="" width="360" height="341"></button><h2>モチ</h2><dl class="character__facts"><dt>どんな子</dt><dd>しろいねこ</dd><dt>せいかく</dt><dd>めんどくさがり。なんでも明日に回しがち</dd><dt>ふくそう</dt><dd>お気に入りの赤いパーカー</dd><dt>くちぐせ</dt><dd>「あと5分だけ…」</dd></dl><p>本では、あとがきでひとこと。</p></section>
+<section class="character"><button type="button" class="character__figure character__figure--shio" data-hop aria-label="シオ（押すとはねます）"><img src="/assets/shio-stand.webp" alt="" width="200" height="243"></button><h2>シオ</h2><dl class="character__facts"><dt>どんな子</dt><dd>ちいさいとり</dd><dt>せいかく</dt><dd>冷静。いつもモチをしずかに見守っている</dd><dt>とくぎ</dt><dd>的確なひとこと</dd><dt>くちぐせ</dt><dd>「…」</dd></dl><p>本では、最後の「その」で、読んで思ったことを話す。</p></section>
 <h2>ふたりの関係</h2><p>モチとシオは、一緒に暮らす同居人のような関係です。モチが行動する側、シオがそれを静かに見守る側。けんかをするわけでも、いつも仲良しこよしというわけでもない、少し距離感のある関係です。</p>
 <div class="home-links"><a href="/books/">ニュースの本を読む →</a><a href="/about/">このサイトについて →</a></div></div>''',crumb=[('ホーム','/'),('モチとシオ','/characters/')])
 # ---- サイト内検索（全部の本が対象。ページは検索結果用なので noindex）
 SEARCH=[{'t':b['title'],'u':b['url'],'d':b['date'],'c':b['category'],'r':region(b),'s':b['summary'],'g':[TAGS[t] for t in book_tags(b)],'n':b['source']['name'],'i':'/'+thumb(b)} for b in BOOKS]
-shell('/search/','本をさがす','もちとしおのニュース本をさがす',intro('SEARCH','本をさがす')+'''<form class="site-search" role="search" action="/search/" method="get"><label class="search"><span aria-hidden="true">⌕</span><input type="search" name="q" id="site-search-q" aria-label="さがす言葉" placeholder="例：AI、アップル、物価"></label></form><p class="search-status" id="search-status" aria-live="polite"></p><div class="search-results" id="search-results"></div><noscript><p><a class="text-link" href="/books/">本棚へ →</a></p></noscript><script src="/search.js" defer></script>''',crumb=[('ホーム','/'),('本をさがす','/search/')],noindex=True)
+shell('/search/','本をさがす','もちとしおのニュース本をさがす',intro('SEARCH','本をさがす')+'''<form class="site-search" role="search" action="/search/" method="get"><label class="search"><span aria-hidden="true">⌕</span><input type="search" name="q" id="site-search-q" aria-label="さがす言葉" placeholder="例：AI、アップル、物価"></label></form><div class="shelf-guide shelf-guide--static" data-search-guide><img class="shelf-guide__face" src="/assets/shio-face.webp" alt="" width="64" height="64" data-guide-face><p class="shelf-guide__line" role="status"><span data-guide-name>シオ</span>「<span id="search-status">なにを探す？</span>」</p></div><div class="shelf--wood"><div class="search-results" id="search-results"></div></div><noscript><p><a class="text-link" href="/books/">本棚へ →</a></p></noscript><script src="/search.js" defer></script>''',crumb=[('ホーム','/'),('本をさがす','/search/')],noindex=True)
 (OUT/'search-index.json').write_text(json.dumps(SEARCH,ensure_ascii=False,separators=(',',':')))
 # Machine-readable discovery documents contain only canonical, indexable content pages.
 ns='http://www.sitemaps.org/schemas/sitemap/0.9';ET.register_namespace('',ns)
