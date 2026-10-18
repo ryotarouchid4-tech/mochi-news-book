@@ -1,5 +1,45 @@
 [
   {
+    "id": 37,
+    "title": "折りたたみiPhone届くのは来年になるかも",
+    "date": "2026-10-18",
+    "category": "電子機器",
+    "pages": [
+      "assets/book-37-1.webp",
+      "assets/book-37-2.webp",
+      "assets/book-37-3.webp",
+      "assets/book-37-4.webp",
+      "assets/book-37-5.webp"
+    ],
+    "slug": "2026-10-18-1700",
+    "description": "アップル初の折りたたみスマホ「iPhone Duo」の予約と、アメリカでの届く時期を、2026年10月18日の本で紹介。注文が多く、来年になる人も。",
+    "summary": "アップル初の折りたたみスマホ「iPhone Duo」の予約が始まり、アメリカでは届くのが2027年1月になる場合もあることについて。",
+    "body": [
+      "アップル初の折りたたみスマホ「iPhone Duo」の予約が始まったんだって。アップルは、注文の多さを「ものすごい」と話しているそうだよ。アメリカでは、今から注文すると届くのが2027年1月になる場合もあるみたい。",
+      "届く日は、人によってばらばらみたい。早い人は、アメリカ時間の10月23日にアップルのお店で受け取れるそう。11月や12月になる人もいて、注文が遅かった人は1月の予定になっているんだって。お店に在庫が置かれるかは、まだはっきりしていないらしいよ。",
+      "初めての折りたたみだから、早くさわってみたい人が多いんだろうな。年末のプレゼントにしようと思ってた人は、ちょっと困りそう。届くまで何か月も待つのって、どんな気持ちなんだろう。"
+    ],
+    "afterword": "人気すぎて、待つ時間も長くなってる",
+    "mochi": "ぼくは布団を折りたたむ",
+    "source": {
+      "name": "Engadget",
+      "title": "iPhone Duo shipping estimates have already been pushed back to 2027",
+      "url": "https://www.engadget.com/2289629/iphone-duo-shipping-estimates-have-already-been-pushed-back-to-2027/",
+      "date": "2026-10-17",
+      "status": "2026年10月18日に記事名と本文（英語）を確認。"
+    },
+    "topic": "electronics",
+    "url": "/books/2026-10-18-1700/",
+    "webPublished": "2026-10-18",
+    "tags": [
+      "apple",
+      "smartphone"
+    ],
+    "time": "1700",
+    "thumb": "assets/book-37-thumb.webp",
+    "ogImage": "assets/book-37-og.jpg"
+  },
+  {
     "id": 36,
     "title": "声で話すAI「Grok Voice 3.0」1秒かからずに返事",
     "date": "2026-10-18",
