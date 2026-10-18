@@ -170,5 +170,9 @@
   {
     "id": "steam",
     "name": "Steam"
+  },
+  {
+    "id": "psychology",
+    "name": "心理学"
   }
 ]
