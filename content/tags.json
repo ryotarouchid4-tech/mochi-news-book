@@ -190,5 +190,13 @@
   {
     "id": "anthropic",
     "name": "アンソロピック"
+  },
+  {
+    "id": "jaxa",
+    "name": "JAXA"
+  },
+  {
+    "id": "space",
+    "name": "宇宙"
   }
 ]
