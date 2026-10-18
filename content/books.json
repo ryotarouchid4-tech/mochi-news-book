@@ -1,5 +1,48 @@
 [
   {
+    "id": 42,
+    "title": "カードゲーム「Inscryption」スマホ版を作っているところ",
+    "date": "2026-10-19",
+    "category": "ゲーム",
+    "pages": [
+      "assets/book-42-1.webp",
+      "assets/book-42-2.webp",
+      "assets/book-42-3.webp",
+      "assets/book-42-4.webp",
+      "assets/book-42-5.webp",
+      "assets/book-42-6.webp"
+    ],
+    "slug": "2026-10-19-0900",
+    "description": "カードゲーム「Inscryption」のスマホ版の開発を、2026年10月19日の本で紹介。5周年の配信で発表された内容や、チームの次の作品について読めます。",
+    "summary": "ホラーなカードゲーム「Inscryption」のスマホ版が作られていることについて。",
+    "body": [
+      "ホラーなカードゲーム「Inscryption」のスマホ版が、いま作られているんだって。ゲームの発売5周年をお祝いする公式の配信で発表されたよ。作った人のダニエル・マリンズさんも出ていたみたい。",
+      "スマホで遊べるようになるまでは、もう少しかかるそうだよ。いつ出るかは、まだ決まっていないんだ。ちゃんとした形で届けたいから、時間をかけて作っているらしい。くわしい話は、これから何か月かのうちに出てくる予定なんだって。",
+      "ゲームに新しい追加の中身を入れる予定はないみたい。作っているチームは「これで完成している」と考えているそうだよ。人気だからといって、むりに中身を足すことはしたくないんだって。いまチームが一番力を入れているのは、次の作品「Pony Island 2」。こちらは2027年4月27日に、ゲーム配信サービスの「Steam」で出る予定だよ。",
+      "5年たっても、お祝いの配信をするくらい好かれてるんだね。スマホになったら、ちょっとした時間にも遊べそう。追加の中身を入れないって決めてるのも、なんだか潔いなと思った。急がずに作るなら、出る日をのんびり待とうかな。"
+    ],
+    "afterword": "あのカードゲームが、スマホでも遊べる日がくる",
+    "mochi": "こわいのは昼にやる",
+    "source": {
+      "name": "Engadget",
+      "title": "After five years, Inscryption is finally coming to mobile",
+      "url": "https://www.engadget.com/2289805/after-five-years-inscryption-is-finally-coming-to-mobile/",
+      "date": "2026-10-18",
+      "status": "2026年10月19日に記事名と本文（英語）を確認。"
+    },
+    "topic": "game",
+    "url": "/books/2026-10-19-0900/",
+    "webPublished": "2026-10-19",
+    "tags": [
+      "game",
+      "smartphone",
+      "steam"
+    ],
+    "time": "0900",
+    "thumb": "assets/book-42-thumb.webp",
+    "ogImage": "assets/book-42-og.jpg"
+  },
+  {
     "id": 41,
     "title": "火星の衛星の砂を持ち帰る探査機、もうすぐ出発",
     "date": "2026-10-19",
