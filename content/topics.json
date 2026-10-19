@@ -80,5 +80,13 @@
     "card": "",
     "lead": "",
     "sections": []
+  },
+  {
+    "id": "work",
+    "title": "仕事・はたらき方",
+    "en": "WORK",
+    "card": "",
+    "lead": "",
+    "sections": []
   }
 ]
