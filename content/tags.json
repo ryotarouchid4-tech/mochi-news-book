@@ -210,5 +210,9 @@
   {
     "id": "fashion",
     "name": "ファッション"
+  },
+  {
+    "id": "rakuten",
+    "name": "楽天"
   }
 ]
