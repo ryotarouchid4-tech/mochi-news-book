@@ -198,5 +198,17 @@
   {
     "id": "space",
     "name": "宇宙"
+  },
+  {
+    "id": "robot",
+    "name": "ロボット"
+  },
+  {
+    "id": "zozo",
+    "name": "ZOZO"
+  },
+  {
+    "id": "fashion",
+    "name": "ファッション"
   }
 ]
