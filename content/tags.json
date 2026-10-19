@@ -214,5 +214,9 @@
   {
     "id": "rakuten",
     "name": "楽天"
+  },
+  {
+    "id": "wedding",
+    "name": "結婚式"
   }
 ]
