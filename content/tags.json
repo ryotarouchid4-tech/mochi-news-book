@@ -218,5 +218,9 @@
   {
     "id": "wedding",
     "name": "結婚式"
+  },
+  {
+    "id": "my-number-card",
+    "name": "マイナンバーカード"
   }
 ]
