@@ -242,5 +242,9 @@
   {
     "id": "ebook",
     "name": "電子書籍"
+  },
+  {
+    "id": "restaurant",
+    "name": "レストラン"
   }
 ]
