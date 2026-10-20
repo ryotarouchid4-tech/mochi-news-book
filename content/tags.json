@@ -230,5 +230,9 @@
   {
     "id": "cashless",
     "name": "キャッシュレス"
+  },
+  {
+    "id": "nintendo",
+    "name": "任天堂"
   }
 ]
