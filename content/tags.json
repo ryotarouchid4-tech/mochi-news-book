@@ -234,5 +234,13 @@
   {
     "id": "nintendo",
     "name": "任天堂"
+  },
+  {
+    "id": "manga",
+    "name": "漫画"
+  },
+  {
+    "id": "ebook",
+    "name": "電子書籍"
   }
 ]
