@@ -266,5 +266,9 @@
   {
     "id": "farming",
     "name": "農業"
+  },
+  {
+    "id": "open-source",
+    "name": "オープンソース"
   }
 ]
