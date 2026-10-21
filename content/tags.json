@@ -258,5 +258,13 @@
   {
     "id": "fitness",
     "name": "フィットネス"
+  },
+  {
+    "id": "plants",
+    "name": "植物"
+  },
+  {
+    "id": "farming",
+    "name": "農業"
   }
 ]
