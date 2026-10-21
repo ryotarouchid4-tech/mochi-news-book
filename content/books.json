@@ -1,5 +1,50 @@
 [
   {
+    "id": 65,
+    "title": "ウォルマート、AIが買い物できるしくみ",
+    "date": "2026-10-22",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-65-1.webp",
+      "assets/book-65-2.webp",
+      "assets/book-65-3.webp",
+      "assets/book-65-4.webp",
+      "assets/book-65-5.webp",
+      "assets/book-65-6.webp",
+      "assets/book-65-7.webp"
+    ],
+    "slug": "2026-10-22-0900",
+    "description": "ウォルマートがAIエージェントの買い物を受け入れるしくみを、2026年10月22日の本で紹介。AI専用のプロフィールやルールについて読めます。",
+    "summary": "アメリカのウォルマートが、AIに買い物をまかせられるしくみを始めたことについて。",
+    "body": [
+      "アメリカの大きなスーパー、ウォルマートが、AIに買い物をまかせられるしくみを始めたんだって。AIが商品をさがして、注文までしてくれる。アマゾンはAIの買い物を止めはじめているから、反対の動きになるね。",
+      "まず、AIがウォルマートとつながるための入り口「Agent Gateway」ができたよ。許可されたAIは、ここから店の在庫をさがして買い物できる。いつものブランドを選んでくれるけど、名前や買った記録はAIにわたさないしくみらしい。",
+      "来月からは、アカウントの中にAI専用のプロフィールができるんだって。AIが買ったものは、自分の買い物とは分けて表示される。毎回OKを出すか、決めた金額まではまかせるか、選べるそうだ。有料会員じゃなくても使えるよ。",
+      "AIが守るルールもある。頼まれたこと以外はしない、支払いの情報は見ない、必要なデータしか使わない。守らないAIは使えなくなるらしい。もしAIが思っていないものを買っても、ふつうの返品の手続きができるんだって。",
+      "知らないうちにAIが変なものを買ってたら、ちょっとこわいよね。でも、金額の上限を決められて、返品もできるなら、試す人もいそう。お店によってAIを歓迎したり止めたり、考え方がわかれてるのがおもしろいな。"
+    ],
+    "afterword": "AIのお使い、お店によって考えがちがう",
+    "mochi": "おやつ買ってきて",
+    "source": {
+      "name": "TechCrunch",
+      "title": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
+      "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+      "date": "2026-10-21",
+      "status": "2026年10月22日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-10-22-0900/",
+    "webPublished": "2026-10-22",
+    "tags": [
+      "amazon",
+      "walmart",
+      "online-shopping"
+    ],
+    "time": "0900",
+    "thumb": "assets/book-65-thumb.webp",
+    "ogImage": "assets/book-65-og.jpg"
+  },
+  {
     "id": 64,
     "title": "自動運転トラック、一般道を通って拠点に発着",
     "date": "2026-10-22",

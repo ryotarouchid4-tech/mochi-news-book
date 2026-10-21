@@ -278,5 +278,13 @@
   {
     "id": "ev",
     "name": "電気自動車"
+  },
+  {
+    "id": "walmart",
+    "name": "ウォルマート"
+  },
+  {
+    "id": "online-shopping",
+    "name": "ネット通販"
   }
 ]
