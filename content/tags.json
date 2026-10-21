@@ -274,5 +274,9 @@
   {
     "id": "water-supply",
     "name": "水道"
+  },
+  {
+    "id": "ev",
+    "name": "電気自動車"
   }
 ]
