@@ -318,5 +318,13 @@
   {
     "id": "travel",
     "name": "旅行"
+  },
+  {
+    "id": "mizuno",
+    "name": "ミズノ"
+  },
+  {
+    "id": "sports",
+    "name": "スポーツ"
   }
 ]
