@@ -326,5 +326,9 @@
   {
     "id": "sports",
     "name": "スポーツ"
+  },
+  {
+    "id": "line",
+    "name": "LINE"
   }
 ]
