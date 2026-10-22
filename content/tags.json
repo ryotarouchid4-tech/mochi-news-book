@@ -286,5 +286,13 @@
   {
     "id": "online-shopping",
     "name": "ネット通販"
+  },
+  {
+    "id": "clock",
+    "name": "時計"
+  },
+  {
+    "id": "seiko",
+    "name": "セイコー"
   }
 ]
