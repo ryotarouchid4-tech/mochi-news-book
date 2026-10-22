@@ -294,5 +294,9 @@
   {
     "id": "seiko",
     "name": "セイコー"
+  },
+  {
+    "id": "ibm",
+    "name": "IBM"
   }
 ]
