@@ -302,5 +302,13 @@
   {
     "id": "pokemon",
     "name": "ポケモン"
+  },
+  {
+    "id": "kokuyo",
+    "name": "コクヨ"
+  },
+  {
+    "id": "stationery",
+    "name": "文房具"
   }
 ]

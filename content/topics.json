@@ -88,5 +88,13 @@
     "card": "",
     "lead": "",
     "sections": []
+  },
+  {
+    "id": "goods",
+    "title": "文房具・雑貨",
+    "en": "STATIONERY & GOODS",
+    "card": "",
+    "lead": "",
+    "sections": []
   }
 ]
