@@ -310,5 +310,13 @@
   {
     "id": "stationery",
     "name": "文房具"
+  },
+  {
+    "id": "airbnb",
+    "name": "エアビーアンドビー"
+  },
+  {
+    "id": "travel",
+    "name": "旅行"
   }
 ]
