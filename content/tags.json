@@ -338,5 +338,9 @@
   {
     "id": "pc",
     "name": "パソコン"
+  },
+  {
+    "id": "canva",
+    "name": "Canva"
   }
 ]
