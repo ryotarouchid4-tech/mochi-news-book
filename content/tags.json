@@ -346,5 +346,9 @@
   {
     "id": "spotify",
     "name": "スポティファイ"
+  },
+  {
+    "id": "usb",
+    "name": "USB"
   }
 ]

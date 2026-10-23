@@ -1,5 +1,52 @@
 [
   {
+    "id": 81,
+    "title": "Surfaceの新しいノートPCに磁石でくっつくUSB-C",
+    "date": "2026-10-23",
+    "category": "電子機器",
+    "pages": [
+      "assets/book-81-1.webp",
+      "assets/book-81-2.webp",
+      "assets/book-81-3.webp",
+      "assets/book-81-4.webp",
+      "assets/book-81-5.webp",
+      "assets/book-81-6.webp",
+      "assets/book-81-7.webp",
+      "assets/book-81-8.webp"
+    ],
+    "slug": "2026-10-23-2300",
+    "description": "Surface Laptop Ultraの磁石でくっつくUSB-C「Magnetic Connect」を、2026年10月23日の本で紹介。専用ケーブルの形やサイズのちがいが読めます。",
+    "summary": "マイクロソフトのSurface Laptop Ultraについた、磁石を使うUSB Type-Cの差し込み口について。",
+    "body": [
+      "マイクロソフトの新しいノートPC「Surface Laptop Ultra」に、磁石を使うUSB Type-Cの差し込み口がついたんだって。名前は「Magnetic Connect」。ケーブルをすっと抜き差しできるのが売りみたい。",
+      "磁石でくっつくのは、いまは専用のケーブルだけ。ふつうのUSB Type-Cケーブルも、この差し込み口に挿して使えるよ。専用ケーブルの先は棒みたいな形で、両側に磁石が入ってるんだ。",
+      "LTT Labsというメディアが、CTスキャンで中を調べたんだって。専用ケーブルの先は、根元が1mmくらい広がってる。だから、ふつうのUSB Type-Cの差し込み口には入らないみたい。差し込む部分の長さも、ふつうの6.65mmより短くて、4.9mmくらいなんだ。",
+      "ケーブルの先の横が少し欠けた形になってるのも見つかったよ。ななめに引っこ抜いたときに、出っぱりが折れないようにするためじゃないか、と考えられてるんだって。",
+      "磁石の部分が多いぶん、差し込み口はふつうのUSB Type-Cの2倍以上の広さがいるそう。アップルのMagSafeとくらべても、少し大きめ。LTT Labsは、次の「Magnetic Connect 2」ではもっと小さくなってほしい、と話してるよ。",
+      "ケーブルに足を引っかけても、するっと外れてくれたら助かるね。でも、専用ケーブルがほかのPCに挿せないのはちょっと不便かな。家にあるケーブルがそのまま使えるのは、ありがたいところ。"
+    ],
+    "afterword": "抜き差しがラクになる、新しい形のUSB-C",
+    "mochi": "ぼくも磁石で布団に…",
+    "source": {
+      "name": "GIGAZINE",
+      "title": "MicrosoftのSurface Laptop Ultraに搭載された「マグネット式USB Type-Cコネクタ」とは一体何なのか？",
+      "url": "https://gigazine.net/news/20261023-usb-c-magnetic-connect-microsoft/",
+      "date": "2026-10-23",
+      "status": "2026年10月23日に記事名と本文を確認。"
+    },
+    "topic": "electronics",
+    "url": "/books/2026-10-23-2300/",
+    "webPublished": "2026-10-23",
+    "tags": [
+      "microsoft",
+      "pc",
+      "usb"
+    ],
+    "time": "2300",
+    "thumb": "assets/book-81-thumb.webp",
+    "ogImage": "assets/book-81-og.jpg"
+  },
+  {
     "id": 80,
     "title": "スポティファイ、家族プランの同居チェックをきびしく",
     "date": "2026-10-23",
