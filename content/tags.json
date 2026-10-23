@@ -350,5 +350,9 @@
   {
     "id": "usb",
     "name": "USB"
+  },
+  {
+    "id": "nvidia",
+    "name": "エヌビディア"
   }
 ]

@@ -1,5 +1,48 @@
 [
   {
+    "id": 82,
+    "title": "アヒルみたいなロボット予約が2万台をこえた",
+    "date": "2026-10-24",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-82-1.webp",
+      "assets/book-82-2.webp",
+      "assets/book-82-3.webp",
+      "assets/book-82-4.webp",
+      "assets/book-82-5.webp",
+      "assets/book-82-6.webp"
+    ],
+    "slug": "2026-10-24-0900",
+    "description": "アヒルみたいに歩く小さなロボットMicroduckを、2026年10月24日の本で紹介。声で動く芸や、作った会社のことが読めます。",
+    "summary": "エヌビディアの発表会で話題になった小さなロボットMicroduckの予約が2万台をこえたことについて。",
+    "body": [
+      "ドイツのベルリンで開かれたエヌビディアの発表会で、社長のジェンスン・フアンさんが、よちよち歩く小さなロボットと遊んだんだって。ロボットの名前は「Microduck」。その動画が広まった次の日には、予約が2万台をこえたそうだよ。",
+      "Microduckは、声をかけると動くロボットなんだ。足をドンドン鳴らしたり、ピコピコと電子音を出したり。おすわりしたり、ころんと倒れて寝たふりをしたり、でんぐり返しもするらしい。クリスマスまでに届く予定で、子どもだけじゃなく大人も買いそう、という声も出ているよ。",
+      "作ったのはPollen Roboticsという会社。2025年にHugging Faceの仲間になって、そのHugging Faceも9月にエヌビディアに買われたんだって。歩く・すわる・立つといった動きは、コンピューターの中の練習で覚えさせて、最初から入っているそう。持ち主が新しい芸を教えて、ほかの人と分け合うこともできるみたい。",
+      "大きな会社の社長が、小さなロボットと遊んでる動画で、一気に売れちゃうんだね。寝たふりをするロボットって、ちょっと見てみたい。芸を教えられるなら、家ごとにちがう子になっていくのかな。"
+    ],
+    "afterword": "遊ぶ姿ひとつで、ロボットが人気者に",
+    "mochi": "寝たふりなら得意",
+    "source": {
+      "name": "TechCrunch",
+      "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
+      "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+      "date": "2026-10-23",
+      "status": "2026年10月24日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-10-24-0900/",
+    "webPublished": "2026-10-24",
+    "tags": [
+      "robot",
+      "open-source",
+      "nvidia"
+    ],
+    "time": "0900",
+    "thumb": "assets/book-82-thumb.webp",
+    "ogImage": "assets/book-82-og.jpg"
+  },
+  {
     "id": 81,
     "title": "Surfaceの新しいノートPCに磁石でくっつくUSB-C",
     "date": "2026-10-23",
