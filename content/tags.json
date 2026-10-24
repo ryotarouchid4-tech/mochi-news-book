@@ -358,5 +358,13 @@
   {
     "id": "skateboard",
     "name": "スケートボード"
+  },
+  {
+    "id": "mitsubishi-pencil",
+    "name": "三菱鉛筆"
+  },
+  {
+    "id": "handwriting",
+    "name": "手書き"
   }
 ]
