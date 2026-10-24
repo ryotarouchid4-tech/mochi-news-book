@@ -354,5 +354,9 @@
   {
     "id": "nvidia",
     "name": "エヌビディア"
+  },
+  {
+    "id": "skateboard",
+    "name": "スケートボード"
   }
 ]
