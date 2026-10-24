@@ -1,5 +1,50 @@
 [
   {
+    "id": 87,
+    "title": "Apple MusicのエラーページにiPodがかくれていた",
+    "date": "2026-10-24",
+    "category": "文化・お祭り",
+    "pages": [
+      "assets/book-87-1.webp",
+      "assets/book-87-2.webp",
+      "assets/book-87-3.webp",
+      "assets/book-87-4.webp",
+      "assets/book-87-5.webp",
+      "assets/book-87-6.webp",
+      "assets/book-87-7.webp"
+    ],
+    "slug": "2026-10-24-2100",
+    "description": "Apple Musicのエラーページにかくれた、さわって遊べるiPodを、2026年10月24日の本で紹介。1,029曲やブロックくずしゲームのことも読めます。",
+    "summary": "アップルがiPod発表25周年を記念して、Apple MusicのエラーページにさわれるiPodをかくしたことについて。",
+    "body": [
+      "アップルが、初代iPodの発表から25年になるのを記念して、Apple Musicのサイトにかくし機能を入れたんだって。わざと存在しないページを開くと、「ページが見つかりません」の下に、さわって動かせるiPodが出てくるらしいよ。",
+      "画面のiPodには、プレイリストやアーティスト、曲、設定のメニューがあるよ。ホイールやボタンも、ちゃんとさわって動かせるんだって。入っている曲は1,029曲。2000年代はじめのポップやロックが多くて、1曲90秒まで聞けるみたい。",
+      "記事を書いた人は、スマホやタブレットで開くのがおすすめと書いてる。パソコンだと、うまく動かなかったそうだよ。Apple Musicに入っていなくても使えるみたい。ただ、ボタンの反応は少しあやしいところもあったらしい。",
+      "それから、「Brick」というブロックくずしのゲームもできるんだって。これは初代iPodに、本当にかくれていたゲーム。「About」の画面で、まん中のボタンを数秒おしつづけると出てくるらしいよ。",
+      "エラーのページって、ふつうはがっかりする場所だよね。そこにiPodを置いておくなんて、しゃれたことするなぁ。ほとんどの人は、気づかないまま通りすぎそう。25年前の機械を、いまの画面でさわれるのはふしぎな感じがする。"
+    ],
+    "afterword": "まちがえて開いたページに、思い出がかくれてた",
+    "mochi": "ぼくは90秒で寝る",
+    "source": {
+      "name": "Engadget",
+      "title": "Apple Music has a fun Easter egg for the iPod's 25th anniversary",
+      "url": "https://www.engadget.com/2295392/apple-music-has-a-fun-easter-egg-for-the-ipods-25th-anniversary/",
+      "date": "2026-10-23",
+      "status": "2026年10月24日に記事名と本文（英語）を確認。"
+    },
+    "topic": "culture",
+    "url": "/books/2026-10-24-2100/",
+    "webPublished": "2026-10-24",
+    "tags": [
+      "apple",
+      "music",
+      "game"
+    ],
+    "time": "2100",
+    "thumb": "assets/book-87-thumb.webp",
+    "ogImage": "assets/book-87-og.jpg"
+  },
+  {
     "id": 86,
     "title": "福岡・天神に大きな屋内スケボー場ができる",
     "date": "2026-10-24",
