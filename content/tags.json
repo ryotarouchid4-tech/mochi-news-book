@@ -374,5 +374,9 @@
   {
     "id": "history",
     "name": "歴史"
+  },
+  {
+    "id": "donation",
+    "name": "寄付"
   }
 ]
