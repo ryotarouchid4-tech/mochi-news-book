@@ -366,5 +366,13 @@
   {
     "id": "handwriting",
     "name": "手書き"
+  },
+  {
+    "id": "museum",
+    "name": "博物館"
+  },
+  {
+    "id": "history",
+    "name": "歴史"
   }
 ]
