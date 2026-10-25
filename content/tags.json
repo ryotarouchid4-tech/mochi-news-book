@@ -378,5 +378,9 @@
   {
     "id": "donation",
     "name": "寄付"
+  },
+  {
+    "id": "rest",
+    "name": "休憩"
   }
 ]
