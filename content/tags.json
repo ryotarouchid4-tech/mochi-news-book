@@ -382,5 +382,9 @@
   {
     "id": "rest",
     "name": "休憩"
+  },
+  {
+    "id": "flower-design",
+    "name": "花のデザイン"
   }
 ]
