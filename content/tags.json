@@ -394,5 +394,9 @@
   {
     "id": "bread",
     "name": "パン"
+  },
+  {
+    "id": "bluetooth",
+    "name": "Bluetooth"
   }
 ]
