@@ -398,5 +398,9 @@
   {
     "id": "bluetooth",
     "name": "Bluetooth"
+  },
+  {
+    "id": "repair",
+    "name": "修理"
   }
 ]
