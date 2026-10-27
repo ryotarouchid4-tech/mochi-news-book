@@ -418,5 +418,13 @@
   {
     "id": "minecraft",
     "name": "マインクラフト"
+  },
+  {
+    "id": "drone",
+    "name": "ドローン"
+  },
+  {
+    "id": "kddi",
+    "name": "KDDI"
   }
 ]
