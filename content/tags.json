@@ -414,5 +414,9 @@
   {
     "id": "words",
     "name": "言葉"
+  },
+  {
+    "id": "minecraft",
+    "name": "マインクラフト"
   }
 ]
