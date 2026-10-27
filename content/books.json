@@ -1,5 +1,51 @@
 [
   {
+    "id": 109,
+    "title": "英語の「今年の言葉」に「maxxing」が選ばれる",
+    "date": "2026-10-27",
+    "category": "文化・お祭り",
+    "pages": [
+      "assets/book-109-1.webp",
+      "assets/book-109-2.webp",
+      "assets/book-109-3.webp",
+      "assets/book-109-4.webp",
+      "assets/book-109-5.webp",
+      "assets/book-109-6.webp",
+      "assets/book-109-7.webp",
+      "assets/book-109-8.webp"
+    ],
+    "slug": "2026-10-27-1700",
+    "description": "Dictionary.comの2026年「今年の言葉」maxxingを、2026年10月27日の本で紹介。SNSでの広がり方や、いろいろな使われ方が読めます。",
+    "summary": "英語の辞書サイトDictionary.comが、2026年の「今年の言葉」に「maxxing」を選んだことについて。",
+    "body": [
+      "英語の辞書サイト「Dictionary.com」が、2026年の「今年の言葉」を発表したんだって。選ばれたのは「maxxing」。なんでもとことんやって、いちばん多く手に入れようとする。そんな空気をあらわす言葉として選ばれたそうだよ。",
+      "辞書サイトで言葉を調べている担当者によると、SNSで「maxxing」が使われた回数は、2026年の最初の7か月で700%近くふえたそう。見た目をよくすることを指す「looksmaxxing」は、1,000%以上ふえたらしい。1月から9月までに、2025年の1年分の12倍も使われたんだって。",
+      "「とことんやる」という言い方は、1990年代のはやりにもつながっているみたい。今の形で広まったのは、2010年代のネットの中から。はじめは一部の男性たちのネットの集まりで使われていたけど、今はもっと広く使われているよ。担当者は、xを2つ重ねたことで、前からある言葉とはちがう新しい言葉になったと話しているんだ。",
+      "前にいろんな言葉をつけて使えるのも、この言葉の特徴。たんぱく質をたくさんとる「proteinmaxxing」や、AIで仕事をどんどん進める「tokenmaxxing」があるよ。その反対に、がんばりすぎの空気にのらないで、「sleepmaxxing」や「cozymaxxing」と、寝ることやくつろぐことに使う人もいるそう。",
+      "ほかの候補には、「affordability」「data centers」「unc」があったんだって。affordabilityは、手の届く値段かどうかという意味。データセンターは、電気や水をたくさん使うことが話題になって、よく聞く言葉になったみたい。uncは、SNSで流行に遅れた年上の人を指すときに使われているよ。",
+      "「とことんやる」がはやる一方で、「とことん休む」にも同じ言葉を使うのがおもしろい。がんばるときも、ゆるむときも、つい「いちばん」を目指したくなるのかな。担当者のお気に入りは、ゆっくり料理をして人とつながる「nonnamaxxing」なんだって。それなら、ちょっとやってみたいかも。"
+    ],
+    "afterword": "休むのも、とことんやりたい時代みたい",
+    "mochi": "寝るのだけは本気だよ",
+    "source": {
+      "name": "Axios",
+      "title": "Dictionary.com's Word of the Year is doing the absolute most",
+      "url": "https://www.axios.com/2026/10/26/maxxing-dictionary-2026-word-of-the-year",
+      "date": "2026-10-26",
+      "status": "2026年10月27日に記事名と本文（英語）を確認。"
+    },
+    "topic": "culture",
+    "url": "/books/2026-10-27-1700/",
+    "webPublished": "2026-10-27",
+    "tags": [
+      "sns",
+      "words"
+    ],
+    "time": "1700",
+    "thumb": "assets/book-109-thumb.webp",
+    "ogImage": "assets/book-109-og.jpg"
+  },
+  {
     "id": 108,
     "title": "英語以外の言葉だとAIの料金が高くなることも",
     "date": "2026-10-27",

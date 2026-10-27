@@ -410,5 +410,9 @@
   {
     "id": "tokenizer",
     "name": "トークナイザー"
+  },
+  {
+    "id": "words",
+    "name": "言葉"
   }
 ]
