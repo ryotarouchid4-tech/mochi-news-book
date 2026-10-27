@@ -402,5 +402,9 @@
   {
     "id": "repair",
     "name": "修理"
+  },
+  {
+    "id": "streaming",
+    "name": "動画配信"
   }
 ]

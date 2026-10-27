@@ -104,5 +104,13 @@
     "card": "",
     "lead": "",
     "sections": []
+  },
+  {
+    "id": "entertainment",
+    "title": "エンタメ・動画",
+    "en": "ENTERTAINMENT",
+    "card": "",
+    "lead": "",
+    "sections": []
   }
 ]
