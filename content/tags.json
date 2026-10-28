@@ -426,5 +426,13 @@
   {
     "id": "kddi",
     "name": "KDDI"
+  },
+  {
+    "id": "docomo",
+    "name": "ドコモ"
+  },
+  {
+    "id": "sleep",
+    "name": "睡眠"
   }
 ]
