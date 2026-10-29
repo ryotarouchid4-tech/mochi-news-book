@@ -1,5 +1,51 @@
 [
   {
+    "id": 129,
+    "title": "Reddit、ログインしないと読めないように",
+    "date": "2026-10-30",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-129-1.webp",
+      "assets/book-129-2.webp",
+      "assets/book-129-3.webp",
+      "assets/book-129-4.webp",
+      "assets/book-129-5.webp",
+      "assets/book-129-6.webp",
+      "assets/book-129-7.webp"
+    ],
+    "slug": "2026-10-30-0900",
+    "description": "Redditがログインしないと読めない仕組みを一部の国や地域でためす話を、2026年10月30日の本で紹介。検索の変化やAIとの関係も読めます。",
+    "summary": "アメリカのRedditが、ログインしていない人には投稿を見せないようにする方針について。",
+    "body": [
+      "アメリカの大きな掲示板サイト「Reddit（レディット）」が、ログインしていない人には投稿を見せないようにするんだって。アカウントを持っていない人も、読めなくなるよ。まずはアメリカ以外の、一部の国や地域でためすそうだよ。",
+      "このことを伝えたのは、Redditのトップのスティーブ・ハフマンさん。株主にあてた手紙の中で発表したよ。ためす国や地域がどこなのかは、記事には書かれていないんだ。アメリカでいつから始めるのかも、まだわかっていないみたい。",
+      "理由のひとつは、検索から来る人がかなり減ったこと。AIが答えを教えてくれるから、サイトまで見に来ない人が増えているんだ。ハフマンさんは、新しく来た人に使い続けてもらうための大事な取り組みだと話しているよ。",
+      "ログインしてもらうと、その人に合った広告を出しやすくなるんだって。ログインしている人のほうが、よく使ってくれるそうだよ。それに、Redditにたまったたくさんの投稿を、AIに勝手に集められるのを防ぐねらいもあるみたい。",
+      "調べものをして、気づいたらRedditを読んでた、ってことあるよね。それがログインしないと読めなくなるのは、ちょっと不便かも。でも、AIに投稿を持っていかれるのがいやなのも、わかる気がする。ほかのサイトも、同じことを始めたりするのかな。"
+    ],
+    "afterword": "ネットの「だれでも読める」が少し変わるかも",
+    "mochi": "ログイン…めんどう",
+    "source": {
+      "name": "Engadget",
+      "title": "Reddit will force users to log in as AI is killing search traffic",
+      "url": "https://www.engadget.com/2301687/reddit-will-move-to-logged-in-only-as-ai-eats-search-traffic/",
+      "date": "2026-10-29",
+      "status": "2026年10月30日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-10-30-0900/",
+    "webPublished": "2026-10-30",
+    "tags": [
+      "reddit",
+      "sns",
+      "generative-ai",
+      "advertising"
+    ],
+    "time": "0900",
+    "thumb": "assets/book-129-thumb.webp",
+    "ogImage": "assets/book-129-og.jpg"
+  },
+  {
     "id": 128,
     "title": "スマートグラス「Even G2」にべっ甲柄の新色",
     "date": "2026-10-30",

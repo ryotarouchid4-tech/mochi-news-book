@@ -462,5 +462,9 @@
   {
     "id": "face-recognition",
     "name": "顔認証"
+  },
+  {
+    "id": "reddit",
+    "name": "Reddit"
   }
 ]
