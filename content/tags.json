@@ -446,5 +446,13 @@
   {
     "id": "gmail",
     "name": "Gmail"
+  },
+  {
+    "id": "samsung",
+    "name": "サムスン"
+  },
+  {
+    "id": "earphones",
+    "name": "イヤホン"
   }
 ]
