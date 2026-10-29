@@ -1,5 +1,49 @@
 [
   {
+    "id": 126,
+    "title": "TikTokにお店さがしの機能ができた",
+    "date": "2026-10-29",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-126-1.webp",
+      "assets/book-126-2.webp",
+      "assets/book-126-3.webp",
+      "assets/book-126-4.webp",
+      "assets/book-126-5.webp",
+      "assets/book-126-6.webp"
+    ],
+    "slug": "2026-10-29-2100",
+    "description": "TikTokの新しいお店ガイド「Must Eat」を、2026年10月29日の本で紹介。投稿やコメントから集めたおすすめのお店を、町ごとに探せます。",
+    "summary": "アメリカのTikTokが、話題のお店を見つけられるガイド機能「Must Eat」を始めたことについて。",
+    "body": [
+      "アメリカで、TikTokが「Must Eat」という新しい機能を始めたんだって。TikTokで話題になっているお店を、まとめて見つけられるガイドだよ。みんなの投稿やコメントから、おすすめが集められているんだ。",
+      "おすすめのもとになっているのは、4000万をこえる投稿やコメント。そこから、お店のおすすめやリストを作っているらしいよ。地図や口コミサイトで調べるのとはちがって、使っている人たちの声が中心なんだ。だから、イェルプやグーグルマップと近いライバルになりそうなんだって。",
+      "使い方は、まず町をえらぶ。そこから料理の種類や値段、評価、場所でしぼりこめるよ。おすすめは、ふだん行ける近所のお店と、お祝いや特別な日に行くお店の2つに分かれてる。OpenTableを使って、TikTokから予約できるお店もあるそう。最初はニューヨーク、ロサンゼルス、サンフランシスコで始まるんだって。",
+      "動画で見たお店に行きたくなっても、どこだったか忘れちゃうことあるよね。それが町ごとにまとまってたら、さがしやすそう。口コミの星の数より、動画のほうがお店の感じは伝わるのかも。日本にも来たら、ちょっと使ってみたいな。"
+    ],
+    "afterword": "動画から、行きたいお店が見つかる",
+    "mochi": "近所のお店でいいや",
+    "source": {
+      "name": "TechCrunch",
+      "title": "TikTok expands into restaurant guides with 'Must Eat' feature",
+      "url": "https://techcrunch.com/2026/10/28/tiktok-expands-into-restaurant-guides-with-must-eat-feature/",
+      "date": "2026-10-28",
+      "status": "2026年10月29日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-10-29-2100/",
+    "webPublished": "2026-10-29",
+    "tags": [
+      "tiktok",
+      "sns",
+      "apps",
+      "restaurant"
+    ],
+    "time": "2100",
+    "thumb": "assets/book-126-thumb.webp",
+    "ogImage": "assets/book-126-og.jpg"
+  },
+  {
     "id": 125,
     "title": "ペットボトルキャップがつめ切りのケースに",
     "date": "2026-10-29",
