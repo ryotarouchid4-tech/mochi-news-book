@@ -458,5 +458,9 @@
   {
     "id": "tiktok",
     "name": "TikTok"
+  },
+  {
+    "id": "face-recognition",
+    "name": "顔認証"
   }
 ]
