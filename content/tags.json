@@ -486,5 +486,13 @@
   {
     "id": "blu-ray",
     "name": "ブルーレイ"
+  },
+  {
+    "id": "toyota",
+    "name": "トヨタ"
+  },
+  {
+    "id": "waymo",
+    "name": "ウェイモ"
   }
 ]
