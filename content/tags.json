@@ -466,5 +466,9 @@
   {
     "id": "reddit",
     "name": "Reddit"
+  },
+  {
+    "id": "butterfly",
+    "name": "チョウ"
   }
 ]
