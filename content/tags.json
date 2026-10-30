@@ -494,5 +494,9 @@
   {
     "id": "waymo",
     "name": "ウェイモ"
+  },
+  {
+    "id": "convenience-store",
+    "name": "コンビニ"
   }
 ]
