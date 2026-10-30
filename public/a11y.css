@@ -176,3 +176,17 @@ small{font-size:max(14px,.8em)}
 .nav-dialog__link>b{align-self:center}
 .nav-dialog__link>span{align-self:center!important;margin:0!important}
 .nav-dialog__link{display:flex!important;justify-content:space-between}
+
+/* ===== 見えない線をそろえる（2026-10-30） ===== */
+/* 本のカード：日付とテーマを、どの本も2段に固定して、タイトルの始まる高さをそろえる */
+.book .book__meta{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0;flex-wrap:nowrap;margin-top:4px}
+.book .book__meta>time,.book .book__meta>span:not(.sr-only){display:block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* 海外のしるしは表紙の右上に重ねる（テーマのページの表紙と同じ位置） */
+.book .book__cover{position:relative}
+.book .book__region--cover{position:absolute;top:8px;right:8px;z-index:2;border-radius:0;box-shadow:none;letter-spacing:.08em;pointer-events:none}
+/* 本棚ページ：絞り込み（しおり）が使えるときは、上の文字のテーマ一覧を出さない（重複をなくす） */
+body:has([data-shelf-tools]:not([hidden])) .topic-list{display:none}
+/* 本棚ページ：検索欄をしおりの上の行に置き、左の線にそろえる */
+.toolbar{flex-direction:column;align-items:stretch;justify-content:flex-start;gap:18px}
+.toolbar .search{order:-1;width:100%;max-width:360px}
+.toolbar .tabs{width:100%}

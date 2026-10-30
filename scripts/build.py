@@ -73,7 +73,7 @@ def shell(path,title,description,body,*,kind='WebPage',extra=None,crumb=None,ima
  write(path,f'<!doctype html><html lang="ja"><head>{head}{ld({"@context":"https://schema.org","@graph":graph})}</head><body id="top" class="{'is-home' if path=='/' else 'is-inner'}"><div class="wrap">{header(path)}{bc}<main id="main" class="{cls}">{body}</main>{footer()}</div>{dialogs_html(page_books())}</body></html>')
 def card(b):
  _USED.append(b)
- return f'''<article class="book" data-book-id="{b['id']}" data-topic="{b['topic']}" data-region="{region(b)}" data-search="{H(b['title']+' '+b['date']+' '+b['date'].replace('-','.')+' '+b['category'])}"><a class="book__cover" href="{b['url']}" tabindex="-1" aria-hidden="true"><img src="/{thumb(b)}" alt="" loading="lazy" width="480" height="640"></a><div class="book__meta"><time datetime="{b['date']}">{b['date'].replace('-','. ')}</time><span>{b['category']}</span>{'<b class="book__region">WORLD</b>' if region(b)=='world' else ''}</div><h3 class="book__title"><a href="{b['url']}">{H(b['title'])}</a></h3><div class="book__actions"><a class="book__read" href="{b['url']}">この本を読む ↗</a><button type="button" class="book__preview" data-preview="{b['id']}" hidden>立ち読み ＋</button></div></article>'''
+ return f'''<article class="book" data-book-id="{b['id']}" data-topic="{b['topic']}" data-region="{region(b)}" data-search="{H(b['title']+' '+b['date']+' '+b['date'].replace('-','.')+' '+b['category'])}"><a class="book__cover" href="{b['url']}" tabindex="-1" aria-hidden="true"><img src="/{thumb(b)}" alt="" loading="lazy" width="480" height="640">{'<b class="book__region book__region--cover">海外</b>' if region(b)=='world' else ''}</a><div class="book__meta"><time datetime="{b['date']}">{b['date'].replace('-','. ')}</time><span>{b['category']}</span>{'<span class="sr-only">海外のニュース</span>' if region(b)=='world' else ''}</div><h3 class="book__title"><a href="{b['url']}">{H(b['title'])}</a></h3><div class="book__actions"><a class="book__read" href="{b['url']}">この本を読む ↗</a><button type="button" class="book__preview" data-preview="{b['id']}" hidden>立ち読み ＋</button></div></article>'''
 def cards(books):return '<div class="books">'+''.join(card(b) for b in books)+'</div>'
 def item_list(books,identifier):return {'@type':'ItemList','@id':url(identifier+'#list'),'numberOfItems':len(books),'itemListElement':[{'@type':'ListItem','position':i+1,'url':url(b['url']),'name':b['title']} for i,b in enumerate(books)]}
 def intro(eyebrow,title,lead=''):return f'<h1>{title}</h1>'+(f'<p class="lead">{lead}</p>' if lead else '')
@@ -124,7 +124,7 @@ def week_range(wid):
  y,w=int(wid[:4]),int(wid[6:]);a=_dt.date.fromisocalendar(y,w,1);z=_dt.date.fromisocalendar(y,w,7);return a,z
 def week_label(wid):
  a,z=week_range(wid);return f'{a.month}月{a.day}日〜{z.month}月{z.day}日'
-month_links='<nav class="month-links" aria-label="月ごとに見る">'+''.join(f'<a href="/books/{m}/">{month_label(m)}<small>{sum(1 for b in BOOKS if b["date"][:7]==m)}冊</small></a>' for m in MONTHS)+'</nav>'
+month_links='<nav class="month-links" aria-label="月ごとに見る">'+''.join(f'<a href="/books/{m}/">{month_label(m)}</a>' for m in MONTHS)+'</nav>'
 TOOLBAR='<div class="toolbar" data-shelf-tools hidden><div class="tabs" aria-label="テーマを絞り込む"><button class="tab" aria-pressed="true" data-filter="all">すべて</button>'+''.join(f'<button class="tab" aria-pressed="false" data-filter="{t['id']}">{H(t['title'])}</button>' for t in TOPICS)+'<span class="tabs__divider" aria-hidden="true"></span><button class="tab" aria-pressed="true" data-region-filter="all">日本と海外</button><button class="tab" aria-pressed="false" data-region-filter="japan">日本</button><button class="tab" aria-pressed="false" data-region-filter="world">海外</button></div><label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" aria-label="タイトルや日付で本を探す" placeholder="タイトルや日付で探す"></label></div>'
 # 本棚ページの案内役：モチとシオがしゃべる（読み上げソフトにも伝える）。JS がないときは出さない
 GUIDE=('<div class="shelf-guide" data-shelf-guide hidden><img class="shelf-guide__face" src="/assets/mochi-face.webp" alt="" width="64" height="64" data-guide-face>'
@@ -145,7 +145,7 @@ def bookmarks(items,label):
  return f'<nav class="bookmarks" aria-label="{label}">'+''.join(f'<a class="bookmark" href="{h}"><span>{t}</span>'+(f'<small>{n}</small>' if n else '')+'</a>' for h,t,n in items)+'</nav>'
 def cover_tile(b):
  _USED.append(b)
- return f'''<a class="cover-tile" href="{b['url']}"><span class="cover-tile__img"><img src="/{thumb(b)}" alt="" loading="lazy" width="480" height="640">{'<b class="book__region cover-tile__badge">WORLD</b>' if region(b)=='world' else ''}</span><span class="cover-tile__meta">{H(b['category'])} ・ {len(b['pages'])}ページ</span><span class="cover-tile__title">{H(b['title'])}</span></a>'''
+ return f'''<a class="cover-tile" href="{b['url']}"><span class="cover-tile__img"><img src="/{thumb(b)}" alt="" loading="lazy" width="480" height="640">{'<b class="book__region cover-tile__badge">海外</b>' if region(b)=='world' else ''}</span><span class="cover-tile__meta">{H(b['category'])} ・ {len(b['pages'])}ページ</span><span class="cover-tile__title">{H(b['title'])}</span></a>'''
 TODAY=[b for b in BOOKS if b['date']==BOOKS[0]['date']]
 RECENT=[b for b in BOOKS if b['date']!=BOOKS[0]['date']][:12]
 HOME_GUIDE=GUIDE.replace('data-shelf-guide hidden','data-shelf-guide data-greeting hidden')
