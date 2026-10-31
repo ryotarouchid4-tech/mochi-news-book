@@ -498,5 +498,9 @@
   {
     "id": "convenience-store",
     "name": "コンビニ"
+  },
+  {
+    "id": "bag",
+    "name": "バッグ"
   }
 ]
