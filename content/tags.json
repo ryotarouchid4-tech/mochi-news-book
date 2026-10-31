@@ -506,5 +506,9 @@
   {
     "id": "anime",
     "name": "アニメ"
+  },
+  {
+    "id": "tokyo-metro",
+    "name": "東京メトロ"
   }
 ]
