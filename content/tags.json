@@ -510,5 +510,9 @@
   {
     "id": "tokyo-metro",
     "name": "東京メトロ"
+  },
+  {
+    "id": "xiaomi",
+    "name": "シャオミ"
   }
 ]
