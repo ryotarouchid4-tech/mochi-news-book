@@ -1,5 +1,52 @@
 [
   {
+    "id": 142,
+    "title": "AIに性格テストをしたら言語で結果が変わった",
+    "date": "2026-10-31",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-142-1.webp",
+      "assets/book-142-2.webp",
+      "assets/book-142-3.webp",
+      "assets/book-142-4.webp",
+      "assets/book-142-5.webp",
+      "assets/book-142-6.webp",
+      "assets/book-142-7.webp",
+      "assets/book-142-8.webp"
+    ],
+    "slug": "2026-10-31-1900",
+    "description": "AIの性格テストの結果が英語と中国語で変わった研究を、2026年10月31日の本で紹介。5つのAIを調べた結果が読めます。",
+    "summary": "AIに人間用の性格テストをさせたら、答える言語によって結果が変わったという研究について。",
+    "body": [
+      "中国の大学の研究チームが、AIに人間用の性格テストを受けさせたんだって。同じAIでも、英語で答えるか中国語で答えるかで、結果が変わったそうだよ。研究の結果は、科学の雑誌で発表されたみたい。",
+      "使ったのは、人の性格を5つの面から調べるテスト。人づきあいの好きさ、やさしさ、まじめさ、不安の感じやすさ、新しいことへの興味の5つだよ。質問は60個。AIには「人のふりをしないで、自分のこととして答えて」と頼んだんだって。",
+      "テストを受けたのは5つのAI。アメリカのChatGPTとGemini、中国のDeepSeekとErnie、フランスのLe Chatだよ。Le Chat以外は英語と中国語で、Le Chatはフランス語で答えた。それぞれ30回ずつ答えさせて、結果をまとめたんだ。",
+      "どのAIも、自分は協力的で信頼できて、不安は少なめ、という答えが多かった。でも言語で差が出たんだ。ChatGPTは英語のほうが「新しいことへの興味」が高くて、DeepSeekは逆に中国語のほうが高かった。人と比べると、AIはどれも良く見える答えをしていたらしい。",
+      "なんで変わるのかは、研究チームにもはっきりわからなかったんだって。学んだ文章の文化のちがいかもしれないし、AIの作り方や、質問を訳したときの受け取られ方のせいかもしれない。作った国だけでは説明できないみたい。性格テストだと気づいて、良く見せようとした可能性もあるそうだよ。",
+      "同じAIなのに、使う言葉で答えが変わるのはふしぎだなぁ。人でも、外国語で話すとちょっと別人っぽくなることってあるよね。でもAIの場合は、学んだ文章のせいなのか、作り方のせいなのか、まだわかってない。日本語で聞いたら、どんな答えになるのか気になるな。"
+    ],
+    "afterword": "AIも、言葉で少し顔つきが変わるみたい",
+    "mochi": "ぼくは何語でも眠い",
+    "source": {
+      "name": "GIGAZINE",
+      "title": "When we had an AI perform a personality assessment, we discovered that the results changed when we switched languages.",
+      "url": "https://gigazine.net/gsc_news/en/20261031-ai-personality-profile-language-bias/",
+      "date": "2026-10-31",
+      "status": "2026年10月31日に記事名と本文を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-10-31-1900/",
+    "webPublished": "2026-10-31",
+    "tags": [
+      "generative-ai",
+      "psychology",
+      "words"
+    ],
+    "time": "1900",
+    "thumb": "assets/book-142-thumb.webp",
+    "ogImage": "assets/book-142-og.jpg"
+  },
+  {
     "id": 141,
     "title": "メタが服を試着できるAIアプリを出した",
     "date": "2026-10-31",
