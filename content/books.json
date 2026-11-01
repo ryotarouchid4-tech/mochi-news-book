@@ -1,5 +1,52 @@
 [
   {
+    "id": 149,
+    "title": "古いEcho、声でAUXに切りかえられなくなる",
+    "date": "2026-11-01",
+    "category": "電子機器",
+    "pages": [
+      "assets/book-149-1.webp",
+      "assets/book-149-2.webp",
+      "assets/book-149-3.webp",
+      "assets/book-149-4.webp",
+      "assets/book-149-5.webp",
+      "assets/book-149-6.webp",
+      "assets/book-149-7.webp",
+      "assets/book-149-8.webp"
+    ],
+    "slug": "2026-11-01-1700",
+    "description": "古いEchoでAUX入力を声で切りかえられなくなった話を、2026年11月1日の本で紹介。ケーブルでつなぐ使い方は今も続けられます。",
+    "summary": "アマゾンが古いEchoの一部で、AUX入力を声で切りかえる機能をやめたことについて。",
+    "body": [
+      "アマゾンが、少し前のスマートスピーカー「Echo」の一部で、AUX入力を声で切りかえる機能をやめたんだって。「ラインインで再生して」と頼んでも、もう動かないみたい。なんでやめたのかは、アマゾンは話していないそうだよ。",
+      "AUXっていうのは、スピーカーについている小さな差しこみ口のこと。イヤホンと同じ3.5ミリのケーブルで、スマホやパソコンの音をEchoから流せるんだ。反対に、Echoの音をほかのスピーカーへ送れる機種もあるよ。",
+      "変わったのは4つの機種。2018年の第2世代Echo Plus、2019年の第3世代Echoと初代Echo Studio、2020年の第4世代Echoなんだって。この機能を声で使っていた、ごく少ない人にはメールで知らせたと、アマゾンは話しているみたい。",
+      "ケーブルでつなぐこと自体は、今までどおりできるそうだよ。アレクサのアプリでスピーカーを選んで、設定の「AUX Audio」から入力か出力かを選ぶんだって。ただ、曲を止めたり飛ばしたりは、つないだ機械のほうでやることになるよ。",
+      "記事を書いた人は、2000年代はじめのソニーのCDチェンジャーを、初代Echo Studioにつないで使っているんだって。今のEchoのままなら、この使い方はつづけられる。逆に2025年の新しいEcho Studioに買いかえると、入力が使えなくなることもあるみたい。",
+      "声で切りかえられないのは、ちょっと不便だよね。でもケーブルをさせば、音はちゃんと出る。20年以上前のCDプレーヤーがまだ現役なのは、なんだかいいな。理由を言わずに機能が消えるのは、少しもやっとするけど。"
+    ],
+    "afterword": "声はダメでも、ケーブルはまだつながる",
+    "mochi": "さすの、めんどう…",
+    "source": {
+      "name": "Engadget",
+      "title": "Amazon made the AUX input on older Alexa devices less useful",
+      "url": "https://www.engadget.com/2300219/amazon-made-alexa-devices-aux-port-less-useful/",
+      "date": "2026-10-31",
+      "status": "2026年11月1日に記事名と本文（英語）を確認。"
+    },
+    "topic": "electronics",
+    "url": "/books/2026-11-01-1700/",
+    "webPublished": "2026-11-01",
+    "tags": [
+      "amazon",
+      "smart-home",
+      "voice"
+    ],
+    "time": "1700",
+    "thumb": "assets/book-149-thumb.webp",
+    "ogImage": "assets/book-149-og.jpg"
+  },
+  {
     "id": 148,
     "title": "チープカシオが指輪サイズの時計に",
     "date": "2026-11-01",
