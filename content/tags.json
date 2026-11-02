@@ -530,5 +530,9 @@
   {
     "id": "3d-display",
     "name": "3Dディスプレイ"
+  },
+  {
+    "id": "gpu",
+    "name": "GPU"
   }
 ]
