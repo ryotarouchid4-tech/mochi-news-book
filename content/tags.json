@@ -534,5 +534,13 @@
   {
     "id": "gpu",
     "name": "GPU"
+  },
+  {
+    "id": "privacy",
+    "name": "プライバシー"
+  },
+  {
+    "id": "ford",
+    "name": "フォード"
   }
 ]
