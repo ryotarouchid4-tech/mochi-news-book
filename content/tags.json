@@ -542,5 +542,13 @@
   {
     "id": "ford",
     "name": "フォード"
+  },
+  {
+    "id": "aeon",
+    "name": "イオン"
+  },
+  {
+    "id": "logistics",
+    "name": "物流"
   }
 ]
