@@ -255,5 +255,11 @@ llms=[f'# {NAME}','',f'> {DESCRIPTION}','',
 (OUT/'llms.txt').write_text('\n'.join(llms))
 (OUT/'books.json').write_text(json.dumps(BOOKS,ensure_ascii=False,indent=2)+'\n')
 # Cloudflare Pages understands this file; the physical legacy pages also work on Sites.
-(OUT/'_redirects').write_text('/contact.html /contact/ 301\n/privacy.html /privacy/ 301\n/thanks.html /thanks/ 301\n')
+(OUT/'_redirects').write_text(
+  '/contact.html https://mochitoshio.com/books/contact/ 301\n'
+  '/privacy.html https://mochitoshio.com/books/privacy/ 301\n'
+  '/thanks.html https://mochitoshio.com/books/thanks/ 301\n'
+  '/books/* https://mochitoshio.com/books/:splat 301\n'
+  '/* https://mochitoshio.com/books/:splat 301\n'
+)
 print(f'Built {len(INDEXABLE)} canonical indexable pages, {len(BOOKS)} book pages, sitemap, robots and feed for {BASE}')
