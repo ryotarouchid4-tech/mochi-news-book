@@ -1,5 +1,51 @@
 [
   {
+    "id": 164,
+    "title": "マッチングアプリ「Hinge」が安い有料プランを試すことに",
+    "date": "2026-11-03",
+    "category": "お金・くらし",
+    "pages": [
+      "assets/book-164-1.webp",
+      "assets/book-164-2.webp",
+      "assets/book-164-3.webp",
+      "assets/book-164-4.webp",
+      "assets/book-164-5.webp",
+      "assets/book-164-6.webp",
+      "assets/book-164-7.webp",
+      "assets/book-164-8.webp"
+    ],
+    "slug": "2026-11-03-1300",
+    "description": "マッチングアプリHingeの安い有料プランのテストを、2026年11月3日の本で紹介。値段が高めのHingeがねらいを変えた理由や、利用者の数の変化が読めます。",
+    "summary": "マッチングアプリのHingeが、今より安い有料プランを試すと発表したことについて。",
+    "body": [
+      "マッチングアプリの「Hinge」が、今より安い有料プランを試すんだって。HingeやTinderを持つMatch Groupが、アメリカ時間の2日の決算発表で明かしたよ。絞りこみの条件を増やせたり、出会う場所の範囲を決められたりする機能が入るみたい。",
+      "Hingeは、Match Groupのアプリの中でも値段が高めなんだ。お金を払っている人1人あたりの売上はだいたい30ドルで、Tinderのほぼ倍。そのかわり、お金を払う人の割合はTinderの半分ちょっとしかない。新しいプランは、とくに女性や、値段を気にする人に向けたものだそう。",
+      "2023年には、逆にもっと高いプランを試していたこともあるよ。今回は向きを変えて、たくさんの人が手を出しやすい値段をねらっているみたい。安ければ、最初から大きなお金を払わなくても使い始められるからね。新しいプランの値段は、まだ発表されていないんだ。",
+      "今のHingeは、けっこう調子がいいみたい。この3か月で、毎月使う人は去年より12%増えたよ。お金を払う人も23%増えて、230万人になったんだって。一方のTinderは、お金を払う人が890万人で、去年より4%減っているそう。",
+      "ただ、マッチングアプリにお金を払うことに疲れた人も多いみたい。毎月払うサービスが多すぎたり、スワイプし続けるのにうんざりしたり。そこでMatch Groupは、グループで集まる機能やイベントも広げていくそう。Tinderでは、使う人の動きに数秒で合わせて、おすすめを変える機能も試す予定だよ。",
+      "前は高いプランを試してたのに、今度は安いほうなんだね。払う人を増やしたいなら、値段を下げるのはわかりやすいやり方かも。でも、アプリに疲れちゃった人が、安くなったからって戻ってくるのかな。そこはちょっとわからないなぁ。"
+    ],
+    "afterword": "安くなっても、疲れた気持ちは別の話かも",
+    "mochi": "スワイプは指が疲れる",
+    "source": {
+      "name": "TechCrunch",
+      "title": "Hinge tests a cheaper plan as users become more fed up paying for dating apps",
+      "url": "https://techcrunch.com/2026/11/02/hinge-tests-a-cheaper-plan-as-users-become-more-fed-up-paying-for-dating-apps/",
+      "date": "2026-11-02",
+      "status": "2026年11月3日に記事名と本文（英語）を確認。"
+    },
+    "topic": "money",
+    "url": "/books/2026-11-03-1300/",
+    "webPublished": "2026-11-03",
+    "tags": [
+      "apps",
+      "dating-apps"
+    ],
+    "time": "1300",
+    "thumb": "assets/book-164-thumb.webp",
+    "ogImage": "assets/book-164-og.jpg"
+  },
+  {
     "id": 163,
     "title": "XRグラス「XREAL AURA」日本で予約開始",
     "date": "2026-11-03",
