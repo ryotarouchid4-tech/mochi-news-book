@@ -558,5 +558,9 @@
   {
     "id": "dating-apps",
     "name": "マッチングアプリ"
+  },
+  {
+    "id": "jcb",
+    "name": "JCB"
   }
 ]
