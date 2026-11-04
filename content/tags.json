@@ -578,5 +578,9 @@
   {
     "id": "data-storage",
     "name": "データ保存"
+  },
+  {
+    "id": "uber",
+    "name": "ウーバー"
   }
 ]
