@@ -1,5 +1,48 @@
 [
   {
+    "id": 169,
+    "title": "Atermの「.php」PHP本体は使わず",
+    "date": "2026-11-04",
+    "category": "電子機器",
+    "pages": [
+      "assets/book-169-1.webp",
+      "assets/book-169-2.webp",
+      "assets/book-169-3.webp",
+      "assets/book-169-4.webp",
+      "assets/book-169-5.webp",
+      "assets/book-169-6.webp",
+      "assets/book-169-7.webp"
+    ],
+    "slug": "2026-11-04-1100",
+    "description": "Aterm設定画面の「.php」を、2026年11月4日の本で紹介。PHP本体を使わずに表示される理由を読めます。",
+    "summary": "NECが、Aterm設定画面の「.php」と独自ソフトのしくみを説明したことについて。",
+    "body": [
+      "NECのルーター「Aterm」では、設定画面のURLに「index.php」と出る機種があるよ。でもNECによると、PHP本体や一般に配られているPHPの実行環境は、まったく使っていないんだって。",
+      "10月22日にPHPの弱点が公表されたため、NECはAtermには影響がないと告知したよ。ところが「PHPを使っていないなら、どうしてURLが.phpなの？」という疑問が出たんだって。昔使っていた名残でもないそうだよ。",
+      "「.php」と出る機種には、PHPの一部のしくみを参考にした、NEC独自のソフトが入っているんだって。PHPの文法に合わせて処理するため、URLの終わりに「.php」という拡張子を使っているそうだよ。",
+      "独自ソフトができるのは、ルーターの情報を表示するなど、設定画面に必要な処理だけ。PHP本体のプログラムは使っていないよ。今回見つかった弱点に関係する処理もなく、影響を受けないことを確かめたんだって。",
+      "URLの終わりが「.php」なら、PHPがそのまま動いていると思ってしまいそう。でも今回は、参考にした文法に合わせて名前を付けていただけだったんだね。見えているファイル名だけでは、中のしくみまでは分からないんだな。"
+    ],
+    "afterword": "「.php」でも、PHP本体を使っているとは限らない",
+    "mochi": "名前だけ同じなの？",
+    "source": {
+      "name": "ITmedia NEWS",
+      "title": "Aterm設定画面、「PHP使ってないのに.php」なぜ？　NECに聞いた",
+      "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002847/",
+      "date": "2026-11-04",
+      "status": "2026年11月4日に記事名と本文を確認。"
+    },
+    "topic": "electronics",
+    "url": "/books/2026-11-04-1100/",
+    "webPublished": "2026-11-04",
+    "tags": [
+      "security"
+    ],
+    "time": "1100",
+    "thumb": "assets/book-169-thumb.webp",
+    "ogImage": "assets/book-169-og.jpg"
+  },
+  {
     "id": 168,
     "title": "宇宙で初めてかたい棒を3D印刷",
     "date": "2026-11-04",
