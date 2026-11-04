@@ -570,5 +570,13 @@
   {
     "id": "raspberry-pi",
     "name": "Raspberry Pi"
+  },
+  {
+    "id": "fujifilm",
+    "name": "富士フイルム"
+  },
+  {
+    "id": "data-storage",
+    "name": "データ保存"
   }
 ]
