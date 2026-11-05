@@ -1,5 +1,50 @@
 [
   {
+    "id": 179,
+    "title": "ネットフリックスに気分で選べるAIのタブ",
+    "date": "2026-11-05",
+    "category": "エンタメ・動画",
+    "pages": [
+      "assets/book-179-1.webp",
+      "assets/book-179-2.webp",
+      "assets/book-179-3.webp",
+      "assets/book-179-4.webp",
+      "assets/book-179-5.webp",
+      "assets/book-179-6.webp",
+      "assets/book-179-7.webp"
+    ],
+    "slug": "2026-11-05-1700",
+    "description": "ネットフリックスの新しい「AI Discover」タブを、2026年11月5日の本で紹介。気分やテーマから見る作品をしぼっていける機能について読めます。",
+    "summary": "アメリカのネットフリックスが始めた、気分で作品を選べる「AI Discover」タブについて。",
+    "body": [
+      "アメリカのネットフリックスで、「AI Discover」という新しいタブが始まったよ。アメリカ時間の3日に発表されたんだって。最初の機能は、いまの気分に合わせて作品をすすめてくれるもの。まずは英語で使っている人の、対応したテレビから出てくるみたい。",
+      "使い方は、まずテーマを選ぶところから。すると、それに合う作品が短い映像つきで並ぶよ。テーマは「軽めのもの」「こわいの見せて」「家族で映画の夜」「さくっと見られるもの」など。気分のほかに、見られる時間や、いま話題かどうかで分けたものもあるらしい。",
+      "出てきた中から、もっとくわしいテーマを選んで、さらにしぼっていける。ぜんぜん違うのが見たいときは、「something different」を押せば最初から。作品ごとにボタンもあって、気に入ったものを残したり、もう出さないようにしたりできるんだ。",
+      "ネットフリックスは今まで、高評価のマークや「マイリスト」をもとにおすすめを出してきた。このタブは、新しい探し方をいろいろ試す場所なんだって。使った人の声を聞いて、よかった機能をふだんの画面に入れていくそう。これから数週間で、使える人を増やす予定だよ。",
+      "見るものが決まらなくて、画面をずっとスクロールしちゃうこと、あるよね。「こわいの見せて」って選べるのは、ちょっと楽しそう。でも、テーマを選んでるうちに夜がおわりそうな気もする。日本で使えるようになるかは、まだわからないみたい。"
+    ],
+    "afterword": "気分で選べたら、迷う時間がへるかもね",
+    "mochi": "「寝る」テーマある？",
+    "source": {
+      "name": "TechCrunch",
+      "title": "Netflix's new AI Discover tab helps you find something to watch based on your mood",
+      "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+      "date": "2026-11-03",
+      "status": "2026年11月5日に記事名と本文（英語）を確認。"
+    },
+    "topic": "entertainment",
+    "url": "/books/2026-11-05-1700/",
+    "webPublished": "2026-11-05",
+    "tags": [
+      "netflix",
+      "streaming",
+      "tv"
+    ],
+    "time": "1700",
+    "thumb": "assets/book-179-thumb.webp",
+    "ogImage": "assets/book-179-og.jpg"
+  },
+  {
     "id": 178,
     "title": "ChatGPTで動くGIF画像が作れるように",
     "date": "2026-11-05",
