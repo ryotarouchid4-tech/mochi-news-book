@@ -96,3 +96,7 @@ home=[a['href'] for t,a in docs[OUT/'index.html'].tags if t=='a' and 'href' in a
 assert books[0]['url'] in home
 ET.parse(OUT/'feed.xml')
 print(f'PASS: {len(docs)} HTML files, {len(urls)} canonical sitemap URLs, {len(books)} text articles, {sum(len(b['pages']) for b in books)} images, links/anchors, JSON-LD, metadata, form configuration and XML feeds')
+# 公開するファイルの数（Cloudflare Pages の上限に近づいたら知らせる・提案No.12）。表示だけで、失敗にはしない
+try:
+ import file_count;file_count.report(OUT,books)
+except Exception as e:print(f'FILES: 数えられませんでした（{e}）')
