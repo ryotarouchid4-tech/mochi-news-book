@@ -1,5 +1,54 @@
 [
   {
+    "id": 185,
+    "title": "Apple Musicで歌う自分を動画にとれるように",
+    "date": "2026-11-06",
+    "category": "エンタメ・動画",
+    "pages": [
+      "assets/book-185-1.webp",
+      "assets/book-185-2.webp",
+      "assets/book-185-3.webp",
+      "assets/book-185-4.webp",
+      "assets/book-185-5.webp",
+      "assets/book-185-6.webp",
+      "assets/book-185-7.webp",
+      "assets/book-185-8.webp"
+    ],
+    "slug": "2026-11-06-1300",
+    "description": "Apple Musicのカラオケ新機能「Selfie Sing」を、2026年11月6日の本で紹介。声の効果や使える曲、始まる時期がわかります。",
+    "summary": "Apple Musicに、歌う自分を歌詞つきで動画にとれる新機能「Selfie Sing」が入ることについて。",
+    "body": [
+      "Apple Musicに、「Selfie Sing」っていう新しい機能が入るんだって。画面に歌詞を流しながら、歌っている自分を動画にとれるそうだよ。ほかのアプリを使わなくても、Apple Musicの中だけでできるみたい。",
+      "Apple Musicには、2022年から「Sing」っていうカラオケの機能があるんだ。Selfie Singは、それをパワーアップさせたものなんだって。曲を選んで、カメラをオンにするだけ。歌詞が流れる画面で歌うと、その様子が動画になるよ。",
+      "とるときに、声に効果をつけることもできるらしい。選べるのは「Megaphone」「Echo」「Concert Hall」「Studio」の4つ。自分の声の大きさも変えられて、できた動画は保存したり、人に送ったりできるそうだよ。",
+      "ただ、どの曲でも歌えるわけじゃないみたい。使えるのは、この機能のための専用のプレイリストに入った曲だけ。はじめは、ケリー・クラークソンやワン・ダイレクション、マドンナ、ブリトニー・スピアーズ、ドリー・パートンの曲などが入っているんだって。",
+      "この機能は、iPhoneの「iOS 27.3」で使えるようになる予定。いまはまだ、ためし版の段階なんだ。みんなが使えるようになるのは、12月ごろと見られているよ。同じアップデートで、SiriのAI機能がふえたり、ヘルスケアのアプリの見た目が変わったりもするらしい。",
+      "カラオケって、歌ってるときの自分の顔は見られないよね。動画にすると、思ったより口が開いてなかったりして。声の効果があるなら、ちょっと上手に聞こえるのかも。曲がまだ少ないのは、これからふえるのかな。"
+    ],
+    "afterword": "スマホがカラオケ屋さんになっていく",
+    "mochi": "ぼくは聞く係でいい",
+    "source": {
+      "name": "Engadget",
+      "title": "Apple Music's upcoming feature will let you record yourself doing karaoke",
+      "url": "https://www.engadget.com/2306269/apple-music-selfie-sing-karaoke-video/",
+      "date": "2026-11-04",
+      "status": "2026年11月6日に記事名と本文（英語）を確認。"
+    },
+    "topic": "entertainment",
+    "url": "/books/2026-11-06-1300/",
+    "webPublished": "2026-11-06",
+    "tags": [
+      "apple",
+      "music",
+      "apps",
+      "smartphone",
+      "karaoke"
+    ],
+    "time": "1300",
+    "thumb": "assets/book-185-thumb.webp",
+    "ogImage": "assets/book-185-og.jpg"
+  },
+  {
     "id": 184,
     "title": "新しいKindleが出そろい値段は1万円以上アップ",
     "date": "2026-11-06",
