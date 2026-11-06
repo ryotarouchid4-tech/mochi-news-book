@@ -602,5 +602,9 @@
   {
     "id": "uniqlo",
     "name": "ユニクロ"
+  },
+  {
+    "id": "movies",
+    "name": "映画"
   }
 ]
