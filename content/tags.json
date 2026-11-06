@@ -598,5 +598,9 @@
   {
     "id": "karaoke",
     "name": "カラオケ"
+  },
+  {
+    "id": "uniqlo",
+    "name": "ユニクロ"
   }
 ]
