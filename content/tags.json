@@ -606,5 +606,9 @@
   {
     "id": "movies",
     "name": "映画"
+  },
+  {
+    "id": "aviation",
+    "name": "飛行機"
   }
 ]
