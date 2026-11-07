@@ -614,5 +614,9 @@
   {
     "id": "toothbrush",
     "name": "歯ブラシ"
+  },
+  {
+    "id": "calligraphy",
+    "name": "書道"
   }
 ]
