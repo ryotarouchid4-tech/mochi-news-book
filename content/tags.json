@@ -610,5 +610,9 @@
   {
     "id": "aviation",
     "name": "飛行機"
+  },
+  {
+    "id": "toothbrush",
+    "name": "歯ブラシ"
   }
 ]
