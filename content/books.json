@@ -1,5 +1,48 @@
 [
   {
+    "id": 196,
+    "title": "グーグルの「Find Hub」に置き忘れを知らせる機能",
+    "date": "2026-11-07",
+    "category": "電子機器",
+    "pages": [
+      "assets/book-196-1.webp",
+      "assets/book-196-2.webp",
+      "assets/book-196-3.webp",
+      "assets/book-196-4.webp",
+      "assets/book-196-5.webp",
+      "assets/book-196-6.webp"
+    ],
+    "slug": "2026-11-07-2100",
+    "description": "グーグルのFind Hubに来た、タグの置き忘れを知らせる通知機能を、2026年11月7日の本で紹介。使い方や、アップル・サムスンとのちがいも読めます。",
+    "summary": "グーグルの「Find Hub」に、タグの置き忘れを知らせる機能が出はじめたことについて。",
+    "body": [
+      "アメリカやヨーロッパの一部で、グーグルの「Find Hub」に新しい機能が出はじめたんだって。落とし物さがし用のタグを置いたまま離れると、スマホに知らせてくれるの。機能の名前は「Notify when left behind」だよ。",
+      "使い方はかんたんみたい。AndroidのFind Hubアプリを開いて、一覧からタグを選ぶ。歯車のマークの設定を開くと、新しいスイッチがあるの。これをオンにすると、タグから遠く離れたときに通知が届くんだって。グーグルマップで「自宅」にしている場所に置いてあるときは、知らせないそうだよ。",
+      "置き忘れを知らせる機能は、アップルの「探す」では何年も前からあったの。サムスンも数年前に、自分のタグやイヤホン向けに入れてる。今回のグーグルのは、モトローラやChipoloのタグでも使えたみたい。9to5Googleというサイトがためして、そう伝えてるよ。",
+      "お店にカバンを置いてきたのに、家に着くまで気づかないこと、あるよね。離れたところで教えてもらえたら、まだ取りに戻れそう。飛行機に乗る前に気づけたら、かなり助かるな。アップルやサムスンにはもうあったから、グーグルはやっと追いついた感じかも。"
+    ],
+    "afterword": "置き忘れに、その場で気づけるようになる",
+    "mochi": "ぼくも置いてかないで",
+    "source": {
+      "name": "Engadget",
+      "title": "Google's Find Hub can finally notify you if you've left a tracker behind",
+      "url": "https://www.engadget.com/2308903/googles-find-hub-can-finally-notify-you-if-youve-left-a-tracker-behind/",
+      "date": "2026-11-06",
+      "status": "2026年11月7日に記事名と本文（英語）を確認。"
+    },
+    "topic": "electronics",
+    "url": "/books/2026-11-07-2100/",
+    "webPublished": "2026-11-07",
+    "tags": [
+      "google",
+      "bluetooth",
+      "apps"
+    ],
+    "time": "2100",
+    "thumb": "assets/book-196-thumb.webp",
+    "ogImage": "assets/book-196-og.jpg"
+  },
+  {
     "id": 195,
     "title": "AIに書道をさせる「AI書道コンクール」",
     "date": "2026-11-07",
