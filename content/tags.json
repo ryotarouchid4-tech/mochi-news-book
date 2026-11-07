@@ -618,5 +618,9 @@
   {
     "id": "calligraphy",
     "name": "書道"
+  },
+  {
+    "id": "kids",
+    "name": "子ども"
   }
 ]
