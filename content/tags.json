@@ -634,5 +634,13 @@
   {
     "id": "vending-machine",
     "name": "自動販売機"
+  },
+  {
+    "id": "power-grid",
+    "name": "電力網"
+  },
+  {
+    "id": "battery",
+    "name": "電池"
   }
 ]
