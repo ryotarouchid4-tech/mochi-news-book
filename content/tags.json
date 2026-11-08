@@ -630,5 +630,9 @@
   {
     "id": "anker",
     "name": "アンカー"
+  },
+  {
+    "id": "vending-machine",
+    "name": "自動販売機"
   }
 ]
