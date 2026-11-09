@@ -642,5 +642,9 @@
   {
     "id": "battery",
     "name": "電池"
+  },
+  {
+    "id": "traffic-signal",
+    "name": "信号機"
   }
 ]
