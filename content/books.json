@@ -1,5 +1,51 @@
 [
   {
+    "id": 209,
+    "title": "スナップのメガネ型コンピューターが軽くなった",
+    "date": "2026-11-09",
+    "category": "電子機器",
+    "pages": [
+      "assets/book-209-1.webp",
+      "assets/book-209-2.webp",
+      "assets/book-209-3.webp",
+      "assets/book-209-4.webp",
+      "assets/book-209-5.webp",
+      "assets/book-209-6.webp",
+      "assets/book-209-7.webp",
+      "assets/book-209-8.webp"
+    ],
+    "slug": "2026-11-09-1700",
+    "description": "スナップのメガネ型コンピューター「Specs」の試用記事を、2026年11月9日の本で紹介。軽くなった重さや値段、使い道について読めます。",
+    "summary": "アメリカのスナップのメガネ型コンピューター「Specs」を、記者が試して軽くなったと伝えた記事について。",
+    "body": [
+      "アメリカのスナップが作っているメガネ型のコンピューター「Specs」を、TechCrunchの記者が試したんだって。今年の初めに試作品をつけたときは、重くて熱くなったらしい。新しいものは、ずっと軽くてつけやすくなっていたそうだよ。",
+      "記者が最初に試作品をつけたのは、今年ラスベガスであった展示会のとき。重くて顔に合わず、熱くなって、顔がピリピリしたそう。新しいSpecsは132グラムで、試作品の半分くらいの重さになったんだ。1時間つけていても、熱くならなかったらしいよ。",
+      "頭の大きさに合わせて、47ミリと52ミリの2つのサイズがあるんだって。つるの付け根にはバネが入っていて、つけ心地をよくしているそう。値段は2,200ドル。記者は、ほとんどのXboxの倍以上だと書いていたよ。",
+      "記者がよさそうと思ったのは、電車の中で動画を見る使い方。HBO Maxやユーチューブにも対応しているんだ。本を読むときも、画面に集中しやすかったらしい。写真や動画をとって、友だちに送ることもできるよ。",
+      "でも記者は、まだ「何のための道具か」がはっきりしないと感じたそう。スナップの人に、遊び用か仕事用かを聞いても、答えはあいまいだったんだって。「どこでも仕事場になる」という話には、ノートパソコンとスマホのほうが手軽だと書いていたよ。",
+      "半分の重さって、つける人にはかなり大きな差だと思う。でも2,200ドルで、使い道がまだはっきりしないのは、ちょっと悩むところ。電車でメガネをかけて手を動かしてる人がいたら、つい見ちゃいそう。"
+    ],
+    "afterword": "軽くはなったけど、まだ高いメガネ",
+    "mochi": "ぼくは寝ながら見たい",
+    "source": {
+      "name": "TechCrunch",
+      "title": "If Snap's Specs are still ridiculously expensive, they're also a lot more comfortable than they used to be",
+      "url": "https://techcrunch.com/2026/11/08/if-snaps-specs-are-still-ridiculously-expensive-theyre-also-a-lot-more-comfortable-than-they-used-to-be/",
+      "date": "2026-11-08",
+      "status": "2026年11月9日に記事名と本文（英語）を確認。"
+    },
+    "topic": "electronics",
+    "url": "/books/2026-11-09-1700/",
+    "webPublished": "2026-11-09",
+    "tags": [
+      "xr-glasses",
+      "wearable"
+    ],
+    "time": "1700",
+    "thumb": "assets/book-209-thumb.webp",
+    "ogImage": "assets/book-209-og.jpg"
+  },
+  {
     "id": 208,
     "title": "四ツ谷にルノアールが「昭和モダン」で再出店",
     "date": "2026-11-09",
