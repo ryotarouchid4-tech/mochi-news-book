@@ -658,5 +658,9 @@
   {
     "id": "adobe",
     "name": "アドビ"
+  },
+  {
+    "id": "sign-language",
+    "name": "手話"
   }
 ]

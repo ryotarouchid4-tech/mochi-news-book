@@ -1,5 +1,53 @@
 [
   {
+    "id": 222,
+    "title": "Apple TVで手話の通訳が見られるように",
+    "date": "2026-11-11",
+    "category": "エンタメ・動画",
+    "pages": [
+      "assets/book-222-1.webp",
+      "assets/book-222-2.webp",
+      "assets/book-222-3.webp",
+      "assets/book-222-4.webp",
+      "assets/book-222-5.webp",
+      "assets/book-222-6.webp",
+      "assets/book-222-7.webp",
+      "assets/book-222-8.webp"
+    ],
+    "slug": "2026-11-11-0900",
+    "description": "Apple TVの新しい手話通訳の機能を、2026年11月11日の本で紹介。画面の右下に通訳の人が出るしくみや使い方を読めます。",
+    "summary": "アップルが、Apple TVの作品に手話通訳を映せる機能を入れると発表したことについて。",
+    "body": [
+      "アップルが、動画サービスのApple TVに「手話通訳」の機能を入れると発表したよ。耳が聞こえない人や、聞こえにくい人にも作品を楽しんでもらうためなんだって。まずは一部の作品から、金曜日に始まるそうだよ。",
+      "手話のための別の映画を作るわけじゃないみたい。字幕をつけたり消したりするのと同じで、設定でオンにするしくみなんだ。オンにすると、画面の右下に通訳の人が出てくる。登場人物のセリフを、その人が手話にして伝えてくれるんだって。",
+      "通訳をするのは、本物の人だよ。アップルは、手話の見せ方を考える専門家たちと組んで、作品の雰囲気に合う通訳の人を選んだそう。AIで作った通訳は使わないんだって。それは、耳が聞こえない人たちが求めているものじゃない、という考えからみたい。",
+      "最初の作品は、障害のある人の権利のために活動したジュディ・ヒューマンさんの伝記映画「Being Heumann」。人気の映画「F1」では、アメリカの手話とイギリスの手話が選べるよ。今年のうちに「Way of the Warrior Kid」と「Greyhound」も加わる予定なんだって。",
+      "使うには、iPhoneなどをiOS 27.2にして、設定に新しくできた手話の項目をオンにする。すると、対応している作品に手話のボタンが出てくるよ。作品のページには、字幕などと並んで手話のマークもつくそう。「with ASL」で検索したり、手話つき作品の特集から探したりもできるんだって。",
+      "字幕があれば足りるのかなって、ちょっと思ってた。でも手話を使ってくらしている人にとっては、手話のほうがすっと入ってくるのかも。AIじゃなくて人にお願いしたところも、気になったな。表情までちゃんと伝わりそうだよね。"
+    ],
+    "afterword": "見たい作品を、見たい言葉で",
+    "mochi": "右下の人ばっかり見そう",
+    "source": {
+      "name": "TechCrunch",
+      "title": "Apple TV makes sign language interpretation a built-in accessibility feature",
+      "url": "https://techcrunch.com/2026/11/10/apple-tv-makes-sign-language-interpretation-a-built-in-accessibility-feature/",
+      "date": "2026-11-10",
+      "status": "2026年11月11日に記事名と本文（英語）を確認。"
+    },
+    "topic": "entertainment",
+    "url": "/books/2026-11-11-0900/",
+    "webPublished": "2026-11-11",
+    "tags": [
+      "apple",
+      "streaming",
+      "movies",
+      "sign-language"
+    ],
+    "time": "0900",
+    "thumb": "assets/book-222-thumb.webp",
+    "ogImage": "assets/book-222-og.jpg"
+  },
+  {
     "id": 221,
     "title": "アドビとグーグル、協力をもっと広げる",
     "date": "2026-11-11",
