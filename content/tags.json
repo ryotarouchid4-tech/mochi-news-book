@@ -646,5 +646,9 @@
   {
     "id": "traffic-signal",
     "name": "信号機"
+  },
+  {
+    "id": "odakyu",
+    "name": "小田急"
   }
 ]
