@@ -1,5 +1,52 @@
 [
   {
+    "id": 219,
+    "title": "Windows 11、固定キーのお知らせを消せるように",
+    "date": "2026-11-10",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-219-1.webp",
+      "assets/book-219-2.webp",
+      "assets/book-219-3.webp",
+      "assets/book-219-4.webp",
+      "assets/book-219-5.webp",
+      "assets/book-219-6.webp",
+      "assets/book-219-7.webp",
+      "assets/book-219-8.webp"
+    ],
+    "slug": "2026-11-10-2100",
+    "description": "Windows 11の固定キーのお知らせを止められる新しいチェックを、2026年11月10日の本で紹介。Shiftを5回押すと出る画面の話です。",
+    "summary": "Windows 11で、固定キーのお知らせ画面をずっと出なくできるようになることについて。",
+    "body": [
+      "アメリカのマイクロソフトが、Windows 11の「固定キー」のお知らせを、ずっと出なくできるようにするんだって。Shiftキーを5回続けて押すと出てくる、あの画面のこと。今は、試験版を使う人向けに試しているところだよ。",
+      "固定キーは、いくつかのキーを同時に押すかわりに、1つずつ順番に押せるようにする機能。たとえばCtrlとAltとDeleteも、ひとつずつ押せばいいんだ。手を動かしにくい人を助けるためのもので、30年以上前のWindows 95からあるんだって。",
+      "ただ、この機能を使わない人も多いみたい。それなのに、Shiftを5回押すたびにお知らせが出てきちゃう。パソコンのゲームでは、走ったり歩いたりするのにShiftを使うことが多いから、遊んでいる途中で出てきて困る人もいたらしいよ。",
+      "新しいWindowsでは、お知らせの画面にチェックを入れる場所ができる。「このショートカットで固定キーをオンにしない」に印をつけると、もう出なくなるんだ。マイクロソフトの人が、アメリカ時間の7日にXで知らせていたよ。",
+      "今のところ、使えるのは「Windows Insider」という試験版に参加している人だけ。ふつうの人は、設定のアクセシビリティから「キーボード」を開いて、固定キーとそのショートカットをオフにすれば止められる。いつかはみんなのWindows 11にも来そうなんだって。",
+      "Shiftを5回押しただけで、いきなり画面が出てくるとびっくりするよね。でも、この機能がないと困る人もいる。だから機能は残して、お知らせだけ止められるようにしたのかな。30年たってやっと、っていうのがちょっとおもしろい。"
+    ],
+    "afterword": "いる人には残して、いらない人は止められる",
+    "mochi": "ぼくは5回も押さない",
+    "source": {
+      "name": "Engadget",
+      "title": "Windows 11 is finally adding an easier way to disable the Sticky Keys pop-up",
+      "url": "https://www.engadget.com/2311340/windows-11-is-finally-adding-an-easier-way-to-disable-sticky-keys-pop-up/",
+      "date": "2026-11-09",
+      "status": "2026年11月10日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-11-10-2100/",
+    "webPublished": "2026-11-10",
+    "tags": [
+      "microsoft",
+      "windows",
+      "pc"
+    ],
+    "time": "2100",
+    "thumb": "assets/book-219-thumb.webp",
+    "ogImage": "assets/book-219-og.jpg"
+  },
+  {
     "id": 218,
     "title": "秋葉原UDXが12月にリニューアルオープン",
     "date": "2026-11-10",
