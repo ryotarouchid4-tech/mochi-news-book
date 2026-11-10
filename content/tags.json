@@ -650,5 +650,9 @@
   {
     "id": "odakyu",
     "name": "小田急"
+  },
+  {
+    "id": "instagram",
+    "name": "インスタグラム"
   }
 ]
