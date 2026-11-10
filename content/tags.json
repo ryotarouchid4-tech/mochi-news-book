@@ -654,5 +654,9 @@
   {
     "id": "instagram",
     "name": "インスタグラム"
+  },
+  {
+    "id": "adobe",
+    "name": "アドビ"
   }
 ]
