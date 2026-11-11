@@ -1,5 +1,54 @@
 [
   {
+    "id": 230,
+    "title": "車の画面でGeminiと話せるようになった",
+    "date": "2026-11-12",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-230-1.webp",
+      "assets/book-230-2.webp",
+      "assets/book-230-3.webp",
+      "assets/book-230-4.webp",
+      "assets/book-230-5.webp",
+      "assets/book-230-6.webp",
+      "assets/book-230-7.webp",
+      "assets/book-230-8.webp"
+    ],
+    "slug": "2026-11-12-0900",
+    "description": "グーグルのAIアプリ「Gemini」がCarPlayに対応したことを、2026年11月12日の本で紹介。車の画面から声で話す使い方や条件が読めます。",
+    "summary": "グーグルが、AIアプリのGeminiをアップルのCarPlayで使えるようにしたことについて。",
+    "body": [
+      "アメリカ時間の11日、グーグルがAIのアプリ「Gemini」を、アップルの「CarPlay」で使えるようにしたんだって。CarPlayは、iPhoneを車につないで、車の画面で地図や音楽を使えるしくみのこと。これからは車の画面から、Geminiと声で話せるよ。",
+      "使い方は、車の画面にあるGeminiのアイコンをタップするだけ。前の会話の続きから話すことも、新しく話しはじめることもできるそう。車で話した中身は、iPhoneのGeminiアプリにもそのまま残る。あとから会話の履歴で見返せるんだって。",
+      "グーグルは、こんな使い方をすすめてるよ。通勤中に、会議の準備をする。メールにざっと目を通す。1日のまとめを聞ける「Daily Brief」を流す。近くで行ける場所を教えてもらう。どれも画面をさわらずに、声でやりとりしながらできるみたい。",
+      "使うには、条件がいくつかある。iPhoneのGeminiアプリを最新にすること。マイクを使っていいと許可すること。それから、iPhoneで一度は「Gemini Live」を使っておくこと。Gemini Liveは、Geminiと声で会話する機能のことだよ。使える言葉は、Gemini Liveが対応している言語すべてなんだって。",
+      "じつはGeminiは、CarPlayのグーグルマップの中からなら、前から使えたらしい。今回はGeminiのアプリそのものが、CarPlayに入ったということ。グーグルは、ほかのグーグルのアプリの情報も使って答える機能を、Android Autoにも広げたばかり。この機能は、グーグルのしくみが入った車にも広げる予定だそうだよ。",
+      "運転中はスマホをさわれないから、話しかけるだけでいいのは助かりそう。でも、運転しながらメールの中身を聞いても、ちゃんと頭に入るのかな。ぼくなら、近くのおいしいお店を聞くのに使ってみたいなぁ。"
+    ],
+    "afterword": "車の中でも、AIと話せるようになってきた",
+    "mochi": "ぼくは助手席で寝る",
+    "source": {
+      "name": "Engadget",
+      "title": "Google brings the Gemini app to Apple CarPlay",
+      "url": "https://www.engadget.com/2314093/google-brings-the-gemini-app-to-apple-carplay/",
+      "date": "2026-11-11",
+      "status": "2026年11月12日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-11-12-0900/",
+    "webPublished": "2026-11-12",
+    "tags": [
+      "google",
+      "apple",
+      "generative-ai",
+      "cars",
+      "voice"
+    ],
+    "time": "0900",
+    "thumb": "assets/book-230-thumb.webp",
+    "ogImage": "assets/book-230-og.jpg"
+  },
+  {
     "id": 229,
     "title": "水道水と透明なパイプでアンテナができた",
     "date": "2026-11-12",
