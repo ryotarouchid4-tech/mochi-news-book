@@ -662,5 +662,9 @@
   {
     "id": "sign-language",
     "name": "手話"
+  },
+  {
+    "id": "toys",
+    "name": "おもちゃ"
   }
 ]
