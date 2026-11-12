@@ -1,5 +1,51 @@
 [
   {
+    "id": 236,
+    "title": "赤ちゃんの写真をまとめるアプリ「Sundrop」",
+    "date": "2026-11-12",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-236-1.webp",
+      "assets/book-236-2.webp",
+      "assets/book-236-3.webp",
+      "assets/book-236-4.webp",
+      "assets/book-236-5.webp",
+      "assets/book-236-6.webp",
+      "assets/book-236-7.webp"
+    ],
+    "slug": "2026-11-12-2100",
+    "description": "赤ちゃんの写真をまとめるiPhoneアプリ「Sundrop」を、2026年11月12日の本で紹介。写真をiPhoneの中だけで処理するしくみや料金も読めます。",
+    "summary": "赤ちゃんの写真を、生成AIを使わずに毎週のまとめや動画にしてくれるiPhoneアプリ「Sundrop」について。",
+    "body": [
+      "iPhoneで撮った赤ちゃんの写真を、いろんな形にまとめてくれるアプリ「Sundrop」が出たんだって。毎週のふり返りや、成長のようすを早送りで見られる動画を作ってくれる。作るときに、生成AIは使っていないそうだよ。",
+      "毎週日曜には、その週のまとめが、ロック画面に通知で届くらしい。ほかにも、雑誌の表紙みたいな画像や、スポーツ選手のカードみたいな画像も作れる。きょうだい2人の、同じ年のころの写真を並べることもできるみたい。アプリでは、こうして作ったものを「drop」と呼んでいるよ。",
+      "アプリはカメラロールを見て、スクリーンショットや同じような写真をよけてくれる。写真の処理は、ネットの向こうのサーバーじゃなくて、iPhoneの中でやるんだって。アップルの、画像を読み取るしくみを使っているそう。夫婦で写真を分け合うときも、外のサーバーには送らないと会社は言っているよ。",
+      "作ったのは、あとで読むためのアプリ「Matter」を作ったチーム。3人とも、子どもがいるお父さんだそう。料金は1年で39.99ドルで、最初の1週間は無料で試せる。1人が買えば、家族で共有して夫婦2人で使えるらしい。今のところ、iPhone向けのアプリだよ。",
+      "赤ちゃんの写真って、撮っても撮ってもたまっていくばかりだよね。見返すひまもなさそうだし、毎週まとめてくれるのは助かりそう。なんでもAIが作る流れの中で、あえて使わないっていうのもおもしろいな。"
+    ],
+    "afterword": "写真は、撮るより見返すほうがむずかしい",
+    "mochi": "ぼくの寝顔もまとめて",
+    "source": {
+      "name": "TechCrunch",
+      "title": "Sundrop turns your endless baby photos into recaps, time lapses, and more — without AI",
+      "url": "https://techcrunch.com/2026/11/10/sundrop-turns-your-endless-baby-photos-into-recaps-time-lapses-and-more-without-ai/",
+      "date": "2026-11-10",
+      "status": "2026年11月12日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-11-12-2100/",
+    "webPublished": "2026-11-12",
+    "tags": [
+      "apps",
+      "apple",
+      "privacy",
+      "photos"
+    ],
+    "time": "2100",
+    "thumb": "assets/book-236-thumb.webp",
+    "ogImage": "assets/book-236-og.jpg"
+  },
+  {
     "id": 235,
     "title": "丸亀製麺がかけうどんを値下げ",
     "date": "2026-11-12",

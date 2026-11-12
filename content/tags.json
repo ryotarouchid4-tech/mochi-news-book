@@ -674,5 +674,9 @@
   {
     "id": "translation",
     "name": "翻訳"
+  },
+  {
+    "id": "photos",
+    "name": "写真"
   }
 ]
