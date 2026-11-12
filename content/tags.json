@@ -678,5 +678,13 @@
   {
     "id": "photos",
     "name": "写真"
+  },
+  {
+    "id": "cats",
+    "name": "ネコ"
+  },
+  {
+    "id": "animals",
+    "name": "動物"
   }
 ]
