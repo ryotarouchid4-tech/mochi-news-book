@@ -670,5 +670,9 @@
   {
     "id": "antenna",
     "name": "アンテナ"
+  },
+  {
+    "id": "translation",
+    "name": "翻訳"
   }
 ]
