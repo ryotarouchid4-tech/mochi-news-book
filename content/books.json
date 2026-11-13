@@ -1,5 +1,50 @@
 [
   {
+    "id": 247,
+    "title": "グーグルのAI「Gemini」銀行口座とつながるように",
+    "date": "2026-11-14",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-247-1.webp",
+      "assets/book-247-2.webp",
+      "assets/book-247-3.webp",
+      "assets/book-247-4.webp",
+      "assets/book-247-5.webp",
+      "assets/book-247-6.webp",
+      "assets/book-247-7.webp"
+    ],
+    "slug": "2026-11-14-0900",
+    "description": "グーグルのAI「Gemini」が銀行口座とつながる新機能を、2026年11月14日の本で紹介。できることや、お金を動かせないしくみについて読めます。",
+    "summary": "グーグルのAI「Gemini」を、Googleウォレットを通して銀行口座とつなげられるようになったことについて。",
+    "body": [
+      "グーグルが、AIの「Gemini」を銀行の口座とつなげられるようにしたんだって。アメリカ時間の13日に発表されたよ。「Googleウォレット」と連携して、自分のお金のことをGeminiに質問できるようになるそう。ウェブとスマホで、いま順番に使えるようになってるみたい。",
+      "つなぐと、口座の中身についてGeminiに聞けるようになるんだ。グーグルが出した例は、ある月額サービスの値上げに気づいてくれること。期間を決めた予算づくりや、年末年始の予算の相談もできるそう。お金の出入りを、グラフにして見せてくれる機能もあるらしいよ。",
+      "Geminiができるのは、口座の情報を読むことだけ。お金を動かしたり、運用したりはできないんだって。それに、自分で「使う」と決めた人だけの機能。設定から、いつでもオン・オフを切りかえられるようになってるよ。",
+      "ほかのAIでは、買いものを代わりにしてくれる機能が増えてるんだ。メタの「Muse」や、OpenAIのAIがそう。でも今回のGeminiは、買いもの用じゃなくて、お金の管理を手伝うためのもの。一方で、ユナイテッド航空やアマゾンなどは、AIに買いものをさせないようにしてるみたい。",
+      "明細を見ればわかることでも、聞くだけで答えてくれるのはラクかもね。忘れてたサブスクの値上げとか、気づかないままのことって多いし。でも、AIはまちがえることもある。大事なお金の話だから、答えをどこまで信じていいのかは、ちょっと気になるな。"
+    ],
+    "afterword": "AIに、お金の相談をする時代が来てる",
+    "mochi": "おこづかい帳もお願い",
+    "source": {
+      "name": "Engadget",
+      "title": "Google now lets people connect Gemini to their bank accounts",
+      "url": "https://www.engadget.com/2316384/google-now-lets-people-connect-gemini-to-their-bank-accounts/",
+      "date": "2026-11-13",
+      "status": "2026年11月14日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-11-14-0900/",
+    "webPublished": "2026-11-14",
+    "tags": [
+      "google",
+      "generative-ai",
+      "cashless"
+    ],
+    "time": "0900",
+    "thumb": "assets/book-247-thumb.webp",
+    "ogImage": "assets/book-247-og.jpg"
+  },
+  {
     "id": 246,
     "title": "FirefoxのVPNが1月末まで使い放題に",
     "date": "2026-11-14",
