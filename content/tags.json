@@ -686,5 +686,13 @@
   {
     "id": "animals",
     "name": "動物"
+  },
+  {
+    "id": "insects",
+    "name": "虫"
+  },
+  {
+    "id": "lighting",
+    "name": "照明"
   }
 ]
