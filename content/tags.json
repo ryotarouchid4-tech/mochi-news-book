@@ -694,5 +694,13 @@
   {
     "id": "lighting",
     "name": "照明"
+  },
+  {
+    "id": "data-center",
+    "name": "データセンター"
+  },
+  {
+    "id": "ocean",
+    "name": "海"
   }
 ]
