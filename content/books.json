@@ -1,5 +1,50 @@
 [
   {
+    "id": 252,
+    "title": "メタのAIが代わりに電話をかけてくれる",
+    "date": "2026-11-14",
+    "category": "AI・テクノロジー",
+    "pages": [
+      "assets/book-252-1.webp",
+      "assets/book-252-2.webp",
+      "assets/book-252-3.webp",
+      "assets/book-252-4.webp",
+      "assets/book-252-5.webp",
+      "assets/book-252-6.webp",
+      "assets/book-252-7.webp"
+    ],
+    "slug": "2026-11-14-2100",
+    "description": "メタのAIエージェント「Muse」が代わりに電話をかける新機能を、2026年11月14日の本で紹介。保留中も待ってくれる様子などが読めます。",
+    "summary": "メタのAIエージェント「Muse」が、有料プランの人の代わりに電話をかけられるようになったことについて。",
+    "body": [
+      "メタのAIエージェント「Muse」が、使う人の代わりに電話をかけられるようになったんだって。お店の予約や、行く日にちを決める電話をまかせられるみたい。ただし使えるのは、Museの有料プランに入っている人だけだよ。",
+      "メタで働く人が、Museがかけた電話の様子を紹介していたよ。車のディーラーに電話して、いちばん早く行ける日を聞く内容だったんだ。相手が出るまで待つ保留の時間は、15分くらい続いたらしい。Museはそのあいだもずっと待って、知りたいことを聞き出したそうだよ。",
+      "その電話でMuseは、自分がAIだとはっきりは言わなかったみたい。「本人の代わりにかけている」「会話を文字にしている」とは伝えていたんだって。記事では、話がうまくかみ合わなかったり、AIだと気づいた相手が電話を切ったりすることもありそう、と書かれていたよ。",
+      "メタによると、Museを使っている人は1000万人をこえているそう。電話のほかに、Muse専用のメールアドレスを作る機能もあるよ。大事なメールにだけMuseを入れれば、受信箱を全部見せなくてすむんだ。似た機能は、グーグルのPixelのスマホなどにもあるらしい。",
+      "保留の音を15分も聞くのは、けっこうつらいよね。そこをまかせられるなら、助かる人は多そう。でも電話に出たお店の人は、相手がAIだとわかったらどう思うのかな。そっちのほうが、ちょっと気になるよ。"
+    ],
+    "afterword": "電話の保留も、AIが待ってくれるようになった",
+    "mochi": "電話、ずっとまかせたい",
+    "source": {
+      "name": "Engadget",
+      "title": "Meta's Muse can now make calls on your behalf (if you have a paid subscription)",
+      "url": "https://www.engadget.com/2315525/metas-muse-can-now-make-calls-on-your-behalf-if-you-have-a-paid-subscription/",
+      "date": "2026-11-12",
+      "status": "2026年11月14日に記事名と本文（英語）を確認。"
+    },
+    "topic": "ai",
+    "url": "/books/2026-11-14-2100/",
+    "webPublished": "2026-11-14",
+    "tags": [
+      "meta",
+      "generative-ai",
+      "voice"
+    ],
+    "time": "2100",
+    "thumb": "assets/book-252-thumb.webp",
+    "ogImage": "assets/book-252-og.jpg"
+  },
+  {
     "id": 251,
     "title": "ゲームを作る人の4割が生成AIを使っている",
     "date": "2026-11-14",
